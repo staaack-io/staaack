@@ -5,6 +5,7 @@ import ServicesSection from "@/app/_components/ServicesSection";
 import HomeSection from "@/app/_components/HomeSection";
 import PartnersSection from "@/app/_components/PartnersSection";
 import Navbar from "@/app/_components/Navbar";
+import AboutSection from "@/app/_components/AboutSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <div className="">
           <Navbar></Navbar>
           <HomeSection></HomeSection>
+          <AboutSection></AboutSection>
           <ServicesSection></ServicesSection>
           <SkillsSection></SkillsSection>
           <PartnersSection></PartnersSection>

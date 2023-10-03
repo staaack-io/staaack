@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-split-b-w {
+    background: linear-gradient(to right bottom, #000 50%, #fff 50%);
+}

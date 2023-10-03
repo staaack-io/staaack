@@ -3,7 +3,7 @@
 import Image from "next/image";
 import ButtonHire from "@/app/_components/button/ButtonHire";
 
-const HomeSection = () => {
+const HomeSection = ({props}) => {
     return <section className="h-screen">
         <div className="flex flex-col lg:flex-row h-full items-center">
             <div className="order-2 lg:order-1 lg:w-1/2 mb-24">
