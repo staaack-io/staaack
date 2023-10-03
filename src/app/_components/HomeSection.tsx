@@ -6,8 +6,11 @@ const HomeSection = () => {
     return <section className="h-screen">
         <div className="flex flex-col lg:flex-row h-full items-center">
             <div className="order-2 lg:order-1 lg:w-1/2">
-                <h1>staaack</h1>
-                <h2>Bienvenue, je suis Alexis. Je t'aide à mettre en place ta staaack de a à z</h2>
+                <h1 className="font-bold text-3xl text-transparent bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400 inline-block bg-clip-text">staaack</h1>
+                <h2 className="font-bold text-xl">
+                    Hi ✋,
+                    I'm a (developer) and I can help you to (develop app)
+                </h2>
                 <div className="flex gap-3">
                     <button>1</button>
                     <button>2</button>
