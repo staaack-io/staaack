@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const BubbleCard = (props) => {
     return <>
-        <div className="flex bg-white m-0.5 rounded-lg p-6 shadow-xl">
+        <div className="min-h-full flex bg-white m-0.5 rounded-lg p-6 shadow-xl">
             <div className="mx-4">
                 <span className="text-transparent bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400 inline-block bg-clip-text">
                     {props.info}

@@ -13,7 +13,7 @@ export default function Home() {
         <div className="">
           <Navbar className="p-8"></Navbar>
           <HomeSection className="p-8 h-screen"></HomeSection>
-          <AboutSection className="p-8 bg-gradient-primary"></AboutSection>
+          <AboutSection className="p-8 bg-gradient-primary "></AboutSection>
           <ServicesSection></ServicesSection>
           <SkillsSection></SkillsSection>
           <PartnersSection></PartnersSection>

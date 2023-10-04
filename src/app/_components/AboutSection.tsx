@@ -1,41 +1,64 @@
-import ServiceCard from "@/app/_components/button/ServiceCard";
-import BubbleCard from "@/app/_components/button/BubbleCard";
 import React from "react";
-import Image from "next/image";
 import SimpleCard from "@/app/_components/button/SimpleCard";
+import BubbleCard from "@/app/_components/button/BubbleCard";
+import SimpleCard1Content from "@/app/_components/button/SimpleCard1Content";
+import SimpleCardTextContent from "@/app/_components/button/SimpleCardTextContent";
 
 const ServiceSection = (props) => {
     return <section {...props}>
-        <div className="h-full text-white grid grid-cols-1 lg:grid-cols-2 gap-x-3 gap-y-5 justify-items-center">
-            <div className="lg:col-span-2 text-5xl py-8">
-                About
-            </div>
-            <div className="">
-                <SimpleCard>
-                    <img src="https://placehold.co/400x600" height={600} width={400} alt="Photo Alexis Détrie" />
-                </SimpleCard>
-            </div>
-            <div className="h-full lg:flex lg:justify-center lg:content-center lg:items-center lg:text-center">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic typesetting,
-                remaining essentially unchanged.
-            </div>
-        </div>
-        <div className="h-min-screen grid sm:grid-cols-2 lg:grid-cols-4 gap-x-3 gap-y-5 justify-items-center pt-12 pb-8">
-            <div className="">
-                <BubbleCard count="7 ans" image="" info="XP en tant que développeur"></BubbleCard>
-            </div>
-            <div>
-                <BubbleCard count="5 ans" image="" info="XP en tant qu'architecte"></BubbleCard>
-            </div>
-            <div>
-                <BubbleCard count={10} image="" info="Sociétés qui m'ont fait confiance"></BubbleCard>
-            </div>
-            <div>
-                <BubbleCard count={10} image="" info="Ceci est un test4"></BubbleCard>
-            </div>
+            <div className="content-center grid grid-cols-6 gap-10">
+                <div className="col-span-6 text-center">About</div>
+                <div className="col-span-2 row-span-2 row-start-2">
+                    <SimpleCard className="">
+                        <img src="https://placehold.co/500x600" height={500} width={400} alt="Photo Alexis Détrie" />
+                    </SimpleCard>
+                </div>
+                <div className="col-start-1 row-start-4">
+                    <SimpleCard>
+                        <SimpleCard1Content imgSrc="./cpu.svg" text1="12" text2="ans d'XP"/>
+                    </SimpleCard>
+                </div>
+                <div className="col-start-2 row-start-4">
+                    <SimpleCard>
+                        <SimpleCard1Content imgSrc="./cpu.svg" text1="12" text2="ans d'XP"/>
+                    </SimpleCard>
+                </div>
+                <div className="col-start-1 row-start-5">
+                    <SimpleCard>
+                        <SimpleCard1Content imgSrc="./cpu.svg" text1="12" text2="ans d'XP"/>
+                    </SimpleCard>
+                </div>
+                <div className="col-start-2 row-start-5">
+                    <SimpleCard>
+                        <SimpleCard1Content imgSrc="./cpu.svg" text1="12" text2="ans d'XP"/>
+                    </SimpleCard>
+                </div>
+                <div className="col-span-2 row-span-3 col-start-3 row-start-2">
+                    <SimpleCard>
+                        <SimpleCardTextContent></SimpleCardTextContent>
+                    </SimpleCard>
+                </div>
+                <div className="col-span-2 col-start-3 row-start-5">
+                    <SimpleCard>6</SimpleCard>
+                </div>
+                <div className="col-start-5 row-start-2">
+                    <SimpleCard>7</SimpleCard>
+                </div>
+                <div className="col-start-6 row-start-2">
+                    <SimpleCard>8</SimpleCard>
+                </div>
+                <div className="col-span-2 col-start-5 row-start-3">
+                    <SimpleCard>9</SimpleCard>
+                </div>
+                <div className="col-start-5 row-start-4">
+                    <SimpleCard>10</SimpleCard>
+                </div>
+                <div className="col-start-6 row-start-4">
+                    <SimpleCard>11</SimpleCard>
+                </div>
+                <div className="col-span-2 col-start-5 row-start-5">
+                    <SimpleCard>12</SimpleCard>
+                </div>
         </div>
     </section>;
 }
