@@ -9,11 +9,11 @@ import AboutSection from "@/app/_components/AboutSection";
 
 export default function Home() {
   return (
-      <div className="min-h-screen p-8">
+      <div className="min-h-screen">
         <div className="">
-          <Navbar></Navbar>
-          <HomeSection></HomeSection>
-          <AboutSection></AboutSection>
+          <Navbar className="p-8"></Navbar>
+          <HomeSection className="p-8 h-screen"></HomeSection>
+          <AboutSection className="p-8 bg-gradient-primary"></AboutSection>
           <ServicesSection></ServicesSection>
           <SkillsSection></SkillsSection>
           <PartnersSection></PartnersSection>

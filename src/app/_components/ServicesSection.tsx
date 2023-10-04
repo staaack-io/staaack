@@ -1,7 +1,7 @@
 import ServiceCard from "@/app/_components/button/ServiceCard";
 
-const ServiceSection = () => {
-    return <section>
+const ServiceSection = (props) => {
+    return <section {...props}>
         <div className="h-min-screen grid grid-cols-2 gap-x-3 gap-y-5 justify-items-center">
             <div className="col-span-2 text-2xl">
                 Service

@@ -1,5 +1,5 @@
-const PartnersSection = () => {
-    return <section>
+const PartnersSection = (props) => {
+    return <section {...props}>
         PartnersSection
     </section>;
 }
