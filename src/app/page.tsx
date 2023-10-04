@@ -9,16 +9,14 @@ import AboutSection from "@/app/_components/AboutSection";
 
 export default function Home() {
   return (
-      <div className="min-h-screen">
         <div className="">
-          <Navbar className="p-8"></Navbar>
-          <HomeSection className="p-8 h-screen"></HomeSection>
-          <AboutSection className="p-8 bg-gradient-primary "></AboutSection>
-          <ServicesSection></ServicesSection>
+          <Navbar className=""></Navbar>
+          <HomeSection className=""></HomeSection>
+          <AboutSection className=""></AboutSection>
+          {/*<ServicesSection></ServicesSection>*/}
           <SkillsSection></SkillsSection>
           <PartnersSection></PartnersSection>
           <ContactSection></ContactSection>
-        </div>
       </div>
   )
 }

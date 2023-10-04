@@ -4,7 +4,7 @@ import Image from "next/image";
 import ButtonHire from "@/app/_components/button/ButtonHire";
 
 const HomeSection = (props) => {
-    return <section  {...props}>
+    return <section  className="p-8 h-screen">
         <div className="flex flex-col lg:flex-row h-full items-center">
             <div className="order-2 lg:order-1 lg:w-1/2 mb-24">
                 <h1 className="font-extrabold text-5xl text-transparent bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400 inline-block bg-clip-text">staaack</h1>
