@@ -9,6 +9,9 @@ import SimpleCard4Content from "@/app/_components/card/SimpleCard4Content";
 import SimpleCardLogoStaaaackContent from "@/app/_components/card/SimpleCardLogoStaaaackContent";
 import MapCardContent from "@/app/_components/card/MapCardContent";
 import SimpleCard8Content from "@/app/_components/card/SimpleCard8Content";
+import SimpleCard6Content from "@/app/_components/card/SimpleCard6Content";
+import SimpleCard9Content from "@/app/_components/card/SimpleCard9Content";
+import SimpleCard1Percent from "@/app/_components/card/SimpleCard1Percent";
 
 const ServiceSection = (props) => {
     return <section className="p-8 bg-gradient-primary">
@@ -71,20 +74,26 @@ const ServiceSection = (props) => {
                     </div>
                     <div className="">
                         <SimpleCard>
-                            <SimpleCard8Content></SimpleCard8Content>
+                            <SimpleCard6Content></SimpleCard6Content>
                         </SimpleCard>
                     </div>
                     <div className="col-span-2">
                         <MapCardContent />
                     </div>
                     <div className="">
-                        <SimpleCard>10</SimpleCard>
+                        <SimpleCard>
+                            <SimpleCard8Content></SimpleCard8Content>
+                        </SimpleCard>
                     </div>
                     <div className="">
-                        <SimpleCard>11</SimpleCard>
+                        <SimpleCard>
+                            <SimpleCard9Content></SimpleCard9Content>
+                        </SimpleCard>
                     </div>
                     <div className="col-span-2">
-                        <SimpleCard>12</SimpleCard>
+                        <SimpleCard>
+                            <SimpleCard1Percent></SimpleCard1Percent>
+                        </SimpleCard>
                     </div>
                 </div>
             </div>

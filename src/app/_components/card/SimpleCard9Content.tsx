@@ -3,15 +3,15 @@ import {GiProcessor} from "react-icons/gi";
 import {CgWorkAlt} from "react-icons/cg";
 import Image from "next/image";
 
-const SimpleCard8Content = (props) => {
+const SimpleCard9Content = (props) => {
     return <div className="grid grid-cols-1">
         <div className="flex justify-center items-center text-7xl">
-            <Image src={"./planet.svg"} alt={"planet"} height={65} width={65}></Image>
+            <Image className="" src={"./document.svg"} alt={"cv"} height={65} width={65}></Image>
         </div>
         <div className="flex justify-center items-center text-xl">
-            <span className="font-bold inline-block">Only remote work</span>
+            <span className="font-bold inline-block">Resume</span>
         </div>
     </div>
 }
 
-export default SimpleCard8Content;
+export default SimpleCard9Content;
