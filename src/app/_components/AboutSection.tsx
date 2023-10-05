@@ -1,8 +1,11 @@
 import React from "react";
-import SimpleCard from "@/app/_components/button/SimpleCard";
-import BubbleCard from "@/app/_components/button/BubbleCard";
-import SimpleCard1Content from "@/app/_components/button/SimpleCard1Content";
-import SimpleCardTextContent from "@/app/_components/button/SimpleCardTextContent";
+import SimpleCard from "@/app/_components/card/SimpleCard";
+import BubbleCard from "@/app/_components/card/BubbleCard";
+import SimpleCard1Content from "@/app/_components/card/SimpleCard1Content";
+import SimpleCardTextContent from "@/app/_components/card/SimpleCardTextContent";
+import SimpleCard2Content from "@/app/_components/card/SimpleCard2Content";
+import SimpleCard3Content from "@/app/_components/card/SimpleCard3Content";
+import SimpleCard4Content from "@/app/_components/card/SimpleCard4Content";
 
 const ServiceSection = (props) => {
     return <section className="p-8 bg-gradient-primary">
@@ -25,17 +28,17 @@ const ServiceSection = (props) => {
                     </div>
                     <div className="">
                         <SimpleCard>
-                            <SimpleCard1Content imgSrc="./cpu.svg" text1="12" text2="ans d'XP"/>
+                            <SimpleCard2Content/>
                         </SimpleCard>
                     </div>
                     <div className="">
                         <SimpleCard>
-                            <SimpleCard1Content imgSrc="./cpu.svg" text1="12" text2="ans d'XP"/>
+                            <SimpleCard3Content/>
                         </SimpleCard>
                     </div>
-                    <div className="">
+                    <div className="w-full h-full">
                         <SimpleCard>
-                            <SimpleCard1Content imgSrc="./cpu.svg" text1="12" text2="ans d'XP"/>
+                            <SimpleCard4Content/>
                         </SimpleCard>
                     </div>
                 </div>
@@ -48,7 +51,11 @@ const ServiceSection = (props) => {
                         </SimpleCard>
                     </div>
                     <div className="col-span-2">
-                        <SimpleCard>6</SimpleCard>
+                        <SimpleCard>
+                            <br/>
+                            <br/>
+                            <br/>
+                        </SimpleCard>
                     </div>
                 </div>
             </div>

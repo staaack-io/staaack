@@ -1,4 +1,4 @@
-import ServiceCard from "@/app/_components/button/ServiceCard";
+import ServiceCard from "@/app/_components/card/ServiceCard";
 
 const ServiceSection = (props) => {
     return <section {...props}>
