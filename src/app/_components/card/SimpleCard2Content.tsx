@@ -1,8 +1,3 @@
-import Link from "next/link";
-import {GiProcessor} from "react-icons/gi";
-import {CgWorkAlt} from "react-icons/cg";
-import Image from "next/image";
-
 const SimpleCard2Content = (props) => {
     return <div className="flex justify-center items-center">
         <div className="h-full w-full overflow-hidden">

@@ -1,6 +1,3 @@
-import Link from "next/link";
-import {GiProcessor} from "react-icons/gi";
-import {CgWorkAlt} from "react-icons/cg";
 import Image from "next/image";
 
 const SimpleCard1Content = (props) => {
@@ -10,7 +7,7 @@ const SimpleCard1Content = (props) => {
                 <Image src={props.imgSrc} height={35} width={35} alt="image on the about section"/>
             </div>
             <div className="mt-3 h-full w-full">
-                <span className="font-bold text-transparent bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400 inline-block bg-clip-text">
+                <span className="text-4xl font-bold text-transparent bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400 inline-block bg-clip-text">
                     {props.text1}
                 </span>
                 <div className="text-xl text-purple-600">{props.text2}</div>

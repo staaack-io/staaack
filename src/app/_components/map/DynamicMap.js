@@ -1,5 +1,5 @@
 "use client"
-import { useEffect } from 'react';
+import {useEffect} from 'react';
 import Leaflet from 'leaflet';
 import * as ReactLeaflet from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
