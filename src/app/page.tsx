@@ -6,17 +6,19 @@ import HomeSection from "@/app/_components/HomeSection";
 import PartnersSection from "@/app/_components/PartnersSection";
 import Navbar from "@/app/_components/Navbar";
 import AboutSection from "@/app/_components/AboutSection";
+import Footer from "@/app/_components/Footer";
 
 export default function Home() {
-  return (
-        <div className="">
-          <Navbar className=""></Navbar>
-          <HomeSection className=""></HomeSection>
-          <AboutSection className=""></AboutSection>
-          {/*<ServicesSection></ServicesSection>*/}
-          <SkillsSection></SkillsSection>
-          <PartnersSection></PartnersSection>
-          <ContactSection></ContactSection>
-      </div>
-  )
+    return (
+        <>
+            <Navbar/>
+            <HomeSection/>
+            <AboutSection/>
+            <ServicesSection/>
+            <SkillsSection/>
+            <PartnersSection/>
+            <ContactSection/>
+            <Footer/>
+        </>
+    )
 }

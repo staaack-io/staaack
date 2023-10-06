@@ -16,7 +16,19 @@ const Navbar = (props) => {
                     <div>
                         <Link href="#">
                             <div className="transition-all duration-500 ease-out text-black hover:text-transparent hover:bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400 inline-block  bg-clip-text">
-                                home
+                                Home
+                            </div>
+                        </Link>
+                    </div>
+                </li>
+                <li>
+                    /
+                </li>
+                <li>
+                    <div>
+                        <Link href="#">
+                            <div className="transition-all duration-500 ease-out text-black hover:text-transparent hover:bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400 inline-block  bg-clip-text">
+                                About me
                             </div>
                         </Link>
                     </div>

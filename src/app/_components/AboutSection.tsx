@@ -18,7 +18,7 @@ const ServiceSection = (props) => {
         <div className="text-center font-bold text-3xl text-white p-10">
             About
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 p-10">
             <div>
                 <div className="content-center grid grid-cols-2 gap-4">
                     <div className="col-span-2 row-span-2 row-start-1">
