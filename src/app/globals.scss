@@ -1,0 +1,256 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-split-b-w {
+    background: linear-gradient(to right bottom, #000 50%, #fff 50%);
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(300deg,#db2778,#7e22ce,#60a5fa);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.pic-services-color {
+    filter: invert(22%) sepia(60%) saturate(4034%) hue-rotate(255deg) brightness(96%) contrast(94%);
+}
+
+
+//Skills section
+$block: '.hex-grid';
+
+@mixin grid-item($amount) {
+    @for $i from 1 through $amount {
+        &:nth-of-type(#{$amount}n + #{$i}) {
+            grid-column: #{$i + $i - 1} / span 3;
+            @if $i % 2 == 0 {
+                grid-row: calc(var(--counter) + var(--counter) - 1) / span 2;
+            }
+        }
+    }
+
+    @for $i from 1 through 20 {
+        &:nth-of-type(n + #{$i * $amount + 1}) {
+            --counter: #{$i + 1};
+        }
+    }
+}
+
+#{$block} {
+    display: flex;
+    justify-content: center;
+
+    &__list {
+        --amount: 5;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(var(--amount), 1fr 2fr) 1fr;
+        grid-gap: 1rem 2rem;
+    }
+
+    &__item {
+        position: relative;
+        grid-column: 1 / span 3;
+        grid-row: calc(var(--counter) + var(--counter)) / span 2;
+        filter: drop-shadow(0 0 10px rgba(#444, .08));
+        height: 0;
+        padding-bottom: 90%;
+    }
+
+    &__content {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        font-size: 1.125rem;
+        color: #111111;
+        background-color: #7e22ce;
+        clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 25%;
+        text-decoration: none;
+        text-align: center;
+        transition: transform .24s ease-out;
+    }
+
+    &__content img {
+        position: absolute;
+        background-color: white;
+        height: 98%;
+        width: 98%;
+        clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+        padding: 2rem 25%;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    #{$block} {
+        &__list {
+            --amount: 10;
+            --counter: 1;
+            grid-gap: 1.5rem 3rem;
+        }
+
+        &__item {
+            @include grid-item(10);
+        }
+    }
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1700px) {
+    #{$block} {
+        &__list {
+            --amount: 9;
+            --counter: 1;
+            grid-gap: 1.5rem 3rem;
+        }
+
+        &__item {
+            @include grid-item(9);
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1550px) {
+    #{$block} {
+        &__list {
+            --amount: 8;
+            --counter: 1;
+            grid-gap: 1.5rem 3rem;
+        }
+
+        &__item {
+            @include grid-item(8);
+        }
+    }
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1400px) {
+    #{$block} {
+        &__list {
+            --amount: 7;
+            --counter: 1;
+            grid-gap: 1.5rem 3rem;
+        }
+
+        &__item {
+            @include grid-item(7);
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1250px) {
+    #{$block} {
+        &__list {
+            --amount: 7;
+            --counter: 1;
+            grid-gap: 1.5rem 3rem;
+        }
+
+        &__item {
+            @include grid-item(7);
+        }
+    }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1100px) {
+    #{$block} {
+        &__list {
+            --amount: 6;
+            --counter: 1;
+            grid-gap: 1.5rem 3rem;
+        }
+
+        &__item {
+            @include grid-item(6);
+        }
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 950px) {
+    #{$block} {
+        &__list {
+            --amount: 5;
+            --counter: 1;
+            grid-gap: 1.5rem 3rem;
+        }
+
+        &__item {
+            @include grid-item(5);
+        }
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 800px) {
+    #{$block} {
+        &__list {
+            --amount: 4;
+            --counter: 1;
+            grid-gap: 1.5rem 3rem;
+        }
+
+        &__item {
+            @include grid-item(4);
+        }
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 650px) {
+    #{$block} {
+        &__list {
+            --amount: 3;
+            --counter: 1;
+            grid-gap: 1.5rem 3rem;
+        }
+
+        &__item {
+            @include grid-item(3);
+        }
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 500px) {
+    #{$block} {
+        &__list {
+            --amount: 2;
+            --counter: 1;
+            grid-gap: 1.5rem 3rem;
+        }
+
+        &__item {
+            @include grid-item(2);
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #{$block} {
+        &__list {
+            --amount: 1;
+            --counter: 1;
+            grid-gap: 1.5rem 3rem;
+        }
+
+        &__item {
+            @include grid-item(1);
+        }
+    }
+}

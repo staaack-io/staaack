@@ -17,8 +17,8 @@ const Map = ({ children, className, width, height, ...rest }) => {
     (async function init() {
       delete Leaflet.Icon.Default.prototype._getIconUrl;
       Leaflet.Icon.Default.mergeOptions({
-        iconRetinaUrl: './logo.svg',
-        iconUrl: './logo.svg',
+        iconRetinaUrl: './img/logo.svg',
+        iconUrl: './img/logo.svg',
         iconSize:    [50, 50],
         iconAnchor:  [25, -5],
         popupAnchor: [0, 0],

@@ -1,5 +1,5 @@
 const ContactSection = (props) => {
-    return <section {...props}>
+    return <section >
         ContactSection
     </section>;
 }

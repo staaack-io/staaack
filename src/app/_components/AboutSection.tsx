@@ -29,7 +29,7 @@ const ServiceSection = (props) => {
                     </div>
                     <div className="">
                         <SimpleCard>
-                            <SimpleCard1Content imgSrc="./cpu.svg" text1="12" text2="ans d'XP"/>
+                            <SimpleCard1Content imgSrc="./img/cpu.svg" text1="12" text2="ans d'XP"/>
                         </SimpleCard>
                     </div>
                     <div className="">

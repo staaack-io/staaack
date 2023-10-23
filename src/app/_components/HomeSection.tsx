@@ -18,7 +18,7 @@ const HomeSection = (props) => {
                 </div>
             </div>
             <div className="order-1 lg:order-2 lg:w-1/2 flex items-center justify-center h-full">
-                <Image src="/logo.svg" alt="logo" width={50} height={50} className="h-1/2 w-1/2"></Image>
+                <Image src="/img/logo.svg" alt="logo" width={50} height={50} className="h-1/2 w-1/2"></Image>
             </div>
         </div>
     </section>;

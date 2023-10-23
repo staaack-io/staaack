@@ -1,6 +1,7 @@
 import React from "react";
-import './grid-hexagon.scss';
-import skills from '/data/skills.json';
+import skills from "public/data/skills.json";
+import Hexagon from "@/app/_components/hexagon/Hexagon";
+import Image from "next/image";
 
 
 const SkillsSection = () => {
@@ -8,58 +9,15 @@ const SkillsSection = () => {
         <div className="text-center font-bold text-3xl text-black p-10">
             Skills
         </div>
-        <div className="bg-purple-100">
+        <div className="">
             <ul className="hex-grid__list">
-                <li className="hex-grid__item">
-                    <div className="hex-grid__content">
-                        1
-                    </div>
-                </li>
-                <li className="hex-grid__item">
-                    <div className="hex-grid__content">
-                        {skills.java}
-                    </div>
-                </li>
-                <li className="hex-grid__item">
-                    <div className="hex-grid__content">
-                        3
-                    </div>
-                </li>
-                <li className="hex-grid__item">
-                    <div className="hex-grid__content">
-                        4
-                    </div>
-                </li>
-                <li className="hex-grid__item">
-                    <div className="hex-grid__content">
-                        5
-                    </div>
-                </li>
-                <li className="hex-grid__item">
-                    <div className="hex-grid__content">
-                        6
-                    </div>
-                </li>
-                <li className="hex-grid__item">
-                    <div className="hex-grid__content">
-                        7
-                    </div>
-                </li>
-                <li className="hex-grid__item">
-                    <div className="hex-grid__content">
-                        8
-                    </div>
-                </li>
-                <li className="hex-grid__item">
-                    <div className="hex-grid__content">
-                        9
-                    </div>
-                </li>
-                <li className="hex-grid__item">
-                    <div className="hex-grid__content">
-                        10
-                    </div>
-                </li>
+                {
+                    skills.map((skill, index) => {
+                        return <Hexagon key={index} color={skill.color}>
+                            <Image src={"/img/logo/" + skill.title + ".svg"} height={10} width={10}></Image>
+                        </Hexagon>;
+                    })
+                }
             </ul>
         </div>
     </section>;

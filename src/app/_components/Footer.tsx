@@ -1,5 +1,5 @@
 const Footer = (props) => {
-    return <footer {...props}>
+    return <footer>
         Footer
     </footer>;
 }
