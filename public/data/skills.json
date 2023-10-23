@@ -1,0 +1,267 @@
+{
+  "intellij": {
+    "title": "Intellij",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "eclipse": {
+    "title": "Eclipse",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "jpa": {
+    "title": "JPA",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "java": {
+    "title": "Java",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "spring-security": {
+    "title": "Spring Security",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "spring": {
+    "title": "Spring",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "maven": {
+    "title": "Maven",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "spring-boot": {
+    "title": "Spring Boot",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "jsf": {
+    "title": "JSF",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "javascript": {
+    "title": "JavaScript",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "react": {
+    "title": "React",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "css": {
+    "title": "CSS",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "ejb": {
+    "title": "EJB",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "struts": {
+    "title": "Struts",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "tomcat": {
+    "title": "Tomcat",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "websphere": {
+    "title": "WebSphere",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "glassfish": {
+    "title": "GlassFish",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "jboss": {
+    "title": "JBoss",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "github-actions": {
+    "title": "GitHub Actions",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "git": {
+    "title": "Git",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "azure-devops": {
+    "title": "Azure DevOps",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "svn": {
+    "title": "SVN",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "jenkins": {
+    "title": "Jenkins",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "cvs": {
+    "title": "CVS",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "tfs": {
+    "title": "TFS",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "pks": {
+    "title": "PKS",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "kubernetes": {
+    "title": "Kubernetes",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "docker": {
+    "title": "Docker",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "harbor": {
+    "title": "Harbor",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "rest": {
+    "title": "REST",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "soap": {
+    "title": "SOAP",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "api-gateway": {
+    "title": "API Gateway",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "microservice": {
+    "title": "Microservice",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "soa": {
+    "title": "SOA",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "good-practices": {
+    "title": "Good Practices",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "azure": {
+    "title": "Azure",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "aws": {
+    "title": "AWS",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "scaleway": {
+    "title": "Scaleway",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "migration": {
+    "title": "Migration",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "paas": {
+    "title": "PAAS",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "saas": {
+    "title": "SAAS",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "iaas": {
+    "title": "iaas",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "veracode": {
+    "title": "Veracode",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "oauth2": {
+    "title": "OAuth 2",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "ssdlc": {
+    "title": "SSDLC",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "saml": {
+    "title": "SAML",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "sonarqube": {
+    "title": "SonarQube",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "oracle": {
+    "title": "Oracle",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "db2": {
+    "title": "DB2",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "sqlserver": {
+    "title": "SQL Server",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "mysql": {
+    "title": "MySQL",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "neo4j": {
+    "title": "Neo4J",
+    "color": "#000000",
+    "img": "toto.svg"
+  },
+  "postgresql": {
+    "title": "PostgreSQL",
+    "color": "#000000",
+    "img": "toto.svg"
+  }
+}
