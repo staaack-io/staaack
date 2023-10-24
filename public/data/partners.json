@@ -1,0 +1,77 @@
+[
+  {
+    "name": "Comité Européen des Régions",
+    "city": "Belgique",
+    "image": "cor.svg"
+  },
+  {
+    "name": "Banque Degroof Petercam",
+    "city": "Luxembourg",
+    "image": "degroof.png"
+  },
+  {
+    "name": "PricewaterhouseCoopers",
+    "city": "Luxembourg",
+    "image": "pwc.svg"
+  },
+  {
+    "name": "CTG",
+    "city": "Luxembourg",
+    "image": "ctg.svg"
+  },
+  {
+    "name": "Spuerkess",
+    "city": "Luxembourg",
+    "image": "spuerkeess.svg"
+  },
+  {
+    "name": "Chambre du commerce",
+    "city": "Luxembourg",
+    "image": "cdc.jpeg"
+  },
+  {
+    "name": "Neopixl",
+    "city": "Luxembourg",
+    "image": "neopixl.jpeg"
+  },
+  {
+    "name": "Wort",
+    "city": "Luxembourg",
+    "image": "wort.svg"
+  },
+  {
+    "name": "Forem",
+    "city": "Belgique",
+    "image": "forem.svg"
+  },
+  {
+    "name": "Capgemini Sogeti",
+    "city": "Luxembourg",
+    "image": "sogeti.svg"
+  },
+  {
+    "name": "Adem",
+    "city": "Luxembourg",
+    "image": "adem.svg"
+  },
+  {
+    "name": "Pragmaconsult",
+    "city": "Luxembourg",
+    "image": "pragma.png"
+  },
+  {
+    "name": "Otis",
+    "city": "France",
+    "image": "otis.svg"
+  },
+  {
+    "name": "Otodoo",
+    "city": "France",
+    "image": "otodoo.png"
+  },
+  {
+    "name": "CDDP 55",
+    "city": "France",
+    "image": "cddp.svg"
+  }
+]

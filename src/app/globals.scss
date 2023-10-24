@@ -254,3 +254,24 @@ $block: '.hex-grid';
         }
     }
 }
+
+//Partner card
+.partner-card-parent {
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+.partner-card-child {
+    border-radius:10px;
+    transition: all .2s;
+}
+
+.partner-card-child:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.partner-card-parent:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
