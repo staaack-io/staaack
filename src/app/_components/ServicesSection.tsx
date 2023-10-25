@@ -2,11 +2,11 @@ import ServiceCard from "@/app/_components/card/ServiceCard";
 import React from "react";
 
 const ServiceSection = () => {
-    return <section className="p-8">
+    return <section className="md:p-8 bg-gradient-primary">
         <div className="text-center font-bold text-3xl text-black p-10">
             Services
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:m-10 gap-x-8 gap-y-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:m-10 gap-10 justify-items-center">
             <ServiceCard icon="/img/develop.svg" serviceName="Developement">
                 <span className="font-semibold">Java/Spring/JEE</span>: Crafting robust and scalable solutions tailored to your specific needs.
                 <br /><br />

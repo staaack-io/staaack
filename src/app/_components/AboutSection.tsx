@@ -14,17 +14,17 @@ import SimpleCard9Content from "@/app/_components/card/SimpleCard9Content";
 import SimpleCard1Percent from "@/app/_components/card/SimpleCard1Percent";
 
 const ServiceSection = (props) => {
-    return <section className="p-8 bg-gradient-primary">
+    return <section className="p-8">
         <div className="text-center font-bold text-3xl text-white p-10">
             About
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:p-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-24 md:px-10">
             <div>
-                <div className="content-center grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-10 md:gap-20">
                     <div className="col-span-2 row-span-2 row-start-1">
                         <SimpleCard className="">
                             <img src="https://placehold.co/500x600" height={500} width={400} alt="Photo Alexis Détrie"
-                                 className="rounded-xl"/>
+                                 className=""/>
                         </SimpleCard>
                     </div>
                     <div className="">
@@ -37,48 +37,14 @@ const ServiceSection = (props) => {
                             <SimpleCard2Content/>
                         </SimpleCard>
                     </div>
-                    <div className="">
-                        <SimpleCard>
-                            <SimpleCard3Content/>
-                        </SimpleCard>
-                    </div>
-                    <div className="w-full h-full">
-                        <SimpleCard>
-                            <SimpleCard4Content/>
-                        </SimpleCard>
-                    </div>
                 </div>
             </div>
             <div>
-                <div className="content-center grid grid-cols-2 gap-4">
+                <div className="content-center grid grid-cols-2 gap-10 md:gap-20">
                     <div className="col-span-2">
                         <SimpleCard>
                             <SimpleCardTextContent></SimpleCardTextContent>
                         </SimpleCard>
-                    </div>
-                    <div className="col-span-2">
-                        <SimpleCard>
-                            <br/>
-                            <br/>
-                            <br/>
-                        </SimpleCard>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div className="content-center grid grid-cols-2 gap-4">
-                    <div className="">
-                        <SimpleCard>
-                            <SimpleCardLogoStaaaackContent></SimpleCardLogoStaaaackContent>
-                        </SimpleCard>
-                    </div>
-                    <div className="">
-                        <SimpleCard>
-                            <SimpleCard6Content></SimpleCard6Content>
-                        </SimpleCard>
-                    </div>
-                    <div className="col-span-2">
-                        <MapCardContent />
                     </div>
                     <div className="">
                         <SimpleCard>
@@ -94,6 +60,29 @@ const ServiceSection = (props) => {
                         <SimpleCard>
                             <SimpleCard1Percent></SimpleCard1Percent>
                         </SimpleCard>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div className="flex flex-col gap-10 md:gap-20 content-between h-full">
+                    <div className="flex gap-10 md:gap-20">
+                        <SimpleCard>
+                            <SimpleCardLogoStaaaackContent></SimpleCardLogoStaaaackContent>
+                        </SimpleCard>
+                        <SimpleCard>
+                            <SimpleCard6Content></SimpleCard6Content>
+                        </SimpleCard>
+                    </div>
+                    <div className="flex gap-10 md:gap-20">
+                        <SimpleCard>
+                            <SimpleCardLogoStaaaackContent></SimpleCardLogoStaaaackContent>
+                        </SimpleCard>
+                        <SimpleCard>
+                            <SimpleCard6Content></SimpleCard6Content>
+                        </SimpleCard>
+                    </div>
+                    <div className="h-72 md:h-full w-full">
+                        <MapCardContent/>
                     </div>
                 </div>
             </div>

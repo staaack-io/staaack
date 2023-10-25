@@ -7,7 +7,7 @@ const DEFAULT_CENTER = [49.5985502,6.1263061]
 const ZOOM = 17
 const MapCardContent = (props) => {
 
-    return <div className="text-4xl justify-center bg-transparent rounded-3xl shadow-2xl h-full w-full">
+    return <div className="text-4xl justify-center bg-transparent rounded-3xl shadow-2xl h-72 md:h-full w-full">
         {/* eslint-disable-next-line react/jsx-no-undef */}
         <Map className="w-full h-full rounded-3xl shadow-2xl" width="800" height="400" center={DEFAULT_CENTER} zoom={ZOOM}>
             {({ TileLayer, Marker, Popup }) => (

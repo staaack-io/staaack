@@ -6,24 +6,6 @@
     background: linear-gradient(to right bottom, #000 50%, #fff 50%);
 }
 
-.bg-gradient-primary {
-    background: linear-gradient(300deg,#db2778,#7e22ce,#60a5fa);
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
-}
-
-@keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 .pic-services-color {
     filter: invert(22%) sepia(60%) saturate(4034%) hue-rotate(255deg) brightness(96%) contrast(94%);
 }
@@ -55,7 +37,6 @@ $block: '.hex-grid';
 
     &__list {
         --amount: 5;
-        position: relative;
         padding: 0;
         margin: 0;
         list-style-type: none;
@@ -274,4 +255,15 @@ $block: '.hex-grid';
 
 .partner-card-parent:hover {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+.simple-card {
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+}
+
+.grid-test {
+    grid-template-rows: auto auto 1fr;
 }
