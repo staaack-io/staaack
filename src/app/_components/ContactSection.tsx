@@ -1,4 +1,7 @@
-import React from "react";
+"use client"
+import React, {useState} from "react";
+import useContactForm from "@/hooks/useContactForm";
+import sendEmail from "@/mail/send-mail";
 
 const ContactSection = (props) => {
     const {values, handleChange} = useContactForm();
