@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const sendEmail = async (email, subject, message) => {
+const sendEmail = async (email: String, subject: String, message: String) => {
     return axios({
         method: 'post',
         url: '/api/send-mail',

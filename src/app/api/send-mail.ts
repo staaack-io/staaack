@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
 
-export default function handler(req, res) {
+export default function handler({req, res}: { req: any, res: any }) {
 
     const message = {
         from: req.body.email,
@@ -19,7 +19,7 @@ export default function handler(req, res) {
     });
 
     if (req.method === 'POST') {
-        transporter.sendMail(message, (err, info) => {
+        transporter.sendMail(message, (err: any, info: any) => {
 
             if (err) {
                 res.status(404).json({
