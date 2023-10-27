@@ -7,7 +7,7 @@ import 'leaflet/dist/leaflet.css';
 const {MapContainer} = ReactLeaflet;
 
 const Map = ({children, className, width, height, ...rest}) => {
-    let mapClassName = "h-full w-full";
+    let mapClassName = "h-full w-full z-0";
 
     if (className) {
         mapClassName = `${mapClassName} ${className}`;

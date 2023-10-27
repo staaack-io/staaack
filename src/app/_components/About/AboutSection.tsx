@@ -11,12 +11,11 @@ import SimpleCard6Content from "@/app/_components/About/SimpleCard6Content";
 import SimpleCard9Content from "@/app/_components/About/SimpleCard9Content";
 import SimpleCard1Percent from "@/app/_components/About/SimpleCard1Percent";
 import Image from "next/image";
+import Title from "@/app/_components/Common/Title";
 
-const ServiceSection = () => {
+const AboutSection = () => {
     return <section className="p-8">
-        <div className="text-center font-bold text-3xl text-white p-10">
-            About
-        </div>
+        <Title title="Services" subtitle="Comment je peux vous aidez" />
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-24 md:px-10">
             <div>
                 <div className="grid grid-cols-2 gap-10 md:gap-20">
@@ -64,7 +63,7 @@ const ServiceSection = () => {
                 </div>
             </div>
             <div>
-                <div className="flex flex-col gap-10 md:gap-20 content-between h-full">
+                <div className="flex flex-col md:gap-20 content-between h-full">
                     <div className="flex gap-10 md:gap-20">
                         <SimpleCard>
                             <SimpleCardLogoStaaaackContent></SimpleCardLogoStaaaackContent>
@@ -90,4 +89,4 @@ const ServiceSection = () => {
     </section>;
 }
 
-export default ServiceSection;
+export default AboutSection;

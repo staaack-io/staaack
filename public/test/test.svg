@@ -1,0 +1,37 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Define a linear gradient for the animated lines -->
+    <defs>
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ff0000; stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#00ff00; stop-opacity:1" />
+        </linearGradient>
+    </defs>
+
+    <!-- Draw connecting lines -->
+    <path d="M10 10, 200 200" stroke="url(#gradient)" fill="none" stroke-width="2" />
+    <!-- Add more lines as needed -->
+
+    <!-- Draw CPU shape in the center (represented as a rectangle for simplicity) -->
+    <rect x="180" y="180" width="40" height="40" fill="#000" />
+
+    <!-- Add 'Powered By' text above the CPU -->
+    <text x="200" y="170" font-family="Arial" font-size="20" fill="#000" text-anchor="middle">Powered By</text>
+
+    <style>
+        /* Add CSS animation for the gradient lines */
+        @keyframes animateGradient {
+        from {
+        stroke-dashoffset: 100;
+        }
+        to {
+        stroke-dashoffset: 0;
+        }
+        }
+
+        path {
+        stroke-dasharray: 100;
+        stroke-dashoffset: 100;
+        animation: animateGradient 5s linear infinite;
+        }
+    </style>
+</svg>

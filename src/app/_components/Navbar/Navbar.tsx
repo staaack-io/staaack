@@ -4,7 +4,7 @@ import Link from "next/link";
 import ButtonHire from "@/app/_components/Home/ButtonHire";
 
 const Navbar = (props: any) => {
-    return <nav className="fixed p-8 h-12 backdrop-blur w-full">
+    return <nav className="fixed p-8 h-12 backdrop-blur-2xl w-full z-50">
         <div className="flex justify-between items-center h-full ">
             <div className="flex gap-3 content-center items-center">
                 <div>

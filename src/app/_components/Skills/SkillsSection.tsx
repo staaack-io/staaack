@@ -14,7 +14,7 @@ const SkillsSection = () => {
             <ul className="hex-grid__list">
                 {
                     skills.map((skill: any, index: any) => <Hexagon key={index} color={skill.color}>
-                        <Image src={"/img/logo/" + skill.title + ".svg"} height={10} width={10} alt={""}></Image>
+                        <Image src={"/img/logo/" + skill.img} height={100} width={100} alt={""}></Image>
                     </Hexagon>)
                 }
             </ul>

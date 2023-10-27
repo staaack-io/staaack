@@ -267,3 +267,8 @@ $block: '.hex-grid';
 .grid-test {
   grid-template-rows: auto auto 1fr;
 }
+
+// Map
+.leaflet-control { z-index: 0 !important}
+.leaflet-pane { z-index: 0 !important}
+.leaflet-top, .leaflet-bottom {z-index: 0 !important}

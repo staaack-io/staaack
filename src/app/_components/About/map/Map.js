@@ -12,8 +12,8 @@ const DEFAULT_HEIGHT = 4;
 const Map = (props) => {
     const {width = DEFAULT_WIDTH, height = DEFAULT_HEIGHT} = props;
     return (
-        <div className="h-full w-full">
-            <DynamicMap {...props} />
+        <div className="h-full w-full z-0">
+            <DynamicMap className="z-0" {...props} />
         </div>
     )
 }
