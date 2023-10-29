@@ -63,7 +63,7 @@ const AboutSection = () => {
                 </div>
             </div>
             <div>
-                <div className="flex flex-col md:gap-20 content-between h-full">
+                <div className="flex flex-col gap-10 md:gap-20 content-between h-full">
                     <div className="flex gap-10 md:gap-20">
                         <SimpleCard>
                             <SimpleCardLogoStaaaackContent></SimpleCardLogoStaaaackContent>

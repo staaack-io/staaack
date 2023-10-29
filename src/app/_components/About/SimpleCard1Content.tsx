@@ -4,10 +4,10 @@ const SimpleCard1Content = (props: any) => {
     return <>
         <div className="h-full w-full overflow-hidden">
             <div
-                className="flex justify-center items-center text-purple-300 bg-gradient-to-l from-purple-700 via-purple-800 to-purple-900 rounded-full p-3">
+                className="flex justify-center items-center text-purple-300 bg-gradient-to-l from-purple-700 via-purple-800 to-purple-900 rounded-full">
                 <Image src={props.imgSrc} height={35} width={35} alt="image on the about section"/>
             </div>
-            <div className="mt-3 h-full w-full">
+            <div className=" h-full w-full">
                 <span
                     className="text-4xl font-bold text-transparent bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400 inline-block bg-clip-text">
                     {props.text1}
