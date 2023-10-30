@@ -89,7 +89,7 @@ const Navbar = (props: any) => {
                         <ButtonHire text="HIRE ME !"/>
                     </li>
                 </ul>
-                <div className="lg:hidden pr-3 z-50">
+                <div className="lg:hidden -mt-6 pr-3 z-50">
                     <div className="fixed z-50">
                         <button onClick={() => setMobileToggleMenu((prevState) => !prevState)}>
                             <RiMenu3Fill size={25}></RiMenu3Fill>
@@ -97,7 +97,7 @@ const Navbar = (props: any) => {
                     </div>
                     <div className={mobileToggleMenu ? "" : "hidden"}>
                         <div
-                            className="lg:hidden fixed bg-gradient-to-bl from-pink-600 via-purple-700 to-blue-400 top-5 right-2 p-1 rounded-xl w-52">
+                            className="lg:hidden fixed bg-gradient-to-bl from-pink-600 via-purple-700 to-blue-400 top-5 right-2 p-1 rounded-xl w-52 -mt-3">
                             <div className="h-full w-full bg-white p-6 pt-12">
                                 <ul className="flex flex-col gap-3 justify-end font-semibold">
                                     <li>
