@@ -28,11 +28,10 @@ const Map = ({children, className, width, height, ...rest}) => {
         })();
     }, []);
 
-    return (
-        <MapContainer className={mapClassName} {...rest}>
+    return <MapContainer className={mapClassName} {...rest}>
             {children(ReactLeaflet, Leaflet)}
         </MapContainer>
-    )
+
 }
 
 export default Map;
