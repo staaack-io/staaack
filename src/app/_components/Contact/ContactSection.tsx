@@ -4,7 +4,7 @@ import useContactForm from "@/hooks/useContactForm";
 import sendEmail from "@/mail/send-mail";
 
 const ContactSection = (props: any) => {
-    const {values , handleChange} = useContactForm();
+    const {values, handleChange} = useContactForm();
     const [responseMessage, setResponseMessage] = useState(
         {isSuccessful: false, message: ''});
 

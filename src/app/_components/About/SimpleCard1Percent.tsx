@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const SimpleCard1Percent = (props:any) => {
+const SimpleCard1Percent = (props: any) => {
     return <>
         <div className="flex justify-center items-center h-full w-full">
             <Image className="h-full w-full md:w-auto" src="/img/1percent.png" alt="1percentfortheplanet" height={600}

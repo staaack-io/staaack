@@ -10,12 +10,11 @@ import SimpleCard8Content from "@/app/_components/About/SimpleCard8Content";
 import SimpleCard6Content from "@/app/_components/About/SimpleCard6Content";
 import SimpleCard9Content from "@/app/_components/About/SimpleCard9Content";
 import SimpleCard1Percent from "@/app/_components/About/SimpleCard1Percent";
-import Image from "next/image";
 import Title from "@/app/_components/Common/Title";
 
 const AboutSection = () => {
     return <section className="p-8">
-        <Title title="Services" subtitle="Comment je peux vous aidez" />
+        <Title title="Services" subtitle="Comment je peux vous aidez"/>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-24 md:px-10">
             <div>
                 <div className="grid grid-cols-2 gap-10 md:gap-20">
@@ -23,7 +22,7 @@ const AboutSection = () => {
                         <SimpleCard className="">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img src="https://placehold.co/500x600" height={500} width={400} alt="Photo Alexis Détrie"
-                                   className=""/>
+                                 className=""/>
                         </SimpleCard>
                     </div>
                     <div className="">

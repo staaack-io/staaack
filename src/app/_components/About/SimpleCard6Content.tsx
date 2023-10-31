@@ -1,4 +1,4 @@
-const SimpleCard8Content = (props:any) => {
+const SimpleCard8Content = (props: any) => {
     return <div className="flex justify-center items-center">
         <div className="grid grid-cols-1 justify-center items-center">
             <span className="text-center text-2xl lg:text-3xl font-bold">Since</span>

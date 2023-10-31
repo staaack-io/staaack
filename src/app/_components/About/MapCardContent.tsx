@@ -1,6 +1,6 @@
 import {Marker, Popup, TileLayer} from 'react-leaflet'
 import React from "react";
-import Map from "@/App/_components/About/Map/";
+import Map from "@/App/_components/About/map/Map";
 
 const DEFAULT_CENTER = [49.5985502, 6.1263061]
 const ZOOM = 17
@@ -11,22 +11,22 @@ const MapCardContent = (props: any) => {
         <Map className="w-full h-full rounded-3xl shadow-2xl" width="800" height="400" center={DEFAULT_CENTER}
              zoom={ZOOM}>
             {// @ts-ignore
-            ({TileLayer, Marker, Popup}) => (
-                <>
-                    <TileLayer
-                        url="https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png"
-                        attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
-                    />
-                    <Marker position={DEFAULT_CENTER}>
-                        <Popup>
-                            <div className="text-xl">
-                                20 rue de Hollerich <br/>
-                                1740 Luxembourg <br/>
-                            </div>
-                        </Popup>
-                    </Marker>
-                </>
-            )}
+                ({TileLayer, Marker, Popup}) => (
+                    <>
+                        <TileLayer
+                            url="https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png"
+                            attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
+                        />
+                        <Marker position={DEFAULT_CENTER}>
+                            <Popup>
+                                <div className="text-xl">
+                                    20 rue de Hollerich <br/>
+                                    1740 Luxembourg <br/>
+                                </div>
+                            </Popup>
+                        </Marker>
+                    </>
+                )}
         </Map>
     </div>;
 }

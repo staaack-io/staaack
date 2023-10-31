@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const SimpleCard8Content = (props:any) => {
+const SimpleCard8Content = (props: any) => {
     return <div className="grid grid-cols-1">
         <div className="flex justify-center items-center">
             <Image src={"./img/planet.svg"} alt={"planet"} height={65} width={65}></Image>

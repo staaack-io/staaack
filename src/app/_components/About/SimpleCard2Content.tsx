@@ -1,4 +1,4 @@
-const SimpleCard2Content = (props:any) => {
+const SimpleCard2Content = (props: any) => {
     return <div className="flex justify-center items-center">
         <div className="h-full w-full overflow-hidden">
             <div className="flex justify-center items-center">
