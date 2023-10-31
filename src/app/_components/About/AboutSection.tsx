@@ -15,9 +15,9 @@ import Title from "@/app/_components/Common/Title";
 const AboutSection = () => {
     return <section className="p-8">
         <Title title="Services" subtitle="Comment je peux vous aidez"/>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-24 md:px-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-10 md:px-10">
             <div>
-                <div className="grid grid-cols-2 gap-10 md:gap-20">
+                <div className="grid grid-cols-2 gap-10 md:gap-5 content-between h-full">
                     <div className="col-span-2 row-span-2 row-start-1">
                         <SimpleCard className="">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -38,7 +38,7 @@ const AboutSection = () => {
                 </div>
             </div>
             <div>
-                <div className="content-center grid grid-cols-2 gap-10 md:gap-20">
+                <div className="content-center grid grid-cols-2 gap-10 md:gap-5">
                     <div className="col-span-2">
                         <SimpleCard>
                             <SimpleCardTextContent></SimpleCardTextContent>
@@ -62,8 +62,8 @@ const AboutSection = () => {
                 </div>
             </div>
             <div>
-                <div className="flex flex-col gap-10 md:gap-20 content-between h-full">
-                    <div className="flex gap-10 md:gap-20">
+                <div className="flex flex-col gap-10 md:gap-5 content-between h-full">
+                    <div className="flex gap-10 md:gap-5">
                         <SimpleCard>
                             <SimpleCardLogoStaaaackContent></SimpleCardLogoStaaaackContent>
                         </SimpleCard>
@@ -71,7 +71,7 @@ const AboutSection = () => {
                             <SimpleCard6Content></SimpleCard6Content>
                         </SimpleCard>
                     </div>
-                    <div className="flex gap-10 md:gap-20">
+                    <div className="flex gap-10 md:gap-5">
                         <SimpleCard>
                             <SimpleCardLogoStaaaackContent></SimpleCardLogoStaaaackContent>
                         </SimpleCard>
