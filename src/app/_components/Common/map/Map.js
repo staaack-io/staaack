@@ -1,37 +1,21 @@
-"use client"
-import {useEffect} from 'react';
-import Leaflet from 'leaflet';
-import * as ReactLeaflet from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
+import dynamic from 'next/dynamic';
 
-const {MapContainer} = ReactLeaflet;
+const DynamicMap = dynamic(() => import('./DynamicMap'), {
+    ssr: false
+});
 
-const Map = ({children, className, width, height, ...rest}) => {
-    let mapClassName = "h-full w-full z-0";
+// Set default sizing to control aspect ratio which will scale responsively
+// but also help avoid layout shift
+const DEFAULT_WIDTH = 4;
+const DEFAULT_HEIGHT = 4;
 
-    if (className) {
-        mapClassName = `${mapClassName} ${className}`;
-    }
-
-    useEffect(() => {
-        (async function init() {
-            delete Leaflet.Icon.Default.prototype._getIconUrl;
-            Leaflet.Icon.Default.mergeOptions({
-                iconRetinaUrl: './img/logo.svg',
-                iconUrl: './img/logo.svg',
-                iconSize: [50, 50],
-                iconAnchor: [25, -5],
-                popupAnchor: [0, 0],
-                tooltipAnchor: [0, 0],
-                shadowSize: [0, 0]
-            });
-        })();
-    }, []);
-
-    return <MapContainer className={mapClassName} {...rest}>
-            {children(ReactLeaflet, Leaflet)}
-        </MapContainer>
-
+const Map = (props) => {
+    const {width = DEFAULT_WIDTH, height = DEFAULT_HEIGHT} = props;
+    return (
+        <div className="h-full w-full z-0">
+            <DynamicMap className="z-0" {...props} />
+        </div>
+    )
 }
 
 export default Map;

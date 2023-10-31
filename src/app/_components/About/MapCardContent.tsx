@@ -1,6 +1,6 @@
 import {Marker, Popup, TileLayer} from 'react-leaflet'
 import React from "react";
-import Map from "@/app/_components/Common/map/Map";
+import Map from "@/app/_components/Common/map/DynamicMap";
 const DEFAULT_CENTER = [49.5985502, 6.1263061]
 const ZOOM = 17
 const MapCardContent = (props: any) => {
