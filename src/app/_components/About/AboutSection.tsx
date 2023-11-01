@@ -38,7 +38,7 @@ const AboutSection = () => {
                 </div>
             </div>
             <div>
-                <div className="content-center grid grid-cols-2 gap-10 md:gap-5">
+                <div className="content-between h-full grid grid-cols-2 gap-10 md:gap-5">
                     <div className="col-span-2">
                         <SimpleCard>
                             <SimpleCardTextContent></SimpleCardTextContent>
