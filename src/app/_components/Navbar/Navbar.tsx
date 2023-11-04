@@ -14,7 +14,7 @@ const Navbar = (props: any) => {
             <div className="flex justify-between items-center h-full ">
                 <div className="flex gap-3 content-center items-center">
                     <div>
-                        <Image src="./img/logo.svg" alt="Logo staaack" height={50} width={50}/>
+                        <Image src="/img/logo.png" alt="Logo staaack" height={50} width={50}/>
                     </div>
                 </div>
                 <ul className="hidden lg:flex lg:gap-3 justify-end font-semibold">

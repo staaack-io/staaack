@@ -12,8 +12,8 @@ const OpenStreetMap = () => {
         (async function init() {
             delete Leaflet.Icon.Default.prototype._getIconUrl;
             Leaflet.Icon.Default.mergeOptions({
-                iconRetinaUrl: './img/logo.svg',
-                iconUrl: './img/logo.svg',
+                iconRetinaUrl: '/img/logo.png',
+                iconUrl: '/img/logo.png',
                 iconSize: [50, 50],
                 iconAnchor: [25, -5],
                 popupAnchor: [0, 0],
