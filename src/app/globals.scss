@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face{
+  font-family: "All Round Gothic W01 Medium";
+  src: url("/font/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.eot");
+  src: url("/font/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.eot?#iefix")format("embedded-opentype"),
+  url("/font/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.woff")format("woff"),
+  url("/font/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.woff2")format("woff2"),
+  url("/font/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.ttf")format("truetype"),
+  url("/font/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.svg#All Round Gothic W01 Medium")format("svg");
+  font-weight:normal;
+  font-style:normal;
+  font-display:swap;
+}
+
+
 .pic-services-color {
   filter: invert(22%) sepia(60%) saturate(4034%) hue-rotate(255deg) brightness(96%) contrast(94%);
 }
@@ -263,4 +277,8 @@ $block: '.hex-grid';
   width: 100%;
   height: 100%;
   border-radius: 1.5rem;
+}
+
+.font-logo {
+  font-family: "All Round Gothic W01 Medium", Bauhaus;
 }
