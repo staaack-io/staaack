@@ -2,17 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face{
+@font-face {
   font-family: "All Round Gothic W01 Medium";
   src: url("/font/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.eot");
-  src: url("/font/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.eot?#iefix")format("embedded-opentype"),
-  url("/font/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.woff")format("woff"),
-  url("/font/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.woff2")format("woff2"),
-  url("/font/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.ttf")format("truetype"),
-  url("/font/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.svg#All Round Gothic W01 Medium")format("svg");
-  font-weight:normal;
-  font-style:normal;
-  font-display:swap;
+  src: url("/font/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.eot?#iefix") format("embedded-opentype"),
+  url("/font/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.woff") format("woff"),
+  url("/font/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.woff2") format("woff2"),
+  url("/font/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.ttf") format("truetype"),
+  url("/font/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.svg#All Round Gothic W01 Medium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 
@@ -282,3 +282,19 @@ $block: '.hex-grid';
 .font-logo {
   font-family: "All Round Gothic W01 Medium", Bauhaus;
 }
+
+.font-color-logo {
+  color: #FE05C2;
+  background-image: -webkit-linear-gradient(0deg, #FE05C2 0%, #FF1378 20%, #CD06BC 40%, #672FD0 60%, #29D9FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.font-shadow-logo {
+  color: #fff;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+}
+
