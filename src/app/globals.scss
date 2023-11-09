@@ -15,6 +15,44 @@
   font-display: swap;
 }
 
+@layer utilities {
+  .font-logo {
+    font-family: "All Round Gothic W01 Medium", Bauhaus;
+  }
+
+  .font-color-logo {
+    color: #000;
+    background-image: -webkit-linear-gradient(0deg, #FE05C2 0%, #FF1378 20%, #CD06BC 40%, #672FD0 60%, #29D9FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+
+  }
+
+  .font-shadow-logo {
+    color: #fff;
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+  }
+
+
+  .anim-bg-gradient {
+    padding: 0.6em 1.2em;
+    cursor: pointer;
+    background: conic-gradient(from 350deg, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #29D9FF, #672FD0, #CD06BC , #FF1378, #FE05C2);
+    margin-right: -10px;
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position .5s;
+  }
+
+  .anim-bg-gradient:hover {
+    background-position: 0 0;
+    color: white;
+  }
+
+}
+
 
 .pic-services-color {
   filter: invert(22%) sepia(60%) saturate(4034%) hue-rotate(255deg) brightness(96%) contrast(94%);
@@ -269,7 +307,7 @@ $block: '.hex-grid';
 
 .simple-card {
   border-radius: 25px;
-  background: #e0e0e0;
+  background: #fff;
 }
 
 // Map
@@ -278,23 +316,3 @@ $block: '.hex-grid';
   height: 100%;
   border-radius: 1.5rem;
 }
-
-.font-logo {
-  font-family: "All Round Gothic W01 Medium", Bauhaus;
-}
-
-.font-color-logo {
-  color: #FE05C2;
-  background-image: -webkit-linear-gradient(0deg, #FE05C2 0%, #FF1378 20%, #CD06BC 40%, #672FD0 60%, #29D9FF 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
-
-}
-
-.font-shadow-logo {
-  color: #fff;
-  text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
-}
-

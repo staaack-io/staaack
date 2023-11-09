@@ -2,7 +2,7 @@
 import Image from "next/image";
 import {RiMenu3Fill} from "react-icons/ri";
 import Link from "next/link";
-import ButtonHire from "@/app/_components/Home/ButtonHire";
+import ButtonStylised from "@/app/_components/Home/ButtonStylised";
 import {useState} from "react";
 
 const Navbar = (props: any) => {
@@ -10,19 +10,17 @@ const Navbar = (props: any) => {
 
 
     return <div>
-        <nav className="fixed p-8 h-12 bg-white md:backdrop-blur-2xl w-full z-30">
+        <nav className="fixed p-8 h-12 bg-white md:bg-transparent md:backdrop-blur-2xl w-full z-30">
             <div className="flex justify-between items-center h-full ">
                 <div className="flex gap-3 content-center items-center">
-                    <div>
-                        <Image src="/img/logo.png" alt="Logo staaack" height={50} width={50}/>
-                    </div>
+                        <Image src="/img/logo.png" alt="Logo staaack" height={50} width={35}/>
                 </div>
                 <ul className="hidden lg:flex lg:gap-3 justify-end font-semibold">
                     <li>
                         <div>
                             <Link href="#">
                                 <div
-                                    className="transition-all duration-500 ease-out text-black hover:text-transparent hover:bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400 inline-block  bg-clip-text">
+                                    className="text-black hover:font-color-logo">
                                     Home
                                 </div>
                             </Link>
@@ -35,7 +33,7 @@ const Navbar = (props: any) => {
                         <div>
                             <Link href="#">
                                 <div
-                                    className="transition-all duration-500 ease-out text-black hover:text-transparent hover:bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400 inline-block  bg-clip-text">
+                                    className="text-black hover:font-color-logo">
                                     About me
                                 </div>
                             </Link>
@@ -47,7 +45,7 @@ const Navbar = (props: any) => {
                     <li>
                         <Link href="#">
                             <span
-                                className="transition duration-500 ease-out text-black hover:text-transparent hover:bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400 inline-block  bg-clip-text">
+                                className="text-black hover:font-color-logo">
                                 Services
                             </span>
                         </Link>
@@ -58,7 +56,7 @@ const Navbar = (props: any) => {
                     <li>
                         <Link href="#">
                             <span
-                                className="transition duration-500 ease-out text-black hover:text-transparent hover:bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400 inline-block  bg-clip-text">
+                                className="text-black hover:font-color-logo">
                                 Skills
                             </span>
                         </Link>
@@ -69,7 +67,7 @@ const Navbar = (props: any) => {
                     <li>
                         <Link href="#">
                             <span
-                                className="transition duration-500 ease-out text-black hover:text-transparent hover:bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400 inline-block  bg-clip-text">
+                                className="text-black hover:font-color-logo">
                                 Partners
                             </span>
                         </Link>
@@ -80,13 +78,13 @@ const Navbar = (props: any) => {
                     <li className="pr-10">
                         <Link href="#">
                             <span
-                                className="transition duration-500 ease-out text-black hover:text-transparent hover:bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400 inline-block  bg-clip-text">
+                                className="text-black hover:font-color-logo">
                                 Contact
                             </span>
                         </Link>
                     </li>
                     <li className="">
-                        <ButtonHire text="HIRE ME !"/>
+                        <ButtonStylised text="HIRE ME !"/>
                     </li>
                 </ul>
                 <div className="lg:hidden -mt-6 pr-3 z-50">
@@ -97,33 +95,33 @@ const Navbar = (props: any) => {
                     </div>
                     <div className={mobileToggleMenu ? "" : "hidden"}>
                         <div
-                            className="lg:hidden fixed bg-gradient-to-bl from-pink-600 via-purple-700 to-blue-400 top-5 right-2 p-1 rounded-xl w-52 -mt-3">
-                            <div className="h-full w-full bg-white p-6 pt-12">
-                                <ul className="flex flex-col gap-3 justify-end font-semibold">
+                            className="lg:hidden fixed bg-gradient-to-bl from-pink-600 via-purple-700 to-blue-400 top-5 right-2 p-1 rounded-xl w-64 -mt-3">
+                            <div className="h-full w-full bg-white p-6 pt-12 rounded-xl">
+                                <ul className="flex flex-col gap-7 justify-end font-semibold">
                                     <li>
                                         <div>
                                             <Link href="#">
-                                                <div
-                                                    className="transition-all duration-500 ease-out text-black hover:text-transparent hover:bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400 inline-block  bg-clip-text">
+                                                <span
+                                                    className="text-black text-2xl hover:font-color-logo">
                                                     Home
-                                                </div>
+                                                </span>
                                             </Link>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <Link href="#">
-                                                <div
-                                                    className="transition-all duration-500 ease-out text-black hover:text-transparent hover:bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400 inline-block  bg-clip-text">
+                                                <span
+                                                    className="text-black text-2xl hover:font-color-logo">
                                                     About me
-                                                </div>
+                                                </span>
                                             </Link>
                                         </div>
                                     </li>
                                     <li>
                                         <Link href="#">
                             <span
-                                className="transition duration-500 ease-out text-black hover:text-transparent hover:bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400 inline-block  bg-clip-text">
+                                className="text-black text-2xl hover:font-color-logo">
                                 Services
                             </span>
                                         </Link>
@@ -131,7 +129,7 @@ const Navbar = (props: any) => {
                                     <li>
                                         <Link href="#">
                             <span
-                                className="transition duration-500 ease-out text-black hover:text-transparent hover:bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400 inline-block  bg-clip-text">
+                                className="text-black text-2xl hover:font-color-logo">
                                 Skills
                             </span>
                                         </Link>
@@ -139,7 +137,7 @@ const Navbar = (props: any) => {
                                     <li>
                                         <Link href="#">
                             <span
-                                className="transition duration-500 ease-out text-black hover:text-transparent hover:bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400 inline-block  bg-clip-text">
+                                className="text-black text-2xl hover:font-color-logo">
                                 Partners
                             </span>
                                         </Link>
@@ -147,13 +145,13 @@ const Navbar = (props: any) => {
                                     <li className="pr-10">
                                         <Link href="#">
                             <span
-                                className="transition duration-500 ease-out text-black hover:text-transparent hover:bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400 inline-block  bg-clip-text">
+                                className="text-black text-2xl hover:font-color-logo">
                                 Contact
                             </span>
                                         </Link>
                                     </li>
                                     <li className="pt-6 w-full flex justify-center">
-                                        <ButtonHire text="HIRE ME !"/>
+                                        <ButtonStylised text="HIRE ME !"/>
                                     </li>
                                 </ul>
                             </div>

@@ -1,7 +1,8 @@
 "use client"
 
 import Image from "next/image";
-import ButtonHire from "@/app/_components/Home/ButtonHire";
+import ButtonStylised from "@/app/_components/Home/ButtonStylised";
+import Spline from "@splinetool/react-spline";
 
 const HomeSection = (props: any) => {
     return <section className="p-8 pb-0 h-screen">
@@ -16,12 +17,13 @@ const HomeSection = (props: any) => {
                     Im a (developer) and I can help you to (develop app)
                 </h2>
                 <div className="flex gap-3 pt-12">
-                    <ButtonHire text="Hire me !"/>
-                    <ButtonHire text="Download my resume"/>
+                    <ButtonStylised text="Hire me !"/>
+                    <ButtonStylised text="Download my resume"/>
                 </div>
             </div>
             <div className="order-1 lg:order-2 lg:w-1/2 flex items-center justify-center h-full">
-                <Image src="/img/logo.png" alt="logo" width={400} height={400} className="h-1/2 w-1/2"></Image>
+
+                <Spline scene="https://prod.spline.design/ttPadaMLh4iul2yS/scene.splinecode" />
             </div>
         </div>
     </section>;
