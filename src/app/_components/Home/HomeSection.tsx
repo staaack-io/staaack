@@ -20,7 +20,7 @@ const HomeSection = (props: any) => {
                     <ButtonStylised text="Download my resume"/>
                 </div>
             </div>
-            <div className="order-1 lg:order-2 lg:w-1/2 flex items-center justify-center h-screen lg:h-full">
+            <div className="order-1 lg:order-2 lg:w-1/2 flex items-center justify-center h-[calc(66vh)] lg:h-full">
                 <Spline scene="https://prod.spline.design/ttPadaMLh4iul2yS/scene.splinecode" />
             </div>
     </section>;
