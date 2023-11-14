@@ -9,7 +9,7 @@ const SimpleCard1Content = (props: any) => {
             </div>
             <div className=" h-full w-full">
                 <span
-                    className="text-4xl font-bold text-transparent bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400 inline-block bg-clip-text">
+                    className="text-4xl font-bold font-color-logo">
                     {props.text1}
                 </span>
                 <div className="text-md md:text-xl text-purple-600">{props.text2}</div>

@@ -2,11 +2,10 @@ const SimpleCardTextContent = () => {
     return <>
         <div className="h-full w-full text-xl">
             <p>
-                Bonjour, je suis Alexis, fondateur de staaack créée en 2023 au Luxembourg 🇱🇺,
-                Je suis spécialisée dans les prestations de services informatiques, en développement
-                Java,
-                architecture et de SI, migration cloud et pratiques DevOps.
-                N pas à me contacter pour faire connaissance.
+                {`Je suis Alexis Détrie, fondateur de staaack, basé à Luxembourg 🇱🇺. Avec 6 ans d'expériences 
+                professionnelles dans le développement Java et 5 ans en tant qu'architecte en solutions Passionné par
+                    l'informatique, j'ai créé en 2023 cette société de services dédiée au développement d'applications Java,
+                    à l'architecture de systèmes d'information, à la migration cloud, et au DevOps`}
             </p>
         </div>
     </>;
