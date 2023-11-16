@@ -1,18 +1,28 @@
-import React from "react";
+"use client"
+import React, {useCallback, useState} from "react";
 // @ts-ignore
 import partners from "public/data/partners.json";
 import PartnerCard from "@/app/_components/Partners/PartnerCard";
+import PartnerChoice from "@/app/_components/Partners/PartnerChoice";
 
 const PartnersSection = (props: any) => {
-    return <section className="bg-gray-100">
+
+    const [listPartners, setListPartners] = useState(partners);
+
+    const selectCategory = useCallback(() => {
+        alert("Salut")
+    }, []);
+
+    return <section className="bg-gray-100 grid grid-rows-1 w-full">
         <div className="text-center font-bold text-3xl text-black p-10">
             Our Partners
         </div>
+        <PartnerChoice />
         <div className="flex justify-center w-full p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4">
                 {
-                    partners.map((partner: any, index: any) => {
-                        return <PartnerCard key={index} name={partner.name} image={partner.image} city={partner.city}/>;
+                    listPartners.map((partner: any, index: any) => {
+                        return <PartnerCard key={index} name={partner.name} image={partner.image} city={partner.city} category={partner.category} selectedSectionPartner={selectCategory}/>;
                     })
                 }
             </div>

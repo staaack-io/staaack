@@ -2,76 +2,91 @@
   {
     "name": "Comité Européen des Régions",
     "city": "Belgique",
-    "image": "cor.svg"
+    "image": "cor.svg",
+    "category": "Administrations"
   },
   {
     "name": "Banque Degroof Petercam",
     "city": "Luxembourg",
-    "image": "degroof.png"
+    "image": "degroof.png",
+    "category": "Banks"
   },
   {
     "name": "PricewaterhouseCoopers",
     "city": "Luxembourg",
-    "image": "pwc.svg"
+    "image": "pwc.svg",
+    "category": "Big four"
   },
   {
     "name": "CTG",
     "city": "Luxembourg",
-    "image": "ctg.svg"
+    "image": "ctg.svg",
+    "category": "IT services companies"
   },
   {
     "name": "Spuerkess",
     "city": "Luxembourg",
-    "image": "spuerkeess.svg"
+    "image": "spuerkeess.svg",
+    "category": "Banks"
   },
   {
     "name": "Chambre du commerce",
     "city": "Luxembourg",
-    "image": "cdc.jpeg"
+    "image": "cdc.jpeg",
+    "category": "Administrations"
   },
   {
     "name": "Neopixl",
     "city": "Luxembourg",
-    "image": "neopixl.jpeg"
+    "image": "neopixl.jpeg",
+    "category": "Startup"
   },
   {
     "name": "Wort",
     "city": "Luxembourg",
-    "image": "wort.svg"
+    "image": "wort.svg",
+    "category": "Others"
   },
   {
     "name": "Forem",
     "city": "Belgique",
-    "image": "forem.svg"
+    "image": "forem.svg",
+    "category": "Administrations"
   },
   {
     "name": "Capgemini Sogeti",
     "city": "Luxembourg",
-    "image": "sogeti.svg"
+    "image": "sogeti.svg",
+    "category": "IT services companies"
   },
   {
     "name": "Adem",
     "city": "Luxembourg",
-    "image": "adem.svg"
+    "image": "adem.svg",
+    "category": "Administrations"
   },
   {
     "name": "Pragmaconsult",
     "city": "Luxembourg",
-    "image": "pragma.png"
+    "image": "pragma.png",
+    "category": "IT services companies"
   },
   {
     "name": "Otis",
     "city": "France",
-    "image": "otis.svg"
+    "image": "otis.svg",
+    "category": "Others"
   },
   {
     "name": "Otodoo",
     "city": "France",
-    "image": "otodoo.png"
+    "image": "otodoo.png",
+    "category": "IT services companies"
   },
   {
     "name": "CDDP 55",
     "city": "France",
-    "image": "cddp.svg"
+    "image": "cddp.svg",
+    "category": "Administrations"
   }
 ]
