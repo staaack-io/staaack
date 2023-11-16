@@ -14,7 +14,7 @@ import Title from "@/app/_components/Common/Title";
 
 const AboutSection = () => {
     return <section className="p-8 bg-gray-100">
-        <Title title="Services" subtitle="Comment je peux vous aidez"/>
+        <Title title="About"/>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-10 md:px-10">
             <div>
                 <div className="grid grid-cols-2 gap-10 md:gap-5 content-between h-full">

@@ -14,9 +14,7 @@ const PartnersSection = (props: any) => {
     }, []);
 
     return <section className="bg-gray-100 grid grid-rows-1 w-full">
-        <div className="text-center font-bold text-3xl text-black p-10">
-            Our Partners
-        </div>
+		<Title title="Our Partners"/>
         <PartnerChoice />
         <div className="flex justify-center w-full p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4">

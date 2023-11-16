@@ -1,10 +1,9 @@
 import React from "react";
+import Link from "next/link";
 
 const Title = (props: any) => {
-    return <div className="md:pl-36 pb-24 font-bold">
-        <span className="text-5xl">{props.title}</span>
-        <span className="hidden md: inline pl-10 text-xl text-gray-600">{props.subtitle}</span>
-
+    return <div className="text-black pb-24 font-bold md:text-center md:p-10">
+        <h2 id={props.title} className="text-4xl md:text-3xl">{props.title}</h2>
     </div>;
 }
 

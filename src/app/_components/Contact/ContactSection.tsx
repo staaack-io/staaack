@@ -2,6 +2,7 @@
 import React, {useState} from "react";
 import useContactForm from "@/hooks/useContactForm";
 import sendEmail from "@/mail/send-mail";
+import Title from "@/app/_components/Common/Title";
 
 const ContactSection = (props: any) => {
     const {values, handleChange} = useContactForm();
@@ -25,8 +26,8 @@ const ContactSection = (props: any) => {
         }
     };
 
-    return <div className="grid grid-cols-1 justify-center items-center w-full">
-        <div className="text-center font-bold text-3xl text-black p-10">Contact us</div>
+    return <div className="grid grid-cols-1 justify-center items-center w-full p-8">
+        <Title title="Contact us"/>
         <div className="text-center text-gray-600 text-l">N hésitez pas à me contacter par ce formulaire</div>
         <div className="flex justify-center">
             <form className="container w-full max-w-3xl" onSubmit={handleSubmit}>

@@ -18,7 +18,7 @@ const Navbar = (props: any) => {
                 <ul className="hidden lg:flex lg:gap-3 justify-end font-semibold">
                     <li>
                         <div>
-                            <Link href="#">
+                            <Link href="#home">
                                 <div
                                     className="text-black hover:font-color-logo">
                                     Home
@@ -31,7 +31,7 @@ const Navbar = (props: any) => {
                     </li>
                     <li>
                         <div>
-                            <Link href="#">
+                            <Link href="#About">
                                 <div
                                     className="text-black hover:font-color-logo">
                                     About me
@@ -43,7 +43,7 @@ const Navbar = (props: any) => {
                         /
                     </li>
                     <li>
-                        <Link href="#">
+                        <Link href="#Services">
                             <span
                                 className="text-black hover:font-color-logo">
                                 Services
@@ -54,7 +54,7 @@ const Navbar = (props: any) => {
                         /
                     </li>
                     <li>
-                        <Link href="#">
+                        <Link href="#Skills">
                             <span
                                 className="text-black hover:font-color-logo">
                                 Skills
@@ -65,7 +65,7 @@ const Navbar = (props: any) => {
                         /
                     </li>
                     <li>
-                        <Link href="#">
+                        <Link href="#Our Partners">
                             <span
                                 className="text-black hover:font-color-logo">
                                 Partners
@@ -76,7 +76,7 @@ const Navbar = (props: any) => {
                         /
                     </li>
                     <li className="pr-10">
-                        <Link href="#">
+                        <Link href="#Contact us">
                             <span
                                 className="text-black hover:font-color-logo">
                                 Contact
@@ -100,7 +100,7 @@ const Navbar = (props: any) => {
                                 <ul className="flex flex-col gap-7 justify-end font-semibold">
                                     <li>
                                         <div>
-                                            <Link href="#">
+                                            <Link href="#home">
                                                 <span
                                                     className="text-black text-2xl hover:font-color-logo">
                                                     Home
@@ -110,7 +110,7 @@ const Navbar = (props: any) => {
                                     </li>
                                     <li>
                                         <div>
-                                            <Link href="#">
+                                            <Link href="#About">
                                                 <span
                                                     className="text-black text-2xl hover:font-color-logo">
                                                     About me
@@ -119,7 +119,7 @@ const Navbar = (props: any) => {
                                         </div>
                                     </li>
                                     <li>
-                                        <Link href="#">
+                                        <Link href="#Services">
                             <span
                                 className="text-black text-2xl hover:font-color-logo">
                                 Services
@@ -127,7 +127,7 @@ const Navbar = (props: any) => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="#">
+                                        <Link href="#Skills">
                             <span
                                 className="text-black text-2xl hover:font-color-logo">
                                 Skills
@@ -135,7 +135,7 @@ const Navbar = (props: any) => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="#">
+                                        <Link href="#Our Partners">
                             <span
                                 className="text-black text-2xl hover:font-color-logo">
                                 Partners
@@ -143,7 +143,7 @@ const Navbar = (props: any) => {
                                         </Link>
                                     </li>
                                     <li className="pr-10">
-                                        <Link href="#">
+                                        <Link href="#Contact Us">
                             <span
                                 className="text-black text-2xl hover:font-color-logo">
                                 Contact
