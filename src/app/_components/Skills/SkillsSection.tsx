@@ -3,13 +3,12 @@ import React from "react";
 import skills from "public/data/skills.json";
 import Hexagon from "@/app/_components/Skills/hexagon/Hexagon";
 import Image from "next/image";
+import Title from "@/app/_components/Common/Title";
 
 
 const SkillsSection = () => {
     return <section className="p-8 flex flex-col">
-        <div className="text-center font-bold text-3xl text-black p-10">
-            Skills
-        </div>
+        <Title title="Skills"/>
         <div className="">
             <ul className="hex-grid__list">
                 {

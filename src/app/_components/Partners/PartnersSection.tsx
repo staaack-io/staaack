@@ -2,12 +2,11 @@ import React from "react";
 // @ts-ignore
 import partners from "public/data/partners.json";
 import PartnerCard from "@/app/_components/Partners/PartnerCard";
+import Title from "@/app/_components/Common/Title";
 
 const PartnersSection = (props: any) => {
-    return <section className="bg-gray-100">
-        <div className="text-center font-bold text-3xl text-black p-10">
-            Our Partners
-        </div>
+    return <section className="bg-gray-100 p-8">
+        <Title title="Our Partners"/>
         <div className="flex justify-center w-full p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4">
                 {
