@@ -10,10 +10,10 @@ const Navbar = (props: any) => {
 
 
     return <div>
-        <nav className="fixed p-8 h-12 bg-white md:bg-transparent md:backdrop-blur-2xl w-full z-30">
+        <nav className="fixed p-8 h-16 bg-white md:bg-transparent md:backdrop-blur-2xl w-full z-30">
             <div className="flex justify-between items-center h-full ">
-                <div className="flex gap-3 content-center items-center">
-                        <Image src="/img/logo.png" alt="Logo staaack" height={50} width={35}/>
+                <div className="flex gap-3 content-center items-center ">
+                        <Image src="/img/logo.png" alt="Logo staaack" height={40} width={27}/>
                 </div>
                 <ul className="hidden lg:flex lg:gap-3 justify-end font-semibold">
                     <li>
