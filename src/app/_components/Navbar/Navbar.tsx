@@ -5,12 +5,14 @@ import Link from "next/link";
 import ButtonStylised from "@/app/_components/Home/ButtonStylised";
 import {useState} from "react";
 
+
+import { Sling as Hamburger } from 'hamburger-react'
+
 const Navbar = (props: any) => {
     const [mobileToggleMenu, setMobileToggleMenu] = useState(false);
 
 
-    return <div>
-        <nav className="fixed p-8 h-16 bg-white md:bg-transparent md:backdrop-blur-2xl w-full z-30">
+    return <nav className="fixed p-8 h-16 bg-white md:bg-transparent md:backdrop-blur-2xl w-full z-30">
             <div className="flex justify-between items-center h-full ">
                 <div className="flex gap-3 content-center items-center ">
                         <Image src="/img/logo.png" alt="Logo staaack" height={40} width={27}/>
@@ -88,19 +90,21 @@ const Navbar = (props: any) => {
                     </li>
                 </ul>
                 <div className="lg:hidden -mt-6 pr-3 z-50">
-                    <div className="fixed z-50">
-                        <button onClick={() => setMobileToggleMenu((prevState) => !prevState)}>
-                            <RiMenu3Fill size={25}></RiMenu3Fill>
+                    <div className="fixed z-50 h-full -mt-3 -ml-3">
+                        <button>
+                            <Hamburger size={25} rounded label="Show menu" toggled={mobileToggleMenu} toggle={setMobileToggleMenu}/>
                         </button>
                     </div>
                     <div className={mobileToggleMenu ? "" : "hidden"}>
+                        <div className="absolute bg-gray-200 bg-opacity-30 w-screen h-screen top-0 left-0"
+                            onClick={() => setMobileToggleMenu(false)}></div>
                         <div
                             className="lg:hidden fixed bg-gradient-to-bl from-pink-600 via-purple-700 to-blue-400 top-5 right-2 p-1 rounded-xl w-64 -mt-3">
                             <div className="h-full w-full bg-white p-6 pt-12 rounded-xl">
                                 <ul className="flex flex-col gap-7 justify-end font-semibold">
                                     <li>
                                         <div>
-                                            <Link href="#home">
+                                            <Link href="#home" onClick={() => setMobileToggleMenu(false)}>
                                                 <span
                                                     className="text-black text-2xl hover:font-color-logo">
                                                     Home
@@ -110,7 +114,7 @@ const Navbar = (props: any) => {
                                     </li>
                                     <li>
                                         <div>
-                                            <Link href="#About">
+                                            <Link href="#About" onClick={() => setMobileToggleMenu(false)}>
                                                 <span
                                                     className="text-black text-2xl hover:font-color-logo">
                                                     About me
@@ -119,7 +123,7 @@ const Navbar = (props: any) => {
                                         </div>
                                     </li>
                                     <li>
-                                        <Link href="#Services">
+                                        <Link href="#Services" onClick={() => setMobileToggleMenu(false)}>
                             <span
                                 className="text-black text-2xl hover:font-color-logo">
                                 Services
@@ -127,7 +131,7 @@ const Navbar = (props: any) => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="#Skills">
+                                        <Link href="#Skills" onClick={() => setMobileToggleMenu(false)}>
                             <span
                                 className="text-black text-2xl hover:font-color-logo">
                                 Skills
@@ -135,7 +139,7 @@ const Navbar = (props: any) => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="#Our Partners">
+                                        <Link href="#Our Partners" onClick={() => setMobileToggleMenu(false)}>
                             <span
                                 className="text-black text-2xl hover:font-color-logo">
                                 Partners
@@ -143,7 +147,7 @@ const Navbar = (props: any) => {
                                         </Link>
                                     </li>
                                     <li className="pr-10">
-                                        <Link href="#Contact Us">
+                                        <Link href="#Contact Us" onClick={() => setMobileToggleMenu(false)}>
                             <span
                                 className="text-black text-2xl hover:font-color-logo">
                                 Contact
@@ -159,9 +163,7 @@ const Navbar = (props: any) => {
                     </div>
                 </div>
             </div>
-        </nav>
-
-    </div>;
+        </nav>;
 }
 
 export default Navbar;

@@ -29,6 +29,9 @@
     -webkit-text-fill-color: transparent;
 
   }
+  *{
+    scroll-margin-top: 4rem;
+  }
 
   .font-shadow-logo {
     color: #fff;
@@ -452,9 +455,4 @@ svg {
       opacity: 1;
     }
   }
-}
-
-
-svg {
-  display: none;
 }
