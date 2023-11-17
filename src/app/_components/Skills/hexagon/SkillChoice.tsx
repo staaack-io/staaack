@@ -14,7 +14,7 @@ const SkillChoice = (props: { name: any }) => {
         setChecked(false);
         setName(category)
     };
-    return <div className="flex w-full p-8 justify-center items-center z-50 ">
+    return <div className="flex w-full p-8 justify-center items-center z-30">
         <div className="dropdown-skills">
             <input type="checkbox" id="dropdown-skills" checked={checked} onChange={handleChange}/>
 
