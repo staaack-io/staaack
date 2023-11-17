@@ -12,7 +12,7 @@ const Navbar = (props: any) => {
     const [mobileToggleMenu, setMobileToggleMenu] = useState(false);
 
 
-    return <nav className="fixed p-8 h-16 bg-white md:bg-transparent md:backdrop-blur-2xl w-full z-50">
+    return <nav className="fixed p-8 h-16 bg-white md:bg-transparent md:backdrop-blur-2xl w-full z-40">
             <div className="flex justify-between items-center h-full ">
                 <div className="flex gap-3 content-center items-center ">
                         <Image src="/img/logo.png" alt="Logo staaack" height={40} width={27}/>
