@@ -456,3 +456,20 @@ svg {
     }
   }
 }
+
+
+.trailsText {
+  position: relative;
+  height: 80px;
+  color: black;
+  will-change: transform, opacity;
+  overflow: hidden;
+}
+
+.trailsText > div {
+}
+
+.container {
+  position: absolute;
+}
+
