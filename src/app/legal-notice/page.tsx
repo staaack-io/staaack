@@ -23,7 +23,7 @@ const LegalNoticePage = () => {
         © staaack S.A.R.L.-S.
 
         <h4>PERSONAL DATA PROTECTION</h4>
-        Personal information is collected on this web site only by one's voluntary registration, for example by subscribing to e-mail notifications or getting in contact with staaack S.A.R.L.-S through this web site. The collected information will not be transferred to any third party for the purpose of direct marketing. As required by applicable data protection legislation, you are entitled to request access to, rectification or deletion of your processed personal data any time. To exercise this right, please contact staaack S.A.R.L.-S at alexis@staaack.io.
+        Personal information is collected on this web site only by one&apos;s voluntary registration, for example by subscribing to e-mail notifications or getting in contact with staaack S.A.R.L.-S through this web site. The collected information will not be transferred to any third party for the purpose of direct marketing. As required by applicable data protection legislation, you are entitled to request access to, rectification or deletion of your processed personal data any time. To exercise this right, please contact staaack S.A.R.L.-S at alexis@staaack.io.
     </span>
 }
 
