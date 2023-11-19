@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = (props: any) => {
     return <footer className="text-gray-600 body-font">
@@ -8,15 +9,20 @@ const Footer = (props: any) => {
                        className="w-14 h-14 text-white p-2"></Image>
                 <span className="ml-3 text-xl">staaack S.A.R.L-S</span>
             </a>
-            <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
-                2023 staaack —
-                Alexis Détrie <br/>
-                20 rue de Hollerich<br/>
-                L-1740 Luxembourg<br/>
-            </p>
-
+            <div>
+                <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+                    © 2023 staaack — Alexis Détrie <br/>
+                    20 rue de Hollerich<br/>
+                    L-1740 Luxembourg<br/>
+                </p>
+            </div>
+            <div>
+                <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+                    <Link href="/legal-notice">Legal Notice</Link><br/>
+                    <Link href="/licences">Licences</Link><br/>
+                </p>
+            </div>
         </div>
-        <div>Fonts made from <a href="http://www.onlinewebfonts.com">Web Fonts</a>is licensed by CC BY 4.0</div>
     </footer>;
 }
 
