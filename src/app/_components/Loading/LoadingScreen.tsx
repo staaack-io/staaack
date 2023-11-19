@@ -8,6 +8,7 @@ import {useTrail, a} from '@react-spring/web'
 const Trail = (props: any) => {
     let lastFrame = -1;
     const items = React.Children.toArray(props.children)
+    const [open, set] = useState(true)
     const trail = useTrail(items.length, {
         config: {mass: 5, tension: 2000, friction: 200},
         opacity: open ? 1 : 0,

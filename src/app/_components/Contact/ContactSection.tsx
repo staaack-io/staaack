@@ -30,7 +30,7 @@ const ContactSection = (props: any) => {
         <Title title="Contact us"/>
         <div className="text-center text-gray-600 text-l">N hésitez pas à me contacter par ce formulaire</div>
         <div className="flex justify-center">
-            <form className="container w-full max-w-3xl" onSubmit={handleSubmit}>
+            <form className="w-full max-w-3xl" onSubmit={handleSubmit}>
                 <div className="w-full text-gray-600 body-font relative px-5">
                     <div className="flex flex-wrap -m-2 ">
                         <div className="p-2 w-1/2">
