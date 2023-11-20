@@ -23,7 +23,6 @@ const LoadingScreen = (props: any) => {
                 duration: 1,
                 delay: 5,
                 repeat: Infinity,
-                repeatType: "loop",
                 repeatDelay:3
             }
         },
