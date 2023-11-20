@@ -24,16 +24,18 @@ export default function Home() {
             <LoadingScreen outAnim={() => {
                 setAnimationIsFinished(true)
             }} />
-            <Navbar showAnim={splineIsLoaded}/>
-            <HomeSection onSlineAppLoad={() => {
-                setSplineIsLoaded(true)
-            }}/>
-            <AboutSection/>
-            <ServicesSection/>
-            <SkillsSection/>
-            <PartnersSection/>
-            <ContactSection/>
-            <Footer/>
+            <div className="hidden">
+                <Navbar showAnim={splineIsLoaded}/>
+                <HomeSection onSlineAppLoad={() => {
+                    setSplineIsLoaded(true)
+                }}/>
+                <AboutSection/>
+                <ServicesSection/>
+                <SkillsSection/>
+                <PartnersSection/>
+                <ContactSection/>
+                <Footer/>
+            </div>
         </>
     )
 }
