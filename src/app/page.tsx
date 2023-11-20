@@ -11,23 +11,35 @@ import LoadingScreen from "@/app/_components/Loading/LoadingScreen";
 import {useEffect, useState} from "react";
 
 export default function Home() {
-    const [animationIsFinished, setAnimationIsFinished] = useState(false)
+    const [endAnimationIsFinished, setEndAnimationIsFinished] = useState(false)
+    const [loadingScreenAnimationIsFinished, setLoadingScreenLoadingScreenAnimationIsFinished] = useState(false)
     const [splineIsLoaded, setSplineIsLoaded] = useState(false)
+    const [loadingScreenLaunchStopAnimation, setloadingScreenLaunchStopAnimation] = useState(false)
 
     useEffect(() => {
-        if (animationIsFinished && splineIsLoaded) {
-
+        console.log("modif sur loadingScreenAnimationIsFinished, splineIsLoaded", loadingScreenAnimationIsFinished, splineIsLoaded)
+        if (loadingScreenAnimationIsFinished && splineIsLoaded) {
+            console.log("spline ok + fin premier load des anims")
+            setloadingScreenLaunchStopAnimation(true)
         }
-    }, [animationIsFinished, splineIsLoaded]);
+    }, [loadingScreenAnimationIsFinished, splineIsLoaded]);
     return (
         <>
-            <LoadingScreen outAnim={() => {
-                setAnimationIsFinished(true)
-            }} />
-            <div className="hidden">
+            <LoadingScreen onStartApplicationFinished={() => {
+                console.log("fin de premier load des anims")
+                setLoadingScreenLoadingScreenAnimationIsFinished(true)
+            }}
+                           launchStopAnimation={loadingScreenLaunchStopAnimation}
+                            endAnimationIsFinished={()=> {
+                                setEndAnimationIsFinished(true)
+                            }}/>
+            <div className={endAnimationIsFinished ? "" : "hidden"}>
                 <Navbar showAnim={splineIsLoaded}/>
                 <HomeSection onSlineAppLoad={() => {
-                    setSplineIsLoaded(true)
+                    setTimeout(function () {
+                        console.log("patiente 2secs")
+                        setSplineIsLoaded(true)
+                    }, 2000);
                 }}/>
                 <AboutSection/>
                 <ServicesSection/>

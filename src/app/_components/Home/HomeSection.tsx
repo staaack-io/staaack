@@ -8,9 +8,9 @@ import {animate} from "framer-motion";
 
 const HomeSection = (props: any) => {
     useEffect(() => {
-        if (props.showAnim){
+        if (props.launchStopAnimation){
         }
-    }, [props.showAnim]);
+    }, [props.launchStopAnimation]);
 
 
     return <section id="home" className="p-8 pb-0 min-h-screen flex flex-col lg:flex-row  items-center ">
