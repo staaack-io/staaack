@@ -1,89 +1,91 @@
 "use client"
 
 import Image from "next/image";
-import {AnimatePresence, motion, stagger, useAnimate, useAnimation} from "framer-motion";
+import {animate, AnimatePresence, motion, stagger, useAnimate, useAnimation} from "framer-motion";
 import React, {useEffect, useState} from "react";
 
 
 const LoadingScreen = (props: any) => {
+    const [startAnimation, setStartAnimmation] = useState(true)
     const [endAnimation, setEndAnimmation] = useState(false)
     const [open, set] = useState(true)
     const controlLogo = useAnimation()
+    const controlTitle = useAnimation()
     const [animLogoStarted, setAnimLogoStarted] = useState(false)
 
     const title = ["s", "t", "a", "a", "a", "c", "k"]
 
     const variantLogo = {
-        initial: {scale: 0},
-        animate: {rotate: 360, scale: 1},
+        hidden: {opacity: 0},
+        visible: {
+            rotate: 360,
+            opacity: 1,
+            scale: 1,
+            transition: {
+                delay: .5
+            }
+        },
         loop: {
             rotate: [0, 360, 0],
             scale: [1, 2, 1],
             transition: {
                 duration: 1,
-                delay: 5,
+                delay: 3,
                 repeat: Infinity,
-                repeatDelay:3
+                repeatDelay: 3
             }
         },
-        transition: {
-            delay: 1,
-            type: "spring",
-            duration: 2
-        }
     };
     const variantParentTitle = {
-        hidden: {opacity: 0, scale: 0.2},
+        hidden: {
+            opacity: 1, scale: 0,
+        },
         visible: {
             opacity: 1,
             scale: 1,
             transition: {
-                delay: .8,
-                when: "beforeChildren",
-                staggerChildren: 0.1,
-                opacity: {duration: 0.1},
-                scale: {
-                    type: "spring",
-                    stiffness: 400,
-                    damping: 20,
-                    restSpeed: 0.6
-                }
+                delay: 0,
+                delayChildren: 0.3,
+                staggerChildren: 0.2
             }
-        }
-
+        },
     };
     const variantTitle = {
         hidden: {y: 20, opacity: 0},
-        visible: {y: 0, opacity: 1}
+        visible: {
+            y: 0,
+            opacity: 1,
+        }
     };
     useEffect(() => {
-        if (!animLogoStarted) {
-            controlLogo.start("animate").then(() => {
-                controlLogo.start("loop")
+        if (startAnimation) {
+            let promise = new Promise(async (resolve, reject) => {
+                await controlLogo.start("visible");
+                await controlTitle.start("visible");
+                await controlLogo.start("loop");
+
             });
-            setAnimLogoStarted(true)
+            setStartAnimmation(false);
         }
     }, []);
     return (!props.hideAnimation &&
         <div id="loader" className="absolute w-full h-screen z-50 bg-white">
-            <div
-                className="flex flex-col items-center justify-center h-full">
-                <motion.div
-                    variants={variantLogo}
-                    initial="initial"
-                    animate={controlLogo}>
+            <div className="flex flex-col items-center justify-center h-full">
+                <motion.div variants={variantLogo} animate={controlLogo} initial="hidden">
                     <Image id="loader-image" src="/img/logo.png" alt="Logo staaack" height={80}
                            width={80}/>
                 </motion.div>
 
-                <motion.ul initial="hidden" animate="visible" variants={variantParentTitle}
-                           className="font-logo font-extrabold text-5xl md:text-6xl text-black">
-                    <AnimatePresence>
-                        {title.map((item, i) => {
-                            return <motion.span key={i} variants={variantTitle}>{item}</motion.span>
-                        })}
-                    </AnimatePresence>
-                </motion.ul>
+                <motion.div
+                    className="flex font-logo font-extrabold text-5xl md:text-6xl text-black "
+                    variants={variantParentTitle}
+                    initial="hidden"
+                    animate={controlTitle}
+                >
+                    {title.map((item, i) => {
+                        return <motion.span key={i} variants={variantTitle}>{item}</motion.span>
+                    })}
+                </motion.div>
             </div>
         </div>
     );
