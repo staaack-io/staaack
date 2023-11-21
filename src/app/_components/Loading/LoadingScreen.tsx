@@ -7,13 +7,10 @@ import React, {useEffect, useState} from "react";
 
 const LoadingScreen = (props: any) => {
     const [startAnimation, setStartAnimmation] = useState(true)
-    const [endAnimation, setEndAnimmation] = useState(false)
     const [hideLoader, setHideLoader] = useState(false)
-    const [open, set] = useState(true)
     const controlLogo = useAnimation()
     const controlTitle = useAnimation()
     const controlLoader = useAnimation()
-    const [animLogoStarted, setAnimLogoStarted] = useState(false)
 
     const title = ["s", "t", "a", "a", "a", "c", "k"]
 
@@ -38,14 +35,20 @@ const LoadingScreen = (props: any) => {
             }
         },
         end: {
+            y: 50,
             opacity: 0,
-            scale: [0],
+            transition: {
+                y: { stiffness: 1000 }
+            }
         }
     };
     const variantLoader = {
         end: {
+            y: 50,
             opacity: 0,
-            scale: 0,
+            transition: {
+                y: { stiffness: 1000 }
+            }
         },
     };
     const variantParentTitle = {
@@ -62,9 +65,11 @@ const LoadingScreen = (props: any) => {
             }
         },
         end: {
+            y: 50,
             opacity: 0,
-            scale: 0,
-            y: 20,
+            transition: {
+                y: { stiffness: 1000 }
+            }
         },
     };
     const variantTitle = {
