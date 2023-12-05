@@ -30,7 +30,7 @@ const ContactSection = (props: any) => {
         <Title title="Contact us"/>
         <div className="text-center text-gray-600 text-l">N hésitez pas à me contacter par ce formulaire</div>
         <div className="flex justify-center">
-            <form className="w-full max-w-3xl" onSubmit={handleSubmit}>
+            <form className="w-full max-w-3xl" action={handleSubmit}>
                 <div className="w-full text-gray-600 body-font relative px-5">
                     <div className="flex flex-wrap -m-2 ">
                         <div className="p-2 w-1/2">
@@ -39,7 +39,7 @@ const ContactSection = (props: any) => {
                                 <input
                                     required
                                     className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                                    id="inline-full-name" type="text" value={values.name}
+                                    id="inline-full-name" type="text" name={values.name}
                                     onChange={handleChange}/>
                             </div>
                         </div>
