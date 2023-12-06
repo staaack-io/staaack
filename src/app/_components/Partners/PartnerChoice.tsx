@@ -9,7 +9,6 @@ const PartnerChoice = (props: { name: any }) => {
     }, []);
 
     const handleChange = () => {
-        console.log(checked)
         setChecked(!checked);
     };
 

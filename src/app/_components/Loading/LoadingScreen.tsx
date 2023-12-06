@@ -84,7 +84,6 @@ const LoadingScreen = (props: any) => {
         if(props.launchStopAnimation){
             props.endAnimationIsFinished()
             let promise = new Promise(async (resolve, reject) => {
-                console.log("hide logo + title")
                 await controlTitle.start("end");
                 await controlLogo.start("end");
                 await controlLoader.start("end");
@@ -99,7 +98,6 @@ const LoadingScreen = (props: any) => {
             let promise = new Promise(async (resolve, reject) => {
                 await controlLogo.start("visible");
                 await controlTitle.start("visible");
-                console.log("execute onStartApplicationFinished")
                 props.onStartApplicationFinished();
                 await controlLogo.start("loop");
 

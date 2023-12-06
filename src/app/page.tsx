@@ -17,16 +17,13 @@ export default function Home() {
     const [loadingScreenLaunchStopAnimation, setloadingScreenLaunchStopAnimation] = useState(false)
 
     useEffect(() => {
-        console.log("modif sur loadingScreenAnimationIsFinished, splineIsLoaded", loadingScreenAnimationIsFinished, splineIsLoaded)
         if (loadingScreenAnimationIsFinished && splineIsLoaded) {
-            console.log("spline ok + fin premier load des anims")
             setloadingScreenLaunchStopAnimation(true)
         }
     }, [loadingScreenAnimationIsFinished, splineIsLoaded]);
     return (
         <>
             <LoadingScreen onStartApplicationFinished={() => {
-                console.log("fin de premier load des anims")
                 setLoadingScreenLoadingScreenAnimationIsFinished(true)
             }}
                            launchStopAnimation={loadingScreenLaunchStopAnimation}
@@ -37,9 +34,8 @@ export default function Home() {
                 <Navbar showAnim={splineIsLoaded}/>
                 <HomeSection onSlineAppLoad={() => {
                     setTimeout(function () {
-                        console.log("patiente 2secs")
                         setSplineIsLoaded(true)
-                    }, 2000);
+                    }, 1000);
                 }}/>
                 <AboutSection/>
                 <ServicesSection/>

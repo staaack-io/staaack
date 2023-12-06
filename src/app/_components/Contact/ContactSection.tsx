@@ -18,7 +18,6 @@ const ContactSection = (props: any) => {
                     {isSuccessful: true, message: 'Thank you for your message.'});
             }
         } catch (e) {
-            console.log(e);
             setResponseMessage({
                 isSuccessful: false,
                 message: 'Oops something went wrong. Please try again.',

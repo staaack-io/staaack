@@ -54,6 +54,16 @@
     color: white;
   }
 
+  .bg-conic {
+    background-image: conic-gradient(from 180deg at 50% 0%, #FEAE07 20.63deg, #FE05C2, #FF1378, #CD06BC, #672FD0, #29D9FF, #A2FFAE);
+    //background: conic-gradient(from 180deg at 50% 0%, #FEAD08 0deg, #FEAE07 20.63deg, #FE05C2 78.75deg, #FF1378 102.82deg, #CD06BC 167.09deg, #672FD0 243.33deg, #29D9FF 301.88deg, #A2FFAE 359.99deg, #FEAD08 360deg);
+
+
+  }
+  .bg-linear-white {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), #FFFFFF 100%);
+  }
+
 }
 
 .pic-services-color {
