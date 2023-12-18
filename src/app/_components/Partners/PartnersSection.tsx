@@ -11,8 +11,9 @@ const PartnersSection = (props: any) => {
     const [listPartners, setListPartners] = useState(partners);
     const [selectedCategory, setSelectedCategory] = useState("All");
 
-    return <section className="bg-gray-100 grid grid-rows-1 w-full cursor-pointer">
+    return <section className="bg-gray-100 w-full cursor-pointer flex flex-col items-center">
 		<Title title="Our Partners"/>
+        <div className="default-size">
         <PartnerChoice name={(category: any) => {setSelectedCategory(category);}}/>
         <div className="flex justify-center w-full p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-5">
@@ -22,6 +23,7 @@ const PartnersSection = (props: any) => {
                     })
                 }
             </div>
+        </div>
         </div>
     </section>;
 }

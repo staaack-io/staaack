@@ -44,7 +44,7 @@ export default function Home() {
                             setSplineIsLoaded(true)
                         }, 1000);
                     }}/>
-                    {/*<AboutSection/>*/}
+                    <AboutSection/>
                     <ServicesSection/>
                     <SkillsSection/>
                     <PartnersSection/>

@@ -15,9 +15,9 @@ const HomeSection = (props: any) => {
     }, [props.launchStopAnimation]);
 
 
-    return <section id="home" className="pt-32 mb-10 flex justify-center items-center">
+    return <section id="home" className=" pt-32 p-8 flex justify-center items-center">
         <div className="grid gap-5 gap-y-12 z-0 grid-cols-12 default-size">
-            <div className="col-span-12 lg:col-span-5 flex flex-col justify-center gap-5 ">
+            <div className="col-span-12 lg:col-span-5 flex flex-col justify-center gap-5">
                 <div className="text-[4rem]">
                     <h1 className="absolute font-shadow-logo font-logo font-extrabold text-transparent inline-block bg-clip-text">staaack</h1>
                     <h1 className="absolute font-color-logo font-logo font-extrabold text-transparent inline-block bg-clip-text">staaack</h1>

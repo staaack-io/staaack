@@ -17,7 +17,7 @@
 
 @layer components {
   .default-size {
-    @apply 2xl:max-w-[1400px] 2xl:min-w-[1400px] xl:max-w-[1150px] xl:min-w-[1150px] lg:max-w-[950px] lg:min-w-[950px] md:max-w-[700px] md:min-w-[700px] sm:max-w-[575px] sm:min-w-[575px] max-w-[400px] min-w-[400px];
+    @apply 2xl:max-w-[1400px] 2xl:min-w-[1400px] xl:max-w-[1150px] xl:min-w-[1150px] lg:max-w-[950px] lg:min-w-[950px] md:max-w-[700px] md:min-w-[700px] sm:max-w-[575px] sm:min-w-[575px] max-w-[400px];
   }
 
 }
@@ -517,3 +517,12 @@ svg {
   position: absolute;
 }
 
+
+
+
+.bg-hero {
+  background-color: #e5e5f7;
+  opacity: 0.1;
+  background-size: 4px 4px;
+  background-image: repeating-linear-gradient(45deg, #9D00A4 0, #9D00A4 0.4px, #e5e5f7 0, #e5e5f7 50%);
+}
