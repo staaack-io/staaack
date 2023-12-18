@@ -8,7 +8,7 @@ import Navbar from "@/app/_components/Navbar/Navbar";
 import AboutSection from "@/app/_components/About/AboutSection";
 import Footer from "@/app/_components/Footer/Footer";
 import LoadingScreen from "@/app/_components/Loading/LoadingScreen";
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 
 export default function Home() {
     const [endAnimationIsFinished, setEndAnimationIsFinished] = useState(false)
@@ -21,16 +21,10 @@ export default function Home() {
             setloadingScreenLaunchStopAnimation(true)
         }
     }, [loadingScreenAnimationIsFinished, splineIsLoaded]);
+
     return (
-        <>
-            <LoadingScreen onStartApplicationFinished={() => {
-                setLoadingScreenLoadingScreenAnimationIsFinished(true)
-            }}
-                           launchStopAnimation={loadingScreenLaunchStopAnimation}
-                            endAnimationIsFinished={()=> {
-                                setEndAnimationIsFinished(true)
-                            }}/>
-            <div className={endAnimationIsFinished ? "" : "hidden"}>
+        <div className="flex flex-row border-2">
+            <div className={endAnimationIsFinished ? "" : ""}>
                 <Navbar showAnim={splineIsLoaded}/>
                 <HomeSection onSlineAppLoad={() => {
                     setTimeout(function () {
@@ -44,6 +38,6 @@ export default function Home() {
                 <ContactSection/>
                 <Footer/>
             </div>
-        </>
+        </div>
     )
 }
