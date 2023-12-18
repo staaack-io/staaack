@@ -21,6 +21,22 @@ const config: Config = {
             scale: {
                 '102': '1.02',
             },
+            backgroundColor: {
+                'bg-cs-yellow-light': '#FEAE07',
+                'bg-cs-pink-light': '#FE05C2',
+                'bg-cs-red-light': '#FF1378',
+                'bg-cs-purple-1-light': '#C600B0',
+                'bg-cs-purple-2-light': '#54A4FF',
+                'bg-cs-blue-light': '#29D9FF',
+                'bg-cs-green-light': '#A2FFAE',
+                'bg-cs-yellow-dark': '#FF4D7B',
+                'bg-cs-pink-dark': '#CD06BC',
+                'bg-cs-red-dark': '#9D00A4',
+                'bg-cs-purple-1-dark': '#6711C5',
+                'bg-cs-purple-2-dark': '#672FD0',
+                'bg-cs-blue-dark': '#5267FF',
+                'bg-cs-green-dark': '#13CEF5'
+            },
             colors: {
                 'cs-yellow-light': '#FEAE07',
                 'cs-pink-light': '#FE05C2',

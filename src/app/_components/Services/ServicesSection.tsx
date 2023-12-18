@@ -5,7 +5,7 @@ import Title from "@/app/_components/Common/Title";
 const ServiceSection = () => {
     return <section className="p-8 bg-gradient-primary">
         <Title title="Services"/>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center">
             <ServiceCard icon="/img/develop.svg" serviceName="Developement">
                 <span className="font-semibold">Java/Spring/JEE</span>: Crafting robust and scalable solutions tailored
                 to your specific needs.

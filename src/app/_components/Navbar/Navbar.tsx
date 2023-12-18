@@ -72,10 +72,10 @@ const Navbar = (props: any) => {
 
     return <nav className="fixed p-8 h-16 top-0 bg-white md:bg-opacity-30 md:backdrop-blur-2xl w-full z-40">
         <div className="flex justify-between items-center h-full ">
-            <motion.div className="flex gap-3 content-center items-center" variants={variantLogo}>
+            <motion.div className="flex gap-5 content-center items-center" variants={variantLogo}>
                 <Image src="/img/logo.png" alt="Logo staaack" height={40} width={27}/>
             </motion.div>
-            <motion.ul className="hidden lg:flex lg:gap-3 justify-end font-semibold" variants={variantParentMenu}>
+            <motion.ul className="hidden lg:flex gap-5 justify-end font-semibold" variants={variantParentMenu}>
                 <motion.li variants={variantMenu}>
                     <div>
                         <Link href="#home">
@@ -160,7 +160,7 @@ const Navbar = (props: any) => {
                     <div
                         className="lg:hidden fixed bg-gradient-to-bl from-pink-600 via-purple-700 to-blue-400 top-5 right-2 p-1 rounded-xl w-64 -mt-3">
                         <div className="h-full w-full bg-white p-6 pt-12 rounded-xl">
-                            <ul className="flex flex-col gap-7 justify-end font-semibold">
+                            <ul className="flex flex-col gap-5 justify-end font-semibold">
                                 <li>
                                     <div>
                                         <Link href="#home" onClick={() => setMobileToggleMenu(false)}>

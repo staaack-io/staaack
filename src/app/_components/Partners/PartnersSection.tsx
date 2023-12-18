@@ -15,7 +15,7 @@ const PartnersSection = (props: any) => {
 		<Title title="Our Partners"/>
         <PartnerChoice name={(category: any) => {setSelectedCategory(category);}}/>
         <div className="flex justify-center w-full p-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-5">
                 {
                     listPartners.map((partner: any, index: any) => {
                         return <PartnerCard key={index} name={partner.name} image={partner.image} city={partner.city} category={partner.category} selectedSectionPartner={selectedCategory}/>;

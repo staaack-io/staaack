@@ -15,9 +15,9 @@ const HomeSection = (props: any) => {
     }, [props.launchStopAnimation]);
 
 
-    return <section id="home" className="p-8 pt-32 mb-28 flex justify-center items-center">
-        <div className="grid gap-3 z-0 grid-cols-12 w-10/12">
-            <div className="flex flex-col justify-center col-span-5">
+    return <section id="home" className="pt-32 mb-10 flex justify-center items-center">
+        <div className="grid gap-5 gap-y-12 z-0 grid-cols-12 default-size">
+            <div className="col-span-12 lg:col-span-5 flex flex-col justify-center gap-5 ">
                 <div className="text-[4rem]">
                     <h1 className="absolute font-shadow-logo font-logo font-extrabold text-transparent inline-block bg-clip-text">staaack</h1>
                     <h1 className="absolute font-color-logo font-logo font-extrabold text-transparent inline-block bg-clip-text">staaack</h1>
@@ -28,7 +28,7 @@ const HomeSection = (props: any) => {
                         from conception to execution
                     </h2>
                 </div>
-                <div className="flex gap-2 mt-2 flex-wrap">
+                <div className="flex gap-5 mt-2 flex-wrap">
                     <div className="rounded-3xl bg-gray-100 px-6 py-3">fullstack</div>
                     <div className="rounded-3xl bg-gray-100 px-6 py-3">architecture</div>
                     <div className="rounded-3xl bg-gray-100 px-6 py-3">devops</div>
@@ -37,8 +37,8 @@ const HomeSection = (props: any) => {
                     <div className="rounded-3xl bg-gray-100 px-6 py-3">advice</div>
                 </div>
             </div>
-            <div className="col-span-2 flex flex-col justify-center items-center gap-2">
-                <Card1x1>
+            <div className="col-span-12 lg:col-span-2 grid grid-cols-2 lg:grid-cols-1 gap-5">
+                <Card1x1 className="bg-test">
                     Schedule a call
                 </Card1x1>
                 <Card1x1>
@@ -48,17 +48,22 @@ const HomeSection = (props: any) => {
                 <Card1x1>
                     12 years of XP
                 </Card1x1>
+                <Card1x1 className="lg:hidden">
+                    Interview me with my avatar.AI
+                </Card1x1>
+
             </div>
-            <div className="rounded-2xl bg-gray-200 col-span-5">
-                <div className="float-right">
+            <div className="col-span-12 lg:col-span-5 ">
+                <div className="float-right hidden lg:block">
                     <Card1x1FullRounded>2</Card1x1FullRounded>
                 </div>
                 <div className="rounded-2xl bg-gray-100 w-full h-full">
+                    {/*<img src="https://placehold.co/500x600" height={500} width={400} alt="Photo Alexis Détrie"*/}
+                    {/*     className="w-full h-full aspect-auto float-left"/>*/}
                     {/*<Spline onLoad={(e) => {*/}
                     {/*    props.onSlineAppLoad(true)*/}
                     {/*}} scene="https://prod.spline.design/J2TLOi0lOEx8lQWc/scene.splinecode"/>*/}
                 </div>
-
             </div>
         </div>
     </section>;
