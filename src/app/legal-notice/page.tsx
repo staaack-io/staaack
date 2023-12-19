@@ -1,5 +1,3 @@
-import ContactPage from "@/app/contact/page";
-
 const LegalNoticePage = () => {
     return <span>
         <h3>Legal notice</h3>

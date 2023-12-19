@@ -1,13 +1,6 @@
 "use client"
 
-import ButtonStylised from "@/app/_components/Home/ButtonStylised";
-import Spline from "@splinetool/react-spline";
 import React, {useEffect} from "react";
-import SimpleCard from "../Common/SimpleCard";
-import Card1x1 from "../Common/Card1x1";
-import Image from "next/image";
-import Card1x1FullRounded from "@/app/_components/Common/Card1x1FullRounded";
-import AboutSection from "@/app/_components/About/AboutSection";
 import AboutSectionMini from "@/app/_components/About/AboutSectionMini";
 
 const HomeSection = (props: any) => {
@@ -19,7 +12,7 @@ const HomeSection = (props: any) => {
 
     return <section id="home" className=" pt-32 p-8 flex justify-center items-center">
         <div className="grid gap-5 gap-y-12 z-0 grid-cols-12 default-size">
-            <div className="col-span-12 lg:col-span-5 flex flex-col justify-center gap-5">
+            <div className="col-span-12 lg:col-span-4 xl:col-span-5 flex flex-col justify-center gap-5">
                 <div className="text-[4rem]">
                     <h1 className="absolute font-shadow-logo font-logo font-extrabold text-transparent inline-block bg-clip-text">staaack</h1>
                     <h1 className="absolute font-color-logo font-logo font-extrabold text-transparent inline-block bg-clip-text">staaack</h1>
@@ -55,18 +48,16 @@ const HomeSection = (props: any) => {
             {/*    </Card1x1>*/}
 
             {/*</div>*/}
-            <div className="col-span-12 lg:col-span-7 ">
+            <div className="col-span-12 lg:col-span-8 xl:col-span-7 rounded-2xl bg-gray-100 w-full h-full">
                 {/*<div className="float-right hidden lg:block">*/}
                 {/*    <Card1x1FullRounded>2</Card1x1FullRounded>*/}
                 {/*</div>*/}
-                <div className="rounded-2xl bg-gray-100 w-full h-full">
-                    <AboutSectionMini />
-                    {/*<img src="https://placehold.co/500x600" height={500} width={400} alt="Photo Alexis Détrie"*/}
-                    {/*     className="w-full h-full aspect-auto float-left"/>*/}
-                    {/*<Spline onLoad={(e) => {*/}
-                    {/*    props.onSlineAppLoad(true)*/}
-                    {/*}} scene="https://prod.spline.design/J2TLOi0lOEx8lQWc/scene.splinecode"/>*/}
-                </div>
+                <AboutSectionMini/>
+                {/*<img src="https://placehold.co/500x600" height={500} width={400} alt="Photo Alexis Détrie"*/}
+                {/*     className="w-full h-full aspect-auto float-left"/>*/}
+                {/*<Spline onLoad={(e) => {*/}
+                {/*    props.onSlineAppLoad(true)*/}
+                {/*}} scene="https://prod.spline.design/J2TLOi0lOEx8lQWc/scene.splinecode"/>*/}
             </div>
         </div>
     </section>;

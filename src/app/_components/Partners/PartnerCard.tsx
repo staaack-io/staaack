@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, {useContext, useEffect} from "react";
+import React from "react";
 
 const PartnerCard = (props: any) => {
 

@@ -17,7 +17,14 @@
 
 @layer components {
   .default-size {
-    @apply 2xl:max-w-[1400px] 2xl:min-w-[1400px] xl:max-w-[1150px] xl:min-w-[1150px] lg:max-w-[950px] lg:min-w-[950px] md:max-w-[700px] md:min-w-[700px] sm:max-w-[575px] sm:min-w-[575px] max-w-[400px];
+    @apply max-w-[400px]
+           sm:max-w-[575px] sm:min-w-[575px]
+           md:max-w-[700px] md:min-w-[700px]
+           lg:max-w-[960px] lg:min-w-[960px]
+           xl:max-w-[1200px] xl:min-w-[1200px]
+           2xl:max-w-[1430px] 2xl:min-w-[1430px]
+
+    ;
   }
 
 }

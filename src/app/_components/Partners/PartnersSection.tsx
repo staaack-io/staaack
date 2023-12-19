@@ -1,5 +1,5 @@
 "use client"
-import React, {useCallback, useState} from "react";
+import React, {useState} from "react";
 // @ts-ignore
 import partners from "public/data/partners.json";
 import PartnerCard from "@/app/_components/Partners/PartnerCard";

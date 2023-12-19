@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 
 const Title = (props: any) => {
     return <div className="text-black pb-24 font-bold md:text-center md:p-10">

@@ -5,7 +5,6 @@ import skills from "public/data/skills.json";
 import Hexagon from "@/app/_components/Skills/hexagon/Hexagon";
 import Image from "next/image";
 import Title from "@/app/_components/Common/Title";
-import PartnerChoice from "@/app/_components/Partners/PartnerChoice";
 import SkillChoice from "@/app/_components/Skills/hexagon/SkillChoice";
 
 

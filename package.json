@@ -23,7 +23,8 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-leaflet": "^4.2.1",
-    "sass": "^1.69.4"
+    "sass": "^1.69.4",
+    "tailwindcss-debug-screens": "^2.2.1"
   },
   "devDependencies": {
     "@types/leaflet": "^1.9.7",
