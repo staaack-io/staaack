@@ -7,6 +7,8 @@ import SimpleCard from "../Common/SimpleCard";
 import Card1x1 from "../Common/Card1x1";
 import Image from "next/image";
 import Card1x1FullRounded from "@/app/_components/Common/Card1x1FullRounded";
+import AboutSection from "@/app/_components/About/AboutSection";
+import AboutSectionMini from "@/app/_components/About/AboutSectionMini";
 
 const HomeSection = (props: any) => {
     useEffect(() => {
@@ -37,27 +39,28 @@ const HomeSection = (props: any) => {
                     <div className="rounded-3xl bg-gray-100 px-6 py-3">advice</div>
                 </div>
             </div>
-            <div className="col-span-12 lg:col-span-2 grid grid-cols-2 lg:grid-cols-1 gap-5">
-                <Card1x1 className="bg-test">
-                    Schedule a call
-                </Card1x1>
-                <Card1x1>
-                    <Image className="" src={"/img/document.svg"} alt={"cv"} height={65} width={65}></Image>
-                    My resume
-                </Card1x1>
-                <Card1x1>
-                    12 years of XP
-                </Card1x1>
-                <Card1x1 className="lg:hidden">
-                    Interview me with my avatar.AI
-                </Card1x1>
+            {/*<div className="col-span-12 lg:col-span-2 grid grid-cols-2 lg:grid-cols-1 gap-5">*/}
+            {/*    <Card1x1 className="bg-test">*/}
+            {/*        Schedule a call*/}
+            {/*    </Card1x1>*/}
+            {/*    <Card1x1>*/}
+            {/*        <Image className="" src={"/img/document.svg"} alt={"cv"} height={65} width={65}></Image>*/}
+            {/*        My resume*/}
+            {/*    </Card1x1>*/}
+            {/*    <Card1x1>*/}
+            {/*        12 years of XP*/}
+            {/*    </Card1x1>*/}
+            {/*    <Card1x1 className="lg:hidden">*/}
+            {/*        Interview me with my avatar.AI*/}
+            {/*    </Card1x1>*/}
 
-            </div>
-            <div className="col-span-12 lg:col-span-5 ">
-                <div className="float-right hidden lg:block">
-                    <Card1x1FullRounded>2</Card1x1FullRounded>
-                </div>
+            {/*</div>*/}
+            <div className="col-span-12 lg:col-span-7 ">
+                {/*<div className="float-right hidden lg:block">*/}
+                {/*    <Card1x1FullRounded>2</Card1x1FullRounded>*/}
+                {/*</div>*/}
                 <div className="rounded-2xl bg-gray-100 w-full h-full">
+                    <AboutSectionMini />
                     {/*<img src="https://placehold.co/500x600" height={500} width={400} alt="Photo Alexis Détrie"*/}
                     {/*     className="w-full h-full aspect-auto float-left"/>*/}
                     {/*<Spline onLoad={(e) => {*/}
