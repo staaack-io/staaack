@@ -1,7 +1,11 @@
 import React from "react";
-import Map from 'react-map-gl';
+import {Map, Marker} from 'react-map-gl';
+import "mapbox-gl/dist/mapbox-gl.css";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 const CardMap = (props: any) => {
+
     return <div className={props.className +
         " bg-white rounded-2xl" +
         " flex flex-col items-center justify-center" +
@@ -20,8 +24,21 @@ const CardMap = (props: any) => {
             mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_KEY}
             attributionControl={false}
             antialias={true}
-
-        />
+        >
+            <Marker longitude={6.1263061} latitude={49.5985502}>
+                <div className="flex justify-center items-center rounded-full border-2 p-7 h-24 w-24 bg-opacity-60 bg-white border-[#888]">
+                    <motion.div
+                        whileHover={{ scale: 1.2, rotate: 360 }}
+                        whileTap={{
+                            scale: 0.8,
+                            rotate: -90,
+                            borderRadius: "100%"
+                        }}>
+                        <Image src={"/img/logo.png"} alt={"Logo staaack"} height={45} width={45} className=""></Image>
+                    </motion.div>
+                </div>
+            </Marker>
+        </Map>
     </div>
 }
 

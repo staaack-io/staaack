@@ -72,7 +72,13 @@ const Navbar = (props: any) => {
 
     return <nav className="fixed p-8 h-16 top-0 bg-white md:bg-opacity-30 md:backdrop-blur-2xl w-full z-40">
         <div className="flex justify-between items-center h-full ">
-            <motion.div className="flex gap-5 content-center items-center" variants={variantLogo}>
+            <motion.div className="flex gap-5 content-center items-center" variants={variantLogo}
+                        whileHover={{ scale: 1.2, rotate: 360 }}
+                        whileTap={{
+                            scale: 0.8,
+                            rotate: -90,
+                            borderRadius: "100%"
+                        }}>
                 <Image src="/img/logo.png" alt="Logo staaack" height={40} width={27}/>
             </motion.div>
             <motion.ul className="hidden lg:flex gap-5 justify-end font-semibold" variants={variantParentMenu}>
