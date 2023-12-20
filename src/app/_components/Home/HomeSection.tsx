@@ -11,6 +11,7 @@ const HomeSection = (props: any) => {
 
 
     return <section id="home" className=" pt-32 p-8 flex justify-center items-center">
+        <div className="bg-hero absolute h-full w-full"></div>
         <div className="grid gap-5 gap-y-12 z-0 grid-cols-12 default-size">
             <div className="col-span-12 lg:col-span-4 xl:col-span-5 flex flex-col justify-center gap-5">
                 <div className="text-[4rem]">
@@ -48,7 +49,7 @@ const HomeSection = (props: any) => {
             {/*    </Card1x1>*/}
 
             {/*</div>*/}
-            <div className="col-span-12 lg:col-span-8 xl:col-span-7 rounded-2xl bg-gray-100 w-full h-full">
+            <div className="col-span-12 lg:col-span-8 xl:col-span-7  w-full h-full">
                 {/*<div className="float-right hidden lg:block">*/}
                 {/*    <Card1x1FullRounded>2</Card1x1FullRounded>*/}
                 {/*</div>*/}

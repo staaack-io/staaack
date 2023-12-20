@@ -528,8 +528,9 @@ svg {
 
 
 .bg-hero {
-  background-color: #e5e5f7;
-  opacity: 0.1;
-  background-size: 4px 4px;
-  background-image: repeating-linear-gradient(45deg, #9D00A4 0, #9D00A4 0.4px, #e5e5f7 0, #e5e5f7 50%);
+  background-color:#f6f6f6;
+}
+
+canvas.mapboxgl-canvas {
+  border-radius: 16px;
 }

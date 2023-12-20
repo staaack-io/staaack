@@ -5,7 +5,7 @@ import CardPhoto from "@/app/_components/Common/CardPhoto";
 import CardMap from "@/app/_components/Common/CardMap";
 
 const AboutSectionMini = () => {
-    return <div className="flex flex-col justify-between items-center bg-gray-100 rounded-2xl p-2">
+    return <div className="flex flex-col justify-between items-center p-2">
         <div className="w-full grid gap-5 grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 justify-end">
             <Card1x1 className="md:order-1">
                 Schedule a call
