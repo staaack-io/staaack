@@ -1,7 +1,7 @@
 "use client"
 
 import React, {useEffect} from "react";
-import AboutSectionMini from "@/app/_components/About/AboutSectionMini";
+import AboutSectionMini from "@/app/_components/Home/AboutSectionMini";
 
 const HomeSection = (props: any) => {
     useEffect(() => {
@@ -10,8 +10,8 @@ const HomeSection = (props: any) => {
     }, [props.launchStopAnimation]);
 
 
-    return <section id="home" className=" pt-32 p-8 flex justify-center items-center">
-        <div className="bg-hero absolute h-full w-full"></div>
+    return <section id="home" className="bg-[#f6f6f6] pt-32 p-8 flex justify-center items-center">
+        <div className="absolute h-full w-full"></div>
         <div className="grid gap-5 gap-y-12 z-0 grid-cols-12 default-size">
             <div className="col-span-12 lg:col-span-4 xl:col-span-5 flex flex-col justify-center gap-5">
                 <div className="text-[4rem]">

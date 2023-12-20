@@ -2,7 +2,7 @@ import React from "react";
 import {Map, Marker} from 'react-map-gl';
 import "mapbox-gl/dist/mapbox-gl.css";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 
 const CardMap = (props: any) => {
 
