@@ -21,14 +21,13 @@
     "public": "^0.1.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.49.2",
     "react-icons": "^4.11.0",
-    "react-leaflet": "^4.2.1",
     "react-map-gl": "^7.1.7",
     "sass": "^1.69.4",
     "tailwindcss-debug-screens": "^2.2.1"
   },
   "devDependencies": {
-    "@types/leaflet": "^1.9.7",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
