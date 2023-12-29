@@ -19,7 +19,7 @@ const PartnerChoice = (props: { name: any }) => {
     };
 
     return <div className="flex w-full p-8 justify-center items-center z-30">
-        <div className="dropdown">
+        <div className="dropdown z-30">
             <input type="checkbox" id="dropdown" checked={checked} onChange={handleChange}/>
 
                 <label className="dropdown__face" htmlFor="dropdown">

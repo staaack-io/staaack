@@ -12,7 +12,7 @@ const HomeSection = (props: any) => {
 
     return <section id="home" className="bg-[#f6f6f6] pt-32 p-8 flex justify-center items-center">
         <div className="absolute h-full w-full"></div>
-        <div className="grid gap-5 gap-y-12 z-0 grid-cols-12 default-size">
+        <div className="grid gap-5 gap-y-12 z-0 grid-cols-12 default-size pt-24 lg:pt-0">
             <div className="col-span-12 lg:col-span-4 xl:col-span-5 flex flex-col justify-center gap-5">
                 <div className="text-[4rem]">
                     <h1 className="absolute font-shadow-logo font-logo font-extrabold text-transparent inline-block bg-clip-text">staaack</h1>

@@ -15,7 +15,7 @@ const SkillChoice = (props: { name: any }) => {
         setName(category)
     };
     return <div className="flex w-full p-8 justify-center items-center z-30">
-        <div className="dropdown-skills">
+        <div className="dropdown-skills z-30">
             <input type="checkbox" id="dropdown-skills" checked={checked} onChange={handleChange}/>
 
                 <label className="dropdown-skills__face" htmlFor="dropdown-skills">

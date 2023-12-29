@@ -18,7 +18,6 @@ const SkillsSection = () => {
             <SkillChoice name={(category: any) => {
                 setSelectedCategory(category);
             }}/>
-            <div className="">
                 <ul className="hex-grid__list">
                     {
                         skills.map((skill: any, index: any) =>
@@ -29,7 +28,6 @@ const SkillsSection = () => {
                             </Hexagon>)
                     }
                 </ul>
-            </div>
         </div>
     </section>;
 }
