@@ -22,7 +22,7 @@ export async function POST(request: Request) {
         .replace(/\t/g, '<br>')
         .replace(/<(?!br\s*\/?)[^>]+>/g, '');
 
-    sendGrid.setApiKey(process.env.SENDGRID_API_KEY);
+    sendGrid.setApiKey(String(process.env.SENDGRID_API_KEY));
     const sendGridMail = {
         to: 'alexis@staaack.io',
         from: 'alexis@staaack.io',
