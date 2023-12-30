@@ -3,12 +3,8 @@
 
 name: Yarn BUILD main CI
 
-env:
-  SENDGRID_API_KEY: staaack
-  SENDGRID_TEMPLATE_ID: staaack
-  NEXT_PUBLIC_MAPBOX_API_KEY: staaack
-
 on:
+  workflow_dispatch:
   push:
     branches: [ "main" ]
   pull_request:
