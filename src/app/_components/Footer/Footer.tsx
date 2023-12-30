@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 const Footer = (props: any) => {
     return <footer className="bg-gray-100 dark:bg-gray-900">
