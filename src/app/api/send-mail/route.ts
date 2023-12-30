@@ -19,7 +19,8 @@ export async function POST(request: Request) {
 
     const messageSendGrid = params.message.replace(/\n/g, '<br>')
         .replace(/\r/g, '<br>')
-        .replace(/\t/g, '<br>');
+        .replace(/\t/g, '<br>')
+        .replace(/<(?!br\s*\/?)[^>]+>/g, '');
 
     sendGrid.setApiKey(process.env.SENDGRID_API_KEY);
     const sendGridMail = {
