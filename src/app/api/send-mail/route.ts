@@ -1,5 +1,7 @@
-import sendGrid from "@sendgrid/mail";
+import sgMail from '@sendgrid/mail';
 import {NextResponse} from 'next/server';
+import {MailContent, MailDataRequired} from "@sendgrid/helpers/classes/mail";
+
 
 export async function POST(request: Request) {
 
@@ -22,21 +24,26 @@ export async function POST(request: Request) {
         .replace(/\t/g, '<br>')
         .replace(/<(?!br\s*\/?)[^>]+>/g, '');
 
-    sendGrid.setApiKey(String(process.env.SENDGRID_API_KEY));
-    const sendGridMail = {
+    sgMail.setApiKey(String(process.env.SENDGRID_API_KEY));
+
+    const mailContent: MailContent  = {
+        type: "", value: ""
+
+    }
+    const sendGridMail : MailDataRequired = {
         to: 'alexis@staaack.io',
         from: 'alexis@staaack.io',
         templateId: process.env.SENDGRID_TEMPLATE_ID,
-        dynamic_template_data: {
+        content:  [mailContent],
+        dynamicTemplateData: {
             name: params.name,
             email: params.email,
             message: messageSendGrid
         }
     };
-
     // send email with SendGrid
     try {
-        await sendGrid.send(sendGridMail);
+        await sgMail.send(sendGridMail);
         return NextResponse.json({message: 'EMAIL_SENT'}, {status: 200})
     } catch {
         return NextResponse.json({message: 'Error with our mail provider, please try again.'}, {status: 500})
