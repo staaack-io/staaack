@@ -21,7 +21,7 @@ export default function Home() {
     }, [loadingScreenAnimationIsFinished, splineIsLoaded]);
 
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col bg-[#EDEEF0]">
             <div className="flex flex-row">
                 <div className={endAnimationIsFinished ? "" : ""}>
                     <Navbar showAnim={splineIsLoaded}/>

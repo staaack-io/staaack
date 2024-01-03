@@ -3,6 +3,7 @@ import React from "react";
 import Card1x1 from "@/app/_components/Common/Card1x1";
 import CardPhoto from "@/app/_components/Common/CardPhoto";
 import CardMap from "@/app/_components/Common/CardMap";
+import CardTechnologies from "@/app/_components/Common/CardTechnologies";
 
 const AboutSectionMini = () => {
     return <div className="flex flex-col justify-between items-center p-2">
@@ -16,9 +17,9 @@ const AboutSectionMini = () => {
             <Card1x1 className="md:order-3 2xl:order-7">
                 XP
             </Card1x1>
-            <Card1x1 className="md:order-4 2xl:order-2">
-                Technologies
-            </Card1x1>
+            <CardTechnologies className="md:order-4 2xl:order-2">
+
+            </CardTechnologies>
             <CardMap className="col-span-2 md:order-5 2xl:order-3">
                 Map
             </CardMap>

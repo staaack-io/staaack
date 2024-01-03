@@ -47,7 +47,7 @@ const ContactSection = (props: any) => {
                                 <label htmlFor="name" className="leading-7 text-sm text-gray-600">Name</label>
                                 <input
                                     id="name"
-                                    className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                                    className="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                                     {...register("name", {required: true})} />
                                 {errors.name && (<p className="font-bold text-red-600">You must filled your name</p>)}
                             </div>
@@ -57,7 +57,7 @@ const ContactSection = (props: any) => {
                                 <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
                                 <input
                                     id="email"
-                                    className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                                    className="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                                     {...register("email", {required: true})} />
                                 {errors.email && (<p className="font-bold text-red-600">You must filled your email</p>)}
                             </div>
@@ -68,7 +68,7 @@ const ContactSection = (props: any) => {
                                        className="leading-7 text-sm text-gray-600">Message</label>
                                 <textarea
                                     id="message"
-                                    className="w-full h-32 text-base outline-none resize-none bg-gray-200 appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                                    className="w-full h-32 text-base outline-none resize-none appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                                     {...register("message", {required: true})} >
                                 </textarea>
                                 {errors.message && (
