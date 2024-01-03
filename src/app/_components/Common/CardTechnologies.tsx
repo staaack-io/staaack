@@ -6,7 +6,7 @@ const CardTechnologies = (props: any) => {
         " hover:drop-shadow-lg hover:scale-102 hover:transform-gpu duration-500"
     }>
         <div className="flex h-full w-full text-white font-extrabold overflow-auto">
-            <span className="relative text-3xl overflow-auto">
+            <span className="relative text-3xl overflow-hidden">
                 java js react html css
                 <br/>architecture security
                 <br/>devops
