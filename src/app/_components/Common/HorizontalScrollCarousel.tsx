@@ -12,7 +12,7 @@ const HorizontalScrollCarousel = () => {
     const x = useTransform(scrollYProgress, [0, 1], ["1%", "-90%"]);
 
     return (
-        <section ref={targetRef} className="h-[225vh]">
+        <section ref={targetRef} className="h-[200vh]">
             <div className="sticky top-0 flex flex-col h-screen items-start overflow-hidden">
                 <div className="flex items-center mb-10 w-full">
                     <Title title="Services" subtitle="I provide a range of cross-functional services to your IT landscape." />

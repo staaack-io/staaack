@@ -11,7 +11,7 @@ import SkillChoice from "@/app/_components/Skills/hexagon/SkillChoice";
 const SkillsSection = () => {
     const [selectedCategory, setSelectedCategory] = useState("All");
 
-    return <section className=" flex flex-col justify-center items-center">
+    return <section className="-mt-32 flex flex-col justify-center items-center">
         <div className="flex items-center mb-10 w-full">
             <Title title="Skills" subtitle="All technologies I have to chance to work"/>
         </div>

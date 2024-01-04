@@ -25,12 +25,12 @@ const HomeSection = (props: any) => {
                     </h2>
                 </div>
                 <div className="flex gap-5 mt-2 flex-wrap">
-                    <div className="rounded-3xl bg-white px-6 py-3">fullstack</div>
-                    <div className="rounded-3xl bg-white px-6 py-3">architecture</div>
-                    <div className="rounded-3xl bg-white px-6 py-3">devops</div>
-                    <div className="rounded-3xl bg-white px-6 py-3">cloud</div>
-                    <div className="rounded-3xl bg-white px-6 py-3">training</div>
-                    <div className="rounded-3xl bg-white px-6 py-3">advice</div>
+                    <div className="rounded-3xl bg-white px-6 py-3 border-2 border-[#FE05C288]">fullstack</div>
+                    <div className="rounded-3xl bg-white px-6 py-3 border-2 border-[#FF137888]">architecture</div>
+                    <div className="rounded-3xl bg-white px-6 py-3 border-2 border-[#C600B088]">devops</div>
+                    <div className="rounded-3xl bg-white px-6 py-3 border-2 border-[#6711C588]">cloud</div>
+                    <div className="rounded-3xl bg-white px-6 py-3 border-2 border-[#54A4FF88]">training</div>
+                    <div className="rounded-3xl bg-white px-6 py-3 border-2 border-[#29D9FF88]">advice</div>
                 </div>
             </div>
             {/*<div className="col-span-12 lg:col-span-2 grid grid-cols-2 lg:grid-cols-1 gap-5">*/}

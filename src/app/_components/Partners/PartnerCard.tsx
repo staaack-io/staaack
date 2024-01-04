@@ -12,8 +12,8 @@ const PartnerCard = (props: any) => {
                         <Image src={"/img/logo/" + props.image} alt="" height={150} width={150} className=""></Image>
                     </div>
                 </div>
-                <span className="pt-3">{props.name}</span>
-                <span>{props.city}</span>
+                <span className="pt-10 oswald text-xl">{props.name}</span>
+                <span className="oswald text-md">{props.city}</span>
             </div>}
     </>
 }

@@ -48,37 +48,37 @@ const ContactSection = (props: any) => {
                         <div className="flex flex-wrap -m-2 ">
                             <div className="p-2 w-1/2">
                                 <div className="relative">
-                                    <label htmlFor="name" className="leading-7 text-sm text-gray-600">Name</label>
+                                    <label htmlFor="name" className="leading-7 oswald text-lg text-gray-600">Name</label>
                                     <input
                                         id="name"
                                         className="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                                         {...register("name", {required: true})} />
                                     {errors.name && (
-                                        <p className="font-bold text-red-600">You must filled your name</p>)}
+                                        <p className="font-bold text-red-600 oswald text-lg">You must filled your name</p>)}
                                 </div>
                             </div>
                             <div className="p-2 w-1/2">
                                 <div className="relative">
-                                    <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
+                                    <label htmlFor="email" className="leading-7 text-lg oswald text-gray-600">Email</label>
                                     <input
                                         id="email"
                                         className="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                                         {...register("email", {required: true})} />
                                     {errors.email && (
-                                        <p className="font-bold text-red-600">You must filled your email</p>)}
+                                        <p className="font-bold text-lg oswald text-red-600">You must filled your email</p>)}
                                 </div>
                             </div>
                             <div className="p-2 w-full">
                                 <div className="relative">
                                     <label htmlFor="message"
-                                           className="leading-7 text-sm text-gray-600">Message</label>
+                                           className="leading-7 text-lg oswald text-gray-600">Message</label>
                                     <textarea
                                         id="message"
                                         className="w-full h-32 text-base outline-none resize-none appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                                         {...register("message", {required: true})} >
                                 </textarea>
                                     {errors.message && (
-                                        <p className="font-bold text-red-600">You must filled a message</p>)}
+                                        <p className="font-bold text-lg oswald text-red-600">You must filled a message</p>)}
                                 </div>
                             </div>
                             <div className="p-2 w-full">
