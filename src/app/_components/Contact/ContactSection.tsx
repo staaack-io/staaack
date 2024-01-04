@@ -34,63 +34,70 @@ const ContactSection = (props: any) => {
 
     }
 
-    return <div className="grid grid-cols-1 justify-center items-center w-full p-8">
-        <Title title="Contact us"/>
-        {mailSent && (
-            <div className="text-center text-green-500 text-l">Your message is sent</div>)}
-        <div className="flex justify-center">
-            <form className="w-full max-w-3xl" onSubmit={handleSubmit(onSubmitHandler)}>
-                <div className="w-full text-gray-600 body-font relative px-5">
-                    <div className="flex flex-wrap -m-2 ">
-                        <div className="p-2 w-1/2">
-                            <div className="relative">
-                                <label htmlFor="name" className="leading-7 text-sm text-gray-600">Name</label>
-                                <input
-                                    id="name"
-                                    className="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                                    {...register("name", {required: true})} />
-                                {errors.name && (<p className="font-bold text-red-600">You must filled your name</p>)}
+    return <div>
+
+        <div className="flex items-center mb-10 w-full">
+            <Title title="Contacts" subtitle=""/>
+        </div>
+        <div className="grid grid-cols-1 justify-center items-center w-full p-8">
+            {mailSent && (
+                <div className="text-center text-green-500 text-l">Your message is sent</div>)}
+            <div className="flex justify-center">
+                <form className="w-full max-w-3xl" onSubmit={handleSubmit(onSubmitHandler)}>
+                    <div className="w-full text-gray-600 body-font relative px-5">
+                        <div className="flex flex-wrap -m-2 ">
+                            <div className="p-2 w-1/2">
+                                <div className="relative">
+                                    <label htmlFor="name" className="leading-7 text-sm text-gray-600">Name</label>
+                                    <input
+                                        id="name"
+                                        className="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                                        {...register("name", {required: true})} />
+                                    {errors.name && (
+                                        <p className="font-bold text-red-600">You must filled your name</p>)}
+                                </div>
                             </div>
-                        </div>
-                        <div className="p-2 w-1/2">
-                            <div className="relative">
-                                <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
-                                <input
-                                    id="email"
-                                    className="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                                    {...register("email", {required: true})} />
-                                {errors.email && (<p className="font-bold text-red-600">You must filled your email</p>)}
+                            <div className="p-2 w-1/2">
+                                <div className="relative">
+                                    <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
+                                    <input
+                                        id="email"
+                                        className="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                                        {...register("email", {required: true})} />
+                                    {errors.email && (
+                                        <p className="font-bold text-red-600">You must filled your email</p>)}
+                                </div>
                             </div>
-                        </div>
-                        <div className="p-2 w-full">
-                            <div className="relative">
-                                <label htmlFor="message"
-                                       className="leading-7 text-sm text-gray-600">Message</label>
-                                <textarea
-                                    id="message"
-                                    className="w-full h-32 text-base outline-none resize-none appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                                    {...register("message", {required: true})} >
+                            <div className="p-2 w-full">
+                                <div className="relative">
+                                    <label htmlFor="message"
+                                           className="leading-7 text-sm text-gray-600">Message</label>
+                                    <textarea
+                                        id="message"
+                                        className="w-full h-32 text-base outline-none resize-none appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                                        {...register("message", {required: true})} >
                                 </textarea>
-                                {errors.message && (
-                                    <p className="font-bold text-red-600">You must filled a message</p>)}
+                                    {errors.message && (
+                                        <p className="font-bold text-red-600">You must filled a message</p>)}
+                                </div>
                             </div>
-                        </div>
-                        <div className="p-2 w-full">
-                            {!mailSending &&
-                                <button
-                                    className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded flex mx-auto"
-                                    type="submit">
-                                    Envoyer
-                                </button>}
-                        </div>
-                        {mailSentError && (
-                            <p className="font-bold text-red-600">An error occured: {mailSentError}</p>)}
-                        <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                            <a className="text-indigo-500">alexis@staaack.io</a>
+                            <div className="p-2 w-full">
+                                {!mailSending &&
+                                    <button
+                                        className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded flex mx-auto"
+                                        type="submit">
+                                        Envoyer
+                                    </button>}
+                            </div>
+                            {mailSentError && (
+                                <p className="font-bold text-red-600">An error occured: {mailSentError}</p>)}
+                            <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                                <a className="text-indigo-500">alexis@staaack.io</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
         ;
