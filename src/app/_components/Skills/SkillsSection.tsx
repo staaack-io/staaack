@@ -11,15 +11,17 @@ import SkillChoice from "@/app/_components/Skills/hexagon/SkillChoice";
 const SkillsSection = () => {
     const [selectedCategory, setSelectedCategory] = useState("All");
 
-    return <section className="p-8 flex flex-col justify-center items-center">
-        <Title title="Skills"/>
+    return <section className="-mt-96 p-8 flex flex-col justify-center items-center">
+        <div className="flex items-center border-2 mb-10 w-full">
+            <Title title="Skills" subtitle="All technologies I have to chance to work"/>
+        </div>
         <div className="default-size">
 
             <SkillChoice name={(category: any) => {
                 setSelectedCategory(category);
             }}/>
-                <ul className="hex-grid__list">
-                    {
+            <ul className="hex-grid__list">
+            {
                         skills.map((skill: any, index: any) =>
                             <Hexagon key={index} color={skill.color} category={skill.category}
                                      selectedSkillCategory={selectedCategory}>
