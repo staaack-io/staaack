@@ -4,7 +4,7 @@ import React from "react";
 const ServiceCard = (props: any) => {
     return <div className={"bg-white rounded-2xl p-10" +
         " flex flex-col w-1/3" +
-        " hover:drop-shadow-lg hover:scale-102 hover:transform-gpu duration-500"}>
+        " hover:drop-shadow-lg hover:scale-102 hover:transform-gpu duration-500" + props.className}>
         <div className="w-96 h-[32rem]">
             <div className="flex justify-center">
                 <Image className="pic-services-color" src={props.icon} alt={props.serviceName} width={100}
