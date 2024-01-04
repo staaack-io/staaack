@@ -1,12 +1,13 @@
 import ServiceCard from "@/app/_components/Services/ServiceCard";
 import React from "react";
 import Title from "@/app/_components/Common/Title";
+import Image from "next/image";
 
 const ServiceSection = () => {
     return <section className="flex flex-col ">
         <Title title="Services"/>
-        <div className="p-20 container-overflow w-full">
-            <div className="flex gap-16 flex-1 text-wrap">
+        <div className="px-20 container-overflow pt-10 w-full">
+            <div className="flex gap-12 flex-1 text-wrap w-full">
                 <ServiceCard icon="/img/develop.svg" serviceName="Developement">
                     <span className="font-semibold">Java/Spring/JEE</span>: Crafting robust and scalable solutions tailored
                     to your specific needs.
