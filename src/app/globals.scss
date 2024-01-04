@@ -28,11 +28,15 @@
   }
 
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
 @layer utilities {
   .font-logo {
     font-family: "All Round Gothic W01 Medium", Bauhaus, sans-serif;
   }
-
+  .typo-staaack {
+    font-family: "Roboto";
+  }
   .font-color-logo {
     color: #000;
     background-image: -webkit-linear-gradient(0deg, #FE05C2 0%, #FF1378 20%, #CD06BC 40%, #672FD0 60%, #29D9FF 100%);
@@ -455,4 +459,9 @@ svg {
 
 canvas.mapboxgl-canvas {
   border-radius: 16px;
+}
+
+.container-overflow {
+  overflow-x: auto;
+  white-space: nowrap;
 }

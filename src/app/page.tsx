@@ -23,14 +23,14 @@ export default function Home() {
     return (
         <div className="flex flex-col bg-[#EDEEF0]">
             <div className="flex flex-row">
-                <div className={endAnimationIsFinished ? "" : ""}>
+                <div className={endAnimationIsFinished ? "w-full" : "w-full"}>
                     <Navbar showAnim={splineIsLoaded}/>
                     <HomeSection onSlineAppLoad={() => {
                         setTimeout(function () {
                             setSplineIsLoaded(true)
                         }, 1000);
                     }}/>
-                    <ServicesSection/>
+                    <ServicesSection></ServicesSection>
                     <SkillsSection/>
                     <PartnersSection/>
                     <ContactSection/>
