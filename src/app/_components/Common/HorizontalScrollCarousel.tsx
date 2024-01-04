@@ -12,12 +12,12 @@ const HorizontalScrollCarousel = () => {
     const x = useTransform(scrollYProgress, [0, 1], ["1%", "-90%"]);
 
     return (
-        <section ref={targetRef} className="h-[300vh]">
+        <section ref={targetRef} className="h-[225vh]">
             <div className="sticky top-0 flex flex-col h-screen items-start overflow-hidden">
-                <div className="flex items-center border-2 mb-10 w-full">
+                <div className="flex items-center mb-10 w-full">
                     <Title title="Services" subtitle="I provide a range of cross-functional services to your IT landscape." />
                 </div>
-                <motion.div style={{x}} className=" flex gap-6 border-2">
+                <motion.div style={{x}} className=" flex gap-6">
                     <div className="w-20"></div>
                     <ServiceCard icon="/img/develop.svg" serviceName="Developement">
                         <span className="font-semibold">Java/Spring/JEE</span>: Crafting robust and scalable solutions

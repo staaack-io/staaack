@@ -26,7 +26,7 @@ const CardMap = (props: any) => {
             antialias={true}
         >
             <Marker longitude={6.1263061} latitude={49.5985502}>
-                <div className="flex justify-center items-center rounded-full border-2 p-7 h-24 w-24 bg-opacity-60 bg-white border-[#888]">
+                <div className="flex justify-center items-center rounded-full p-7 h-24 w-24 bg-opacity-60 bg-white border-[#888]">
                     <motion.div
                         whileHover={{ scale: 1.2, rotate: 360 }}
                         whileTap={{

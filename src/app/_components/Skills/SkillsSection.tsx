@@ -12,7 +12,7 @@ const SkillsSection = () => {
     const [selectedCategory, setSelectedCategory] = useState("All");
 
     return <section className=" flex flex-col justify-center items-center">
-        <div className="flex items-center border-2 mb-10 w-full">
+        <div className="flex items-center mb-10 w-full">
             <Title title="Skills" subtitle="All technologies I have to chance to work"/>
         </div>
         <div className="default-size">
