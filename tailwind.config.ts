@@ -18,9 +18,6 @@ const config: Config = {
                 '5xl': '3.052rem',
                 '6xl': '3.75rem'
             },
-            scale: {
-                '102': '1.02',
-            },
             backgroundColor: {
                 'bg-cs-yellow-light': '#FEAE07',
                 'bg-cs-pink-light': '#FE05C2',
