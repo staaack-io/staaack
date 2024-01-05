@@ -156,7 +156,9 @@ const Navbar = (props: any) => {
                             <ul className="flex flex-col gap-5 justify-end font-semibold">
                                 <li>
                                     <div>
-                                        <Link href="#home" onClick={() => setMobileToggleMenu(false)}>
+                                        <Link href="#home" onClick={() => {
+                                            setMobileToggleMenu(false); return true;
+                                        }}>
                                                 <span
                                                     className="text-black text-2xl hover:font-color-logo">
                                                     Home
@@ -165,7 +167,7 @@ const Navbar = (props: any) => {
                                     </div>
                                 </li>
                                 <li>
-                                    <Link href="#Services" onClick={() => setMobileToggleMenu(false)}>
+                                    <Link href="#Services" onClick={() => {setMobileToggleMenu(false); return true;}}>
                             <span
                                 className="text-black text-2xl hover:font-color-logo">
                                 Services
@@ -173,7 +175,9 @@ const Navbar = (props: any) => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#Skills" onClick={() => setMobileToggleMenu(false)}>
+                                    <Link href="#Skills" onClick={() => {
+                                        setMobileToggleMenu(false); return true;
+                                    }}>
                             <span
                                 className="text-black text-2xl hover:font-color-logo">
                                 Skills
@@ -181,7 +185,9 @@ const Navbar = (props: any) => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#Our Partners" onClick={() => setMobileToggleMenu(false)}>
+                                    <Link href="#Our Partners" onClick={() => {
+                                        setMobileToggleMenu(false); return true;
+                                    }}>
                             <span
                                 className="text-black text-2xl hover:font-color-logo">
                                 Partners
@@ -189,7 +195,9 @@ const Navbar = (props: any) => {
                                     </Link>
                                 </li>
                                 <li className="pr-10">
-                                    <Link href="#Contacts" onClick={() => setMobileToggleMenu(false)}>
+                                    <Link href="#Contacts" onClick={() => {
+                                        setMobileToggleMenu(false); return true;
+                                    }}>
                             <span
                                 className="text-black text-2xl hover:font-color-logo">
                                 Contact
