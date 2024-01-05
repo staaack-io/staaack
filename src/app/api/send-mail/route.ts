@@ -30,11 +30,12 @@ export async function POST(request: Request) {
         type: "", value: ""
 
     }
+
+    // @ts-ignore
     const sendGridMail : MailDataRequired = {
         to: 'alexis@staaack.io',
         from: 'alexis@staaack.io',
         templateId: process.env.SENDGRID_TEMPLATE_ID,
-        content:  [mailContent],
         dynamicTemplateData: {
             name: params.name,
             email: params.email,
@@ -45,7 +46,8 @@ export async function POST(request: Request) {
     try {
         await sgMail.send(sendGridMail);
         return NextResponse.json({message: 'EMAIL_SENT'}, {status: 200})
-    } catch {
+    } catch (error) {
+        console.log(error)
         return NextResponse.json({message: 'Error with our mail provider, please try again.'}, {status: 500})
     }
 }
