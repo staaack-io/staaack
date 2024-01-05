@@ -9,12 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@lottiefiles/react-lottie-player": "^3.5.3",
+    "@lottiefiles/lottie-player": "^2.0.2",
     "@sendgrid/mail": "^8.1.0",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.495",
     "framer-motion": "^10.16.5",
     "hamburger-react": "^2.5.0",
+    "lottie-player": "^1.0.0",
     "lottie-react": "^2.4.0",
     "lottie-web": "^5.12.2",
     "mapbox-gl": "^3.0.1",

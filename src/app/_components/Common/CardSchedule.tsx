@@ -1,5 +1,5 @@
 import React from "react";
-import LordIcons from "@/app/_components/Common/LordIcons";
+import LottieFile from "@/app/_components/Common/LottieFile";
 
 const CardSchedule = (props: any) => {
 
@@ -8,11 +8,11 @@ const CardSchedule = (props: any) => {
         " bg-white rounded-2xl" +
         " flex flex-col items-center justify-center" +
         " aspect-square w-[full] sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]" +
-        " overflow-hidden"
-        " hover:drop-shadow-lg  hover:transform-gpu duration-500" +
+        " overflow-hidden" +
+        " hover:drop-shadow-lg  hover:transform-gpu duration-500"
     }>
         <div className="flex flex-col items-center justify-center w-full h-full">
-            <LordIcons beforeSrc="" src="https://cdn.lordicon.com/xsqjakgm.json"></LordIcons>
+            <LottieFile beforeSrc="" src="lottie/schedule.json"></LottieFile>
             Schedule a call
         </div>
     </div>
