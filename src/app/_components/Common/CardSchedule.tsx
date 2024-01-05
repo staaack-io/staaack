@@ -3,7 +3,6 @@ import LottieFile from "@/app/_components/Common/LottieFile";
 
 const CardSchedule = (props: any) => {
 
-    // @ts-ignore
     return <div className={props.className +
         " bg-white rounded-2xl" +
         " flex flex-col items-center justify-center" +
@@ -12,8 +11,14 @@ const CardSchedule = (props: any) => {
         " hover:drop-shadow-lg  hover:transform-gpu duration-500"
     }>
         <div className="flex flex-col items-center justify-center w-full h-full">
-            <LottieFile beforeSrc="" src="lottie/schedule.json"></LottieFile>
-            Schedule a call
+            <div className="w-28 h-28">
+                <LottieFile beforeSrc="lottie/schedule-in.json" src="lottie/schedule.json"
+                            className="w-20 h-20"></LottieFile>
+            </div>
+            <div className="pt-2 font-color-logo font-bold">
+                Schedule a call
+
+            </div>
         </div>
     </div>
 }
