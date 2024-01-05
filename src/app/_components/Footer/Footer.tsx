@@ -1,13 +1,13 @@
 import Image from "next/image";
 
 const Footer = (props: any) => {
-    return <footer className="bg-gray-100 dark:bg-gray-900">
+    return <footer className="bg-gray-100 dark:bg-gray-900 oswald">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div className="md:flex md:justify-between">
                 <div className="mb-6 md:mb-0 md:flex md:items-center md:justify-center">
                     <a href="https://staaack.io/" className="flex items-center">
                         <Image src="/img/logo.png" alt="logo" width={40} height={40} className="p-2 mr-2"></Image>
-                        <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">staaack</span>
+                        <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white typo-staaack ">staaack</span>
                     </a>
                 </div>
                 <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

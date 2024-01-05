@@ -92,7 +92,7 @@ const ContactSection = (props: any) => {
                             {mailSentError && (
                                 <p className="font-bold text-red-600">An error occured: {mailSentError}</p>)}
                             <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                                <a className="text-indigo-500">alexis@staaack.io</a>
+                                <a className="text-indigo-500 oswald text-xl">alexis@staaack.io</a>
                             </div>
                         </div>
                     </div>

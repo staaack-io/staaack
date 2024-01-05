@@ -32,7 +32,7 @@ const AboutSectionMini = () => {
     };
 
 
-    return <div className="flex flex-col justify-between items-center p-2">
+    return <>
         <motion.div className="w-full grid gap-5 grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 justify-end"
                     initial={container.hidden}
                     animate={container.visible}>
@@ -102,8 +102,7 @@ const AboutSectionMini = () => {
                 </Card1x1>
             </motion.div>
         </motion.div>
-    </div>
-        ;
+    </>;
 }
 
 export default AboutSectionMini;

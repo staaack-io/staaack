@@ -10,7 +10,7 @@ const CardSchedule = (props: any) => {
         " hover:drop-shadow-lg hover:scale-102 hover:transform-gpu duration-500" +
         " overflow-hidden"
     }>
-        <div className="absolute flex justify-center items-center w-full h-full -mt-2">
+        <div className="relative flex justify-center items-center w-full h-full -mt-2">
             Schedule a call
         </div>
         <div className="flex justify-end items-end w-full h-full ml-10 -mb-5">
