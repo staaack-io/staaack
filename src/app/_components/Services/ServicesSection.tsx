@@ -1,14 +1,100 @@
 import ServiceCard from "@/app/_components/Services/ServiceCard";
 import React from "react";
 import Title from "@/app/_components/Common/Title";
-import Image from "next/image";
-import HorizontalScrollCarousel from "@/app/_components/Common/HorizontalScrollCarousel";
-
+import Carousel from 'react-multi-carousel';
+import "react-multi-carousel/lib/styles.css";
+const responsive = {
+    desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 3,
+        paritialVisibilityGutter: 60
+    },
+    tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 2,
+        paritialVisibilityGutter: 50
+    },
+    mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1,
+        paritialVisibilityGutter: 30
+    }
+};
+const listServices =
+    [{
+        serviceName: "Developement",
+        icon: "/img/develop.svg",
+        content: "Java/Spring/JEE: Crafting robust and scalable solutions" +
+            "                        tailored" +
+            "                        to your specific needs." +
+            "                        <br/><br/>" +
+            "                        HTML/CSS/JS/React: Designing modern, responsive user" +
+            "                        interfaces" +
+            "                        for an optimal user experience."
+    }, {
+        serviceName: "Architecture",
+        icon: "/img/architecture.svg",
+        content: "Implementing personalized solutions to efficiently" +
+            "                        integrate" +
+            "                        technology into your information system." +
+            "                        <br/><br/>" +
+            "                        Definition and design of optimal architectures for Java/Spring applications," +
+            "                        ensuring performance and scalability."
+    }, {
+        serviceName: "Cloud",
+        icon: "/img/cloud.svg",
+        content: "Cloud Deployment: Maximizing your business flexibility and" +
+            "                        scalability with our tailored cloud solutions." +
+            "                        <br/><br/>" +
+            "                        Migration: Smoothly transition your systems to the" +
+            "                        cloud, minimizing disruptions and costs."
+    }, {
+        serviceName: "Dev(Sec)Ops",
+        icon: "/img/devops.svg",
+        content: "                        Automate your workflows with advanced " +
+            "DevOps solutions for quick and reliable application and" +
+            "                        infrastructure" +
+            "                        deployment."
+    }, {
+        serviceName: "Training",
+        icon: "/img/training.svg",
+        content: "Comprehensive training on current technologies adapted to" +
+            "                        your" +
+            "                        needs." +
+            "                        <br/><br/>" +
+            "                        Specialization in Java development, CI/CD methodologies, DevOps, best practices and more."
+    }, {
+        serviceName: "Advisory",
+        icon: "/img/advisor.svg",
+        content: "Proposing innovative technological solutions to address your challenges." +
+            "                        <br/><br/>" +
+            "                        Impact analysis and strategic recommendations to align" +
+            "                        technology" +
+            "                        with your business goals."
+    }];
 const ServiceSection = () => {
-    return <section className="flex flex-col ">
-
-        <div className="pt-10 w-full">
-            <HorizontalScrollCarousel></HorizontalScrollCarousel>
+    return <section className="flex flex-col pt-10 h-screen w-full">
+        <Title title="Services" subtitle="I provide a range of cross-functional services to your IT landscape."/>
+        <div className="w-full h-full p-10">
+            <Carousel className="border-2"
+                      swipeable={true}
+                      draggable={true}
+                      showDots={false}
+                      responsive={responsive}
+                      infinite={false}
+                      keyBoardControl={true}
+                      customTransition="transform 300ms ease-in-out"
+                      transitionDuration={500}
+                      itemClass="">
+                {
+                    listServices.map((service: any, index: any) => {
+                        // eslint-disable-next-line react/jsx-key
+                        return <ServiceCard key={index} icon={service.icon} serviceName={service.serviceName}>
+                                {service.content}
+                            </ServiceCard>
+                    })
+                }
+            </Carousel>
         </div>
     </section>;
 }
