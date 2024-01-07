@@ -4,20 +4,40 @@ import Title from "@/app/_components/Common/Title";
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
 const responsive = {
-    desktop: {
-        breakpoint: { max: 3000, min: 1024 },
+    desktop3Xl: {
+        breakpoint: { max: 100000, min: 1601 },
+        items: 4,
+        paritialVisibilityGutter: 60
+    },
+    desktop2Xl: {
+        breakpoint: { max: 1600, min: 1537 },
         items: 3,
         paritialVisibilityGutter: 60
     },
-    tablet: {
-        breakpoint: { max: 1024, min: 464 },
+    desktopXl: {
+        breakpoint: { max: 1536, min: 1281 },
+        items: 3,
+        paritialVisibilityGutter: 60
+    },
+    desktopL: {
+        breakpoint: { max: 1280, min: 1025 },
         items: 2,
+        paritialVisibilityGutter: 60
+    },
+    desktop: {
+        breakpoint: { max: 1024, min: 769 },
+        items: 2,
+        paritialVisibilityGutter: 60
+    },
+    tablet: {
+        breakpoint: { max: 768, min: 641 },
+        items: 1,
         paritialVisibilityGutter: 50
     },
     mobile: {
-        breakpoint: { max: 464, min: 0 },
+        breakpoint: { max: 640, min: 0 },
         items: 1,
-        paritialVisibilityGutter: 30
+        paritialVisibilityGutter: 0
     }
 };
 const listServices =
@@ -76,7 +96,7 @@ const ServiceSection = () => {
     return <section className="flex flex-col pt-10 h-screen w-full">
         <Title title="Services" subtitle="I provide a range of cross-functional services to your IT landscape."/>
         <div className="w-full h-full p-10">
-            <Carousel className="border-2"
+            <Carousel className=""
                       swipeable={true}
                       draggable={true}
                       showDots={false}

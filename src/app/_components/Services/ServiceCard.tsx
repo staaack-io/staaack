@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const ServiceCard = (props: any) => {
-    return <div className={"bg-white rounded-2xl p-10 " +
+    return <div className={"my-10 ml-4 bg-white rounded-2xl p-10 " +
         " w-96 h-[32rem]" +
         " flex flex-col " +
         " hover:drop-shadow-lg hover:transform-gpu duration-500 p-10" + props.className}>
