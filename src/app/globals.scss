@@ -992,3 +992,19 @@ canvas.mapboxgl-canvas {
   overflow-x: clip;
   white-space: nowrap;
 }
+
+button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left, button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right {
+  z-index: 40 !important;
+  bottom: 60px;
+  left: 60px;
+
+}
+
+button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right {
+  padding-left: 0px;
+  left: 120px;
+}
+button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left {
+  padding-left: 0px;
+
+}
