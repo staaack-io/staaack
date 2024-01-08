@@ -8,6 +8,7 @@ import CardSchedule from "@/app/_components/Common/CardSchedule";
 import Image from "next/image";
 import CardResume from "@/app/_components/Common/CardResume";
 import {motion, useAnimation} from "framer-motion";
+import ExperienceMap from "@/app/_components/Common/ExperienceMap";
 
 const AboutSectionMini = () => {
 
@@ -62,10 +63,13 @@ const AboutSectionMini = () => {
             </motion.div>
             <motion.div className="md:order-8 2xl:order-6">
                 <Card1x1>
-                    <video controls width="250">
-                        <source src="emoji.mov" type="video/mp4"/>
-                    </video>
-                    AI
+                    <div className="w-full h-full p-2 flex flex-col items-center justify-center opacity-30">
+                        <Image src={"/img/cards/bg-ai.png"} alt="" height={100} width={100} className="rounded-full"/>
+                        <div className='wrap'>
+                            <button>such ripple</button>
+                        </div>
+                    </div>
+                    <span className="text-center opacity-100">Discuss with my chat bot</span>
                 </Card1x1>
             </motion.div>
             <motion.div className="md:order-7 2xl:order-8">
@@ -81,22 +85,16 @@ const AboutSectionMini = () => {
                     </div>
                 </CardPhoto>
             </motion.div>
-            <motion.div className="md:order-9 hidden 2xl:block">
-                <Card1x1>
-                    1 ???
-                </Card1x1>
-            </motion.div>
-            <motion.div className="md:order-10 hidden 2xl:block">
-                <Card1x1>
-                    2 ???
-                </Card1x1>
+
+            <motion.div className="col-span-2">
+                <ExperienceMap />
             </motion.div>
             <motion.div className="md:order-11 hidden 2xl:block">
                 <Card1x1>
                     3 ???
                 </Card1x1>
             </motion.div>
-            <motion.div className="md:order-11 hidden 2xl:block">
+            <motion.div className="md:order-12 hidden 2xl:block">
                 <Card1x1>
                     4 ???
                 </Card1x1>
