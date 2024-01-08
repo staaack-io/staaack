@@ -76,7 +76,7 @@ const AboutSectionMini = () => {
             <motion.div className="col-span-2 row-span-2 md:order-6 2xl:order-5" initial="hidden"
                         animate="visible">
                 <CardPhoto>
-                    <div className="flex rounded-2xl w-30 h-30 bg-black">
+                    <div className="flex rounded-3xl w-30 h-30 bg-black">
                         <Image src="/img/emoj.gif" alt="" height={100} width={100} className="rounded-full"/>
                     </div>
                 </CardPhoto>
