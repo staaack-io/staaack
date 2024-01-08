@@ -3,7 +3,7 @@ import React from "react";
 
 const ServiceCard = (props: any) => {
     return <div className={"my-10 ml-4 bg-white rounded-2xl p-10 " +
-        " w-48 h-72 sm:w-96 sm:h-[32rem]" +
+        " w-96 h-[32rem]" +
         " flex flex-col " +
         " hover:drop-shadow-lg hover:transform-gpu duration-500 p-10" + props.className}>
         <div className="flex justify-center ">
