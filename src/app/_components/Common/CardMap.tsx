@@ -17,7 +17,7 @@ const CardMap = (props: any) => {
             initialViewState={{
                 longitude: 6.1263061,
                 latitude: 49.5985502,
-                zoom: 15
+                zoom: 13
             }}
             style={{width: "100%", height: "100%", borderRadius: "16"}}
             mapStyle="mapbox://styles/mapbox/streets-v12"
