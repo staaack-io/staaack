@@ -12,7 +12,7 @@ function Flag({
                       '#00A4E0',
                       '#00A4E0'
                   ],
-                  width = 200,
+                  width = 170,
                   numOfColumns = 10,
                   staggeredDelay = 100,
                   billow = 2,

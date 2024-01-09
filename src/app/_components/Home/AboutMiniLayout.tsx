@@ -1,6 +1,7 @@
 "use client"
 import React, {useEffect, useState} from "react";
 import Card1x1 from "@/app/_components/Common/Card1x1";
+import Card1x12 from "@/app/_components/Common/Card1x12";
 import CardPhoto from "@/app/_components/Common/CardPhoto";
 import CardMap from "@/app/_components/Common/CardMap";
 import CardTechnologies from "@/app/_components/Common/CardTechnologies";
@@ -9,7 +10,6 @@ import Image from "next/image";
 import CardResume from "@/app/_components/Common/CardResume";
 import {motion, useAnimation} from "framer-motion";
 import Card2x1 from "@/app/_components/Common/ExperienceMap";
-import LottieFile from "@/app/_components/Common/LottieFile";
 import Flag from "@/app/_components/Common/Flag";
 import CardSocialNetwork from "@/app/_components/Common/CardSocialNetwork";
 import CardExperience from "@/app/_components/Common/CardExperience";
@@ -84,10 +84,10 @@ const Layout2AboutMini = (props: any) => {
                     <span
                         className="p-2 rounded-full m-2 text-center bg-opacity-0 opacity-0 group-hover:bg-opacity-100 group-hover:opacity-100 bg-white">This service is not unavailable</span>
                 </div>
-                <Card1x1
+                <Card1x12
                     className="absolute border-2 border-[#FEAE07] aspect-square w-full sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]">
                     <span className="absolute text-center opacity-20">Discuss with my AI bot</span>
-                    <div className="flex items-center justify-center w-full h-full p-2 hover:scale-150 transition">
+                    <div className="flex items-center justify-center w-full h-full hover:scale-150 transition">
                         <div className='opacity-20 flex justify-center items-center h-full'>
                             <div id="ripple-mini">
                                 <Image src={"/img/cards/bg-ai.png"} alt="" height={100} width={100}
@@ -95,7 +95,7 @@ const Layout2AboutMini = (props: any) => {
                             </div>
                         </div>
                     </div>
-                </Card1x1>
+                </Card1x12>
             </motion.div>
             <motion.div className="">
                 <Card1x1 className=" border-2 border-[#6711C5]">

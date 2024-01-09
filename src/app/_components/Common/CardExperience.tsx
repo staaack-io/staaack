@@ -4,37 +4,37 @@ import {motion} from "framer-motion";
 const ExperienceDetails = (props: any) => {
     return props.hidden &&
         <motion.div
-        initial={{scale: 0}}
-        animate={{rotate: 360, scale: 1}}
-        transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 20
-        }}
-        hidden={false}
-        className="flex flex-wrap items-baseline gap-1 h-full pt-4">
-        <motion.span         initial={{opacity: 0,scale: 0}}
-                             animate={{opacity: 100, scale: 1}}
-                             transition={{
-                                 type: "spring",
-                                 stiffness: 260,
-                                 damping: 20
-                             }} className="text-5xl font-bold text-white items-end">{props.text1}</motion.span>
-        <motion.span         initial={{opacity: 0,scale: 0}}
-                             animate={{opacity: 100, scale: 1}}
-                             transition={{
-                                 type: "spring",
-                                 stiffness: 260,
-                                 damping: 20
-                             }} className="text-2xl font-bold text-white">{props.text2}</motion.span>
-        <motion.span         initial={{opacity: 0,scale: 0}}
-                             animate={{opacity: 100, scale: 1}}
-                             transition={{
-                                 type: "spring",
-                                 stiffness: 260,
-                                 damping: 20
-                             }} className="-mt-7 text-large font-bold col-span-2">{props.text3}</motion.span>
-    </motion.div>
+            initial={{scale: 0}}
+            animate={{rotate: 360, scale: 1}}
+            transition={{
+                type: "spring",
+                stiffness: 260,
+                damping: 20
+            }}
+            hidden={false}
+            className="flex flex-wrap items-baseline gap-1 h-full pt-4">
+            <motion.span initial={{opacity: 0, scale: 0}}
+                         animate={{opacity: 100, scale: 1}}
+                         transition={{
+                             type: "spring",
+                             stiffness: 260,
+                             damping: 20
+                         }} className="text-5xl font-bold text-white items-end">{props.text1}</motion.span>
+            <motion.span initial={{opacity: 0, scale: 0}}
+                         animate={{opacity: 100, scale: 1}}
+                         transition={{
+                             type: "spring",
+                             stiffness: 260,
+                             damping: 20
+                         }} className="text-2xl font-bold text-white">{props.text2}</motion.span>
+            <motion.span initial={{opacity: 0, scale: 0}}
+                         animate={{opacity: 100, scale: 1}}
+                         transition={{
+                             type: "spring",
+                             stiffness: 260,
+                             damping: 20
+                         }} className="-mt-7 text-large font-bold col-span-2">{props.text3}</motion.span>
+        </motion.div>
 }
 const CardExperience = (props: any) => {
 
@@ -57,14 +57,14 @@ const CardExperience = (props: any) => {
 
     return <div className={
         " " + color +
-        " rounded-3xl p-5" +
+        " rounded-3xl p-2" +
         " flex flex-col items-center justify-center" +
-        " aspect-square w-full sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]" +
+        " aspect-square h-full w-full sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]" +
         " hover:drop-shadow-lg hover:transform-gpu duration-500 " +
         props.className
     } onClick={onClickChangeXp}>
         <motion.div
-            className="flex justify-center items-center h-full w-full"
+            className="flex justify-center items-center  w-full"
             onClick={onClickChangeXp}
             initial={{scale: 0}}
             animate={{rotate: 360, scale: 1}}
@@ -76,7 +76,8 @@ const CardExperience = (props: any) => {
             }}
         >{
             props.experiences.map((experience: any, index: any) => {
-                return <ExperienceDetails key={index} hidden={index == i - 1} text1={experience.text1} text2={experience.text2} text3={experience.text3}/>
+                return <ExperienceDetails key={index} hidden={index == i - 1} text1={experience.text1}
+                                          text2={experience.text2} text3={experience.text3}/>
             })
         }
 
