@@ -84,7 +84,7 @@ const Navbar = (props: any) => {
             <motion.ul className="hidden lg:flex gap-5 justify-end font-semibold" variants={variantParentMenu}>
                 <motion.li variants={variantMenu}>
                     <div>
-                        <Link href="#home">
+                        <Link href="/#home">
                             <div
                                 className="text-black hover:font-color-logo">
                                 Home
@@ -96,7 +96,7 @@ const Navbar = (props: any) => {
                     /
                 </motion.li>
                 <motion.li variants={variantMenu}>
-                    <Link href="#Services">
+                    <Link href="/#services">
                             <span
                                 className="text-black hover:font-color-logo">
                                 Services
@@ -107,7 +107,7 @@ const Navbar = (props: any) => {
                     /
                 </motion.li>
                 <motion.li variants={variantMenu}>
-                    <Link href="#skills">
+                    <Link href="/#skills">
                             <span
                                 className="text-black hover:font-color-logo">
                                 Skills
@@ -118,7 +118,7 @@ const Navbar = (props: any) => {
                     /
                 </motion.li>
                 <motion.li variants={variantMenu}>
-                    <Link href="#Our Partners">
+                    <Link href="/#our partners">
                             <span
                                 className="text-black hover:font-color-logo">
                                 Partners
@@ -129,7 +129,7 @@ const Navbar = (props: any) => {
                     /
                 </motion.li>
                 <motion.li className="pr-10" variants={variantMenu}>
-                    <Link href="#Contacts">
+                    <Link href="/#contacts">
                             <span
                                 className="text-black hover:font-color-logo">
                                 Contact
@@ -167,7 +167,7 @@ const Navbar = (props: any) => {
                                     </div>
                                 </li>
                                 <li>
-                                    <Link href="/#Services" onClick={() => {setMobileToggleMenu(false); return true;}}>
+                                    <Link href="/#services" onClick={() => {setMobileToggleMenu(false); return true;}}>
                             <span
                                 className="text-black text-2xl hover:font-color-logo">
                                 Services
@@ -185,7 +185,7 @@ const Navbar = (props: any) => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/#Our Partners" onClick={() => {
+                                    <Link href="/#our partners" onClick={() => {
                                         setMobileToggleMenu(false); return true;
                                     }}>
                             <span
@@ -195,7 +195,7 @@ const Navbar = (props: any) => {
                                     </Link>
                                 </li>
                                 <li className="pr-10">
-                                    <Link href="/#Contacts" onClick={() => {
+                                    <Link href="/#contacts" onClick={() => {
                                         setMobileToggleMenu(false); return true;
                                     }}>
                             <span
