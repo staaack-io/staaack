@@ -14,7 +14,7 @@ import Flag from "@/app/_components/Common/Flag";
 import CardSocialNetwork from "@/app/_components/Common/CardSocialNetwork";
 import CardExperience from "@/app/_components/Common/CardExperience";
 
-const AboutSectionMini = () => {
+const AboutMini = () => {
 
     useEffect(() => {
 
@@ -54,37 +54,40 @@ const AboutSectionMini = () => {
         <motion.div className="w-full grid gap-5 grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 justify-end"
                     initial={container.hidden}
                     animate={container.visible}>
-            <motion.div className="md:order-1">
+            <motion.div className="">
                 <CardSchedule>
                     Schedule a call
                 </CardSchedule>
             </motion.div>
-            <motion.div className="md:order-2 2xl:order-4">
+            <motion.div className="col-span-2" initial="hidden"
+                        animate="visible">
+                <CardMap/>
+            </motion.div>
+            <motion.div className="">
                 <CardResume>
                     Resume
                 </CardResume>
             </motion.div>
-            <motion.div className="md:order-3 2xl:order-7">
+            <motion.div className="col-span-2">
+                <Card2x1/>
+            </motion.div>
+            <motion.div className="">
                 <Card1x1 className="p-0 bg-white rounded-3xl">
                     <Flag></Flag>
                 </Card1x1>
             </motion.div>
-            <motion.div className="md:order-4 2xl:order-2">
+            <motion.div className="">
                 <CardTechnologies>
 
                 </CardTechnologies>
             </motion.div>
-            <motion.div className="col-span-2 md:order-5 2xl:order-3" initial="hidden"
-                        animate="visible">
-                <CardMap/>
-            </motion.div>
-            <motion.div className="md:order-8 2xl:order-6 group">
-                <div className="absolute bg-opacity-0 z-30 group-hover:bg-opacity-30 h-full bg-black aspect-square w-[full] sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px] rounded-3xl flex items-center justify-center transition">
-                    <span className="py-2 rounded-full m-2 text-center bg-opacity-0 opacity-0 group-hover:bg-opacity-100 group-hover:opacity-100 bg-white">This service is not unavailable</span>
+            <motion.div className="group relative">
+                <div className="absolute bg-opacity-0 z-30 group-hover:bg-opacity-30 h-full bg-black aspect-square w-full sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px] rounded-3xl flex items-center justify-center transition">
+                    <span className="p-2 rounded-full m-2 text-center bg-opacity-0 opacity-0 group-hover:bg-opacity-100 group-hover:opacity-100 bg-white">This service is not unavailable</span>
                 </div>
-                <Card1x1 className=" border-2 border-[#FEAE07]">
+                <Card1x1 className="absolute border-2 border-[#FEAE07] aspect-square w-full sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]">
                     <span className="absolute text-center opacity-20">Discuss with my AI bot</span>
-                    <div className="flex items-center justify-center md:block w-full h-full p-2 hover:scale-150 transition">
+                    <div className="flex items-center justify-center w-full h-full p-2 hover:scale-150 transition">
                         <div className='opacity-20 flex justify-center items-center h-full'>
                             <div id="ripple-mini">
                                 <Image src={"/img/cards/bg-ai.png"} alt="" height={100} width={100}
@@ -94,12 +97,12 @@ const AboutSectionMini = () => {
                     </div>
                 </Card1x1>
             </motion.div>
-            <motion.div className="md:order-7 2xl:order-8">
+            <motion.div className="">
                 <Card1x1 className=" border-2 border-[#6711C5]">
                     <Image src={"/img/logo.png"} alt={"Logo staaack"} height={45} width={45} className=""></Image>
                 </Card1x1>
             </motion.div>
-            <motion.div className="col-span-2 row-span-2 md:order-6 2xl:order-5" initial="hidden"
+            <motion.div className="col-span-2 row-span-2" initial="hidden"
                         animate="visible">
                 <CardPhoto>
                     <div className="flex rounded-3xl w-30 h-30 bg-black">
@@ -108,9 +111,6 @@ const AboutSectionMini = () => {
                 </CardPhoto>
             </motion.div>
 
-            <motion.div className="col-span-2 md:order-10 2xl:block">
-                <Card2x1/>
-            </motion.div>
             <motion.div className="md:order-11 hidden 2xl:block">
                 <CardSocialNetwork>
                     <div className="flex gap-2 h-full w-full">
@@ -119,11 +119,11 @@ const AboutSectionMini = () => {
                     </div>
                 </CardSocialNetwork>
             </motion.div>
-            <motion.div className="md:order-12 hidden 2xl:block">
+            <motion.div className="">
                 <CardExperience experiences={experiences} />
             </motion.div>
         </motion.div>
     </>;
 }
 
-export default AboutSectionMini;
+export default AboutMini;

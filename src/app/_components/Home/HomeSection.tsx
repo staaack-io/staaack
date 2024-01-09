@@ -1,7 +1,8 @@
 "use client"
 
 import React, {useEffect} from "react";
-import AboutSectionMini from "@/app/_components/Home/AboutSectionMini";
+import AboutMini from "@/app/_components/Home/AboutMini";
+import AboutMiniLayout from "@/app/_components/Home/AboutMiniLayout";
 
 const HomeSection = (props: any) => {
     useEffect(() => {
@@ -33,32 +34,8 @@ const HomeSection = (props: any) => {
                     <div className="rounded-3xl bg-white px-6 py-3 border-2 border-[#29D9FF88]">advice</div>
                 </div>
             </div>
-            {/*<div className="col-span-12 lg:col-span-2 grid grid-cols-2 lg:grid-cols-1 gap-5">*/}
-            {/*    <Card1x1 className="bg-test">*/}
-            {/*        Schedule a call*/}
-            {/*    </Card1x1>*/}
-            {/*    <Card1x1>*/}
-            {/*        <Image className="" src={"/img/document.svg"} alt={"cv"} height={65} width={65}></Image>*/}
-            {/*        My resume*/}
-            {/*    </Card1x1>*/}
-            {/*    <Card1x1>*/}
-            {/*        12 years of XP*/}
-            {/*    </Card1x1>*/}
-            {/*    <Card1x1 className="lg:hidden">*/}
-            {/*        Interview me with my avatar.AI*/}
-            {/*    </Card1x1>*/}
-
-            {/*</div>*/}
             <div className="col-span-12 lg:col-span-8 xl:col-span-7  w-full h-full">
-                {/*<div className="float-right hidden lg:block">*/}
-                {/*    <Card1x1FullRounded>2</Card1x1FullRounded>*/}
-                {/*</div>*/}
-                <AboutSectionMini/>
-                {/*<img src="https://placehold.co/500x600" height={500} width={400} alt="Photo Alexis Détrie"*/}
-                {/*     className="w-full h-full aspect-auto float-left"/>*/}
-                {/*<Spline onLoad={(e) => {*/}
-                {/*    props.onSlineAppLoad(true)*/}
-                {/*}} scene="https://prod.spline.design/J2TLOi0lOEx8lQWc/scene.splinecode"/>*/}
+                <AboutMiniLayout/>
             </div>
         </div>
     </section>;
