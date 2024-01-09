@@ -1,11 +1,57 @@
-import {useState} from "react";
+import React, {useEffect, useState} from "react";
+import {motion} from "framer-motion";
 
+const ExperienceDetails = (props: any) => {
+    return <motion.div
+        initial={{scale: 0}}
+        animate={{rotate: 360, scale: 1}}
+        transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20
+        }}
+        className="flex flex-wrap items-baseline gap-1 h-full pt-4">
+        <span className="text-5xl font-bold text-white items-end">{props.text1}</span>
+        <span className="text-2xl font-bold text-white">{props.text2}</span>
+        <span className="-mt-8 text-large font-bold col-span-2">{props.text3}</span>
+    </motion.div>
+}
 const CardExperience = (props: any) => {
 
     const [colors, setColors] = useState(['bg-cs-yellow-light', 'bg-cs-pink-light', 'bg-cs-blue-light'])
     const [color, setColor] = useState(colors[0])
     const [i, setI] = useState(1)
+    const [toShow, setToShow] = useState(null)
 
+    const onClickChangeXp = () => {
+        let nbValues = colors.length;
+        if (i == nbValues) {
+            setColor(colors[0]);
+            props.experiences.map((experience: any, index: any) => {
+                if (0 == index) {
+                    setToShow(<ExperienceDetails text1={experience.text1} text2={experience.text2} text3={experience.text3}/>)
+                }
+            })
+            setI(1);
+        } else if (i - 1 < nbValues) {
+            setColor(colors[i]);
+            props.experiences.map((experience: any, index: any) => {
+                if (i == index) {
+                    setToShow(<ExperienceDetails text1={experience.text1} text2={experience.text2} text3={experience.text3}/>)
+                }
+            })
+            setI(i + 1);
+        }
+
+    }
+
+    useEffect(() => {
+        props.experiences.map((experience: any, index: any) => {
+            if (index == 0) {
+                setToShow(<ExperienceDetails text1={experience.text1} text2={experience.text2} text3={experience.text3}/>)
+            }
+        })
+    }, [props.experiences]);
 
     return <div className={
         " " + color +
@@ -15,22 +61,22 @@ const CardExperience = (props: any) => {
         " hover:drop-shadow-lg hover:transform-gpu duration-500 " +
         props.className
     }>
-        <button className="h-full w-full" onClick={()=> {
-            let nbValues = colors.length;
-            console.log("----------")
-            console.log("nbValues: " + nbValues)
-            console.log("i: " + i)
-            console.log("color: " + color)
-            console.log("----------")
-            if (i == nbValues ) {
-                setColor(colors[0]);
-                setI(1);
-            } else {
-                setColor(colors[i]);
-                setI( i + 1);
-            }
-        }}></button>
-        {props.children}
+        <motion.div
+            className="flex justify-center items-center h-full w-full"
+            onClick={onClickChangeXp}
+            initial={{scale: 0}}
+            animate={{rotate: 360, scale: 1}}
+            transition={{
+                delay: .5,
+                type: "spring",
+                stiffness: 260,
+                damping: 20
+            }}
+        >{
+            toShow
+        }
+
+        </motion.div>
     </div>
 }
 

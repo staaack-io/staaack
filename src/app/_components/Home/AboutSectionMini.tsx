@@ -36,6 +36,19 @@ const AboutSectionMini = () => {
         }
     };
 
+    const experiences = [{
+        text1: '13',
+        text2: ' years',
+        text3: 'of XP',
+    },{
+        text1: '6',
+        text2: ' years',
+        text3: ' of XP as IT Solution Architect',
+    },{
+        text1: '7',
+        text2: ' years',
+        text3: ' of XP as fullstack java developer',
+    }]
 
     return <>
         <motion.div className="w-full grid gap-5 grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 justify-end"
@@ -104,9 +117,7 @@ const AboutSectionMini = () => {
                 </CardSocialNetwork>
             </motion.div>
             <motion.div className="md:order-12 hidden 2xl:block">
-                <CardExperience>
-                    4 ???
-                </CardExperience>
+                <CardExperience experiences={experiences} />
             </motion.div>
         </motion.div>
     </>;
