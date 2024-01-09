@@ -8,10 +8,11 @@ import CardSchedule from "@/app/_components/Common/CardSchedule";
 import Image from "next/image";
 import CardResume from "@/app/_components/Common/CardResume";
 import {motion, useAnimation} from "framer-motion";
-import ExperienceMap from "@/app/_components/Common/ExperienceMap";
+import Card2x1 from "@/app/_components/Common/ExperienceMap";
 import LottieFile from "@/app/_components/Common/LottieFile";
 import Flag from "@/app/_components/Common/Flag";
 import CardSocialNetwork from "@/app/_components/Common/CardSocialNetwork";
+import CardExperience from "@/app/_components/Common/CardExperience";
 
 const AboutSectionMini = () => {
 
@@ -92,7 +93,7 @@ const AboutSectionMini = () => {
             </motion.div>
 
             <motion.div className="col-span-2 md:order-10 2xl:block">
-                <ExperienceMap/>
+                <Card2x1/>
             </motion.div>
             <motion.div className="md:order-11 hidden 2xl:block">
                 <CardSocialNetwork>
@@ -103,9 +104,9 @@ const AboutSectionMini = () => {
                 </CardSocialNetwork>
             </motion.div>
             <motion.div className="md:order-12 hidden 2xl:block">
-                <Card1x1>
+                <CardExperience>
                     4 ???
-                </Card1x1>
+                </CardExperience>
             </motion.div>
         </motion.div>
     </>;
