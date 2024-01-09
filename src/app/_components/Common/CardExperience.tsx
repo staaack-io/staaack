@@ -12,28 +12,30 @@ const ExperienceDetails = (props: any) => {
                 damping: 20
             }}
             hidden={false}
-            className="flex flex-wrap items-baseline gap-1 h-full pt-4">
+            className="flex flex-col flex-wrap items-baseline h-full pt-4">
+            <div className="flex justify-start items-baseline gap-1">
+                <motion.span initial={{opacity: 0, scale: 0}}
+                             animate={{opacity: 100, scale: 1}}
+                             transition={{
+                                 type: "spring",
+                                 stiffness: 260,
+                                 damping: 20
+                             }} className="text-5xl font-bold text-white items-end">{props.text1}</motion.span>
+                <motion.span initial={{opacity: 0, scale: 0}}
+                             animate={{opacity: 100, scale: 1}}
+                             transition={{
+                                 type: "spring",
+                                 stiffness: 260,
+                                 damping: 20
+                             }} className="text-2xl font-bold text-white">{props.text2}</motion.span>
+            </div>
             <motion.span initial={{opacity: 0, scale: 0}}
                          animate={{opacity: 100, scale: 1}}
                          transition={{
                              type: "spring",
                              stiffness: 260,
                              damping: 20
-                         }} className="text-5xl font-bold text-white items-end">{props.text1}</motion.span>
-            <motion.span initial={{opacity: 0, scale: 0}}
-                         animate={{opacity: 100, scale: 1}}
-                         transition={{
-                             type: "spring",
-                             stiffness: 260,
-                             damping: 20
-                         }} className="text-2xl font-bold text-white">{props.text2}</motion.span>
-            <motion.span initial={{opacity: 0, scale: 0}}
-                         animate={{opacity: 100, scale: 1}}
-                         transition={{
-                             type: "spring",
-                             stiffness: 260,
-                             damping: 20
-                         }} className="-mt-7 text-large font-bold col-span-2">{props.text3}</motion.span>
+                         }} className="p-1 text-base sm:text-2xl sm:font-bold col-span-2">{props.text3}</motion.span>
         </motion.div>
 }
 const CardExperience = (props: any) => {
@@ -64,7 +66,7 @@ const CardExperience = (props: any) => {
         props.className
     } onClick={onClickChangeXp}>
         <motion.div
-            className="flex justify-center items-center  w-full"
+            className="flex justify-center items-center w-full"
             onClick={onClickChangeXp}
             initial={{scale: 0}}
             animate={{rotate: 360, scale: 1}}
