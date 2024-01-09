@@ -60,8 +60,11 @@
   }
 
   .font-color-logo {
-    color: #000;
-    background-image: -webkit-linear-gradient(0deg, #FE05C2 0%, #FF1378 20%, #CD06BC 40%, #672FD0 60%, #29D9FF 100%);
+    //color: #000;
+    //background-image: -webkit-linear-gradient(0deg, #FE05C2 0%, #FF1378 20%, #CD06BC 40%, #672FD0 60%, #29D9FF 100%);
+
+    background: rgb(254,174,7);
+    //background-image: -webkit-linear-gradient(0deg, #FE05C2 0%, #FF1378 20%, #CD06BC 40%, #672FD0 60%, #29D9FF 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -299,27 +299,21 @@ const AboutMiniLayout = () => {
 
     return <>
         <div className="sm:hidden lg:hidden xl:hidden 2xl:hidden">
-            min
             <Layout2AboutMini/>
         </div>
         <div className="hidden sm:block md:hidden lg:hidden xl:hidden 2xl:hidden">
-            sm
             <Layout2AboutMini/>
         </div>
         <div className="hidden sm:hidden md:block lg:hidden xl:hidden 2xl:hidden">
-            md
             <Layout3AboutMini/>
         </div>
         <div className="hidden sm:hidden md:hidden lg:block xl:hidden 2xl:hidden">
-            lg
             <Layout3AboutMini/>
         </div>
         <div className="hidden sm:hidden md:hidden lg:hidden xl:block 2xl:hidden">
-            xl
             <Layout3AboutMini/>
         </div>
         <div className="hidden sm:hidden md:hidden lg:hidden xl:hidden 2xl:block">
-            2xl
             <Layout4AboutMini/>
         </div>
     </>;

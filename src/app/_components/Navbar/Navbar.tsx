@@ -107,7 +107,7 @@ const Navbar = (props: any) => {
                     /
                 </motion.li>
                 <motion.li variants={variantMenu}>
-                    <Link href="#Skills">
+                    <Link href="#skills">
                             <span
                                 className="text-black hover:font-color-logo">
                                 Skills
@@ -175,7 +175,7 @@ const Navbar = (props: any) => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/#Skills" onClick={() => {
+                                    <Link href="/#skills" onClick={() => {
                                         setMobileToggleMenu(false); return true;
                                     }}>
                             <span
