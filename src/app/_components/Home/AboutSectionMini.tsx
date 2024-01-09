@@ -9,6 +9,9 @@ import Image from "next/image";
 import CardResume from "@/app/_components/Common/CardResume";
 import {motion, useAnimation} from "framer-motion";
 import ExperienceMap from "@/app/_components/Common/ExperienceMap";
+import LottieFile from "@/app/_components/Common/LottieFile";
+import Flag from "@/app/_components/Common/Flag";
+import CardSocialNetwork from "@/app/_components/Common/CardSocialNetwork";
 
 const AboutSectionMini = () => {
 
@@ -48,8 +51,8 @@ const AboutSectionMini = () => {
                 </CardResume>
             </motion.div>
             <motion.div className="md:order-3 2xl:order-7">
-                <Card1x1>
-                    XP
+                <Card1x1 className="p-0 bg-white rounded-3xl">
+                    <Flag></Flag>
                 </Card1x1>
             </motion.div>
             <motion.div className="md:order-4 2xl:order-2">
@@ -62,18 +65,20 @@ const AboutSectionMini = () => {
                 <CardMap/>
             </motion.div>
             <motion.div className="md:order-8 2xl:order-6">
-                <Card1x1>
-                    <div className="w-full h-full p-2 flex flex-col items-center justify-center opacity-30">
-                        <Image src={"/img/cards/bg-ai.png"} alt="" height={100} width={100} className="rounded-full"/>
-                        <div className='wrap'>
-                            <button>such ripple</button>
+                <Card1x1 className=" border-2 border-[#FEAE07]">
+                    <div className="w-full h-full p-2">
+                        <div className='wrap opacity-20'>
+                            <div id="ripple-mini">
+                                <Image src={"/img/cards/bg-ai.png"} alt="" height={100} width={100}
+                                       className="rounded-full"/>
+                            </div>
                         </div>
                     </div>
-                    <span className="text-center opacity-100">Discuss with my chat bot</span>
+                    <span className="text-center opacity-20 -mt-5">Discuss with AI bot</span>
                 </Card1x1>
             </motion.div>
             <motion.div className="md:order-7 2xl:order-8">
-                <Card1x1>
+                <Card1x1 className=" border-2 border-[#6711C5]">
                     <Image src={"/img/logo.png"} alt={"Logo staaack"} height={45} width={45} className=""></Image>
                 </Card1x1>
             </motion.div>
@@ -86,13 +91,16 @@ const AboutSectionMini = () => {
                 </CardPhoto>
             </motion.div>
 
-            <motion.div className="col-span-2">
-                <ExperienceMap />
+            <motion.div className="col-span-2 md:order-10 2xl:block">
+                <ExperienceMap/>
             </motion.div>
             <motion.div className="md:order-11 hidden 2xl:block">
-                <Card1x1>
-                    3 ???
-                </Card1x1>
+                <CardSocialNetwork>
+                    <div className="flex gap-2 h-full w-full">
+                        <Image src="/img/logo/github.svg" alt="" height={100} width={100} className="invert"/>
+                        <Image src="/img/logo/linkedin.svg" alt="" height={100} width={100} className="invert inverse-img"/>
+                    </div>
+                </CardSocialNetwork>
             </motion.div>
             <motion.div className="md:order-12 hidden 2xl:block">
                 <Card1x1>
