@@ -80,10 +80,10 @@ const AboutSectionMini = () => {
             </motion.div>
             <motion.div className="md:order-8 2xl:order-6 group">
                 <div className="absolute bg-opacity-0 z-30 group-hover:bg-opacity-30 h-full bg-black aspect-square w-[full] sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px] rounded-3xl flex items-center justify-center transition">
-                    <span className="m-2 text-center bg-opacity-0 opacity-0 group-hover:bg-opacity-100 group-hover:opacity-100 bg-white">This service is not unavailable</span>
+                    <span className="py-2 rounded-full m-2 text-center bg-opacity-0 opacity-0 group-hover:bg-opacity-100 group-hover:opacity-100 bg-white">This service is not unavailable</span>
                 </div>
                 <Card1x1 className=" border-2 border-[#FEAE07]">
-                    <span className="absolute text-center opacity-20">Discuss with AI bot</span>
+                    <span className="absolute text-center opacity-20">Discuss with my AI bot</span>
                     <div className="flex items-center justify-center md:block w-full h-full p-2 hover:scale-150 transition">
                         <div className='opacity-20 flex justify-center items-center h-full'>
                             <div id="ripple-mini">
