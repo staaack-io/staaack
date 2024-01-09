@@ -68,7 +68,7 @@ const Navbar = (props: any) => {
                 await controlLogo.start("visible")
             });
         }
-    }, [props.showAnim]);
+    }, [props.showAnim, controlMenu, controlLogo]);
 
     return <nav className="fixed p-8 h-16 top-0 bg-white md:bg-opacity-30 md:backdrop-blur-2xl w-full z-40">
         <div className="flex justify-between items-center h-full ">

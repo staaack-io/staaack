@@ -25,7 +25,7 @@ const LottieFile = (props: any) => {
             // @ts-ignore
             element.removeEventListener('complete', handleComplete);
         };
-    }, [updateSrc]);
+    }, [updateSrc, props.src]);
 
     return <lottie-player
         ref={ref}

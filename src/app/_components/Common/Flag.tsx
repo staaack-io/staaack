@@ -2,21 +2,21 @@ import React from 'react';
 
 function Flag({
                   colors = [
-                           '#EF2F3E',
-                           '#EF2F3E',
-                           '#EF2F3E',
-                           '#FFFFFF',
-                           '#FFFFFF',
-                           '#FFFFFF',
-                           '#00A4E0',
-                           '#00A4E0',
-                           '#00A4E0'
-                       ],
-                       width = 200,
-                       numOfColumns = 10,
-                       staggeredDelay = 100,
-                       billow = 2,
-                   }) {
+                      '#EF2F3E',
+                      '#EF2F3E',
+                      '#EF2F3E',
+                      '#FFFFFF',
+                      '#FFFFFF',
+                      '#FFFFFF',
+                      '#00A4E0',
+                      '#00A4E0',
+                      '#00A4E0'
+                  ],
+                  width = 200,
+                  numOfColumns = 10,
+                  staggeredDelay = 100,
+                  billow = 2,
+              }) {
 
     const friendlyWidth =
         Math.round(width / numOfColumns) * numOfColumns;
@@ -24,8 +24,8 @@ function Flag({
     const firstColumnDelay = numOfColumns * staggeredDelay * -1;
 
     return (
-        <div className="flag p-5" style={{ width: friendlyWidth }}>
-            {[1,2,3,4,5,6,7,8,9].map((columnIndex) => (
+        <div className="flag p-5" style={{width: friendlyWidth}}>
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((columnIndex) => (
                 <div
                     key={columnIndex}
                     className="column"
