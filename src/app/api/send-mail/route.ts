@@ -47,7 +47,6 @@ export async function POST(request: Request) {
         await sgMail.send(sendGridMail);
         return NextResponse.json({message: 'EMAIL_SENT'}, {status: 200})
     } catch (error) {
-        console.log(error)
         return NextResponse.json({message: 'Error with our mail provider, please try again.'}, {status: 500})
     }
 }

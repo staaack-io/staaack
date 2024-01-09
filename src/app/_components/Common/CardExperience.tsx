@@ -2,7 +2,8 @@ import React, {useEffect, useState} from "react";
 import {motion} from "framer-motion";
 
 const ExperienceDetails = (props: any) => {
-    return <motion.div
+    return props.hidden &&
+        <motion.div
         initial={{scale: 0}}
         animate={{rotate: 360, scale: 1}}
         transition={{
@@ -10,10 +11,29 @@ const ExperienceDetails = (props: any) => {
             stiffness: 260,
             damping: 20
         }}
+        hidden={false}
         className="flex flex-wrap items-baseline gap-1 h-full pt-4">
-        <span className="text-5xl font-bold text-white items-end">{props.text1}</span>
-        <span className="text-2xl font-bold text-white">{props.text2}</span>
-        <span className="-mt-8 text-large font-bold col-span-2">{props.text3}</span>
+        <motion.span         initial={{opacity: 0,scale: 0}}
+                             animate={{opacity: 100, scale: 1}}
+                             transition={{
+                                 type: "spring",
+                                 stiffness: 260,
+                                 damping: 20
+                             }} className="text-5xl font-bold text-white items-end">{props.text1}</motion.span>
+        <motion.span         initial={{opacity: 0,scale: 0}}
+                             animate={{opacity: 100, scale: 1}}
+                             transition={{
+                                 type: "spring",
+                                 stiffness: 260,
+                                 damping: 20
+                             }} className="text-2xl font-bold text-white">{props.text2}</motion.span>
+        <motion.span         initial={{opacity: 0,scale: 0}}
+                             animate={{opacity: 100, scale: 1}}
+                             transition={{
+                                 type: "spring",
+                                 stiffness: 260,
+                                 damping: 20
+                             }} className="-mt-7 text-large font-bold col-span-2">{props.text3}</motion.span>
     </motion.div>
 }
 const CardExperience = (props: any) => {
@@ -21,37 +41,19 @@ const CardExperience = (props: any) => {
     const [colors, setColors] = useState(['bg-cs-yellow-light', 'bg-cs-pink-light', 'bg-cs-blue-light'])
     const [color, setColor] = useState(colors[0])
     const [i, setI] = useState(1)
-    const [toShow, setToShow] = useState(null)
 
     const onClickChangeXp = () => {
         let nbValues = colors.length;
         if (i == nbValues) {
             setColor(colors[0]);
-            props.experiences.map((experience: any, index: any) => {
-                if (0 == index) {
-                    setToShow(<ExperienceDetails text1={experience.text1} text2={experience.text2} text3={experience.text3}/>)
-                }
-            })
             setI(1);
         } else if (i - 1 < nbValues) {
             setColor(colors[i]);
-            props.experiences.map((experience: any, index: any) => {
-                if (i == index) {
-                    setToShow(<ExperienceDetails text1={experience.text1} text2={experience.text2} text3={experience.text3}/>)
-                }
-            })
             setI(i + 1);
         }
 
     }
 
-    useEffect(() => {
-        props.experiences.map((experience: any, index: any) => {
-            if (index == 0) {
-                setToShow(<ExperienceDetails text1={experience.text1} text2={experience.text2} text3={experience.text3}/>)
-            }
-        })
-    }, [props.experiences]);
 
     return <div className={
         " " + color +
@@ -60,7 +62,7 @@ const CardExperience = (props: any) => {
         " aspect-square w-[full] sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]" +
         " hover:drop-shadow-lg hover:transform-gpu duration-500 " +
         props.className
-    }>
+    } onClick={onClickChangeXp}>
         <motion.div
             className="flex justify-center items-center h-full w-full"
             onClick={onClickChangeXp}
@@ -73,7 +75,9 @@ const CardExperience = (props: any) => {
                 damping: 20
             }}
         >{
-            toShow
+            props.experiences.map((experience: any, index: any) => {
+                return <ExperienceDetails key={index} hidden={index == i - 1} text1={experience.text1} text2={experience.text2} text3={experience.text3}/>
+            })
         }
 
         </motion.div>

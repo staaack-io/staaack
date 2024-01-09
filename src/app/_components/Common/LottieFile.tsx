@@ -11,9 +11,7 @@ const LottieFile = (props: any) => {
         const element = ref.current;
         // @ts-ignore
         const handleComplete = event => {
-            console.log(event);
             if (!updateSrc) {
-                console.log("ici");
                 setUpdateSrc(true);
                 // @ts-ignore
                 element.load(props.src);
