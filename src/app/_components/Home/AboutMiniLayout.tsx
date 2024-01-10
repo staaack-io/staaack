@@ -189,10 +189,10 @@ const Layout3AboutMini = (props: any) => {
 
 const container = {
     hidden: { opacity: 1, scale: 1 },
-    delay: 2,
     visible: {
         opacity: 1,
         scale: 1,
+        delay: 1,
         transition: {
             delayChildren: 0.3,
             staggerChildren: 0.2

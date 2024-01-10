@@ -25,7 +25,7 @@ export default function RootLayout({
             <link rel="manifest" href="/site.webmanifest"></link>
             <title>Welcome to staaack</title>
         </head>
-        <body className={inter.className + " debug-screens"}>{children}</body>
+        <body className={inter.className + " debug-screens font-sans"}>{children}</body>
         </html>
     )
 }

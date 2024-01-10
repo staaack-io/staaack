@@ -3,6 +3,7 @@
 import React, {useEffect} from "react";
 import AboutMini from "@/app/_components/Home/AboutMini";
 import AboutMiniLayout from "@/app/_components/Home/AboutMiniLayout";
+import Tag from "@/app/_components/Common/Tag";
 
 const HomeSection = (props: any) => {
     useEffect(() => {
@@ -26,12 +27,12 @@ const HomeSection = (props: any) => {
                     </h2>
                 </div>
                 <div className="flex gap-5 mt-2 flex-wrap">
-                    <div className="rounded-3xl bg-white px-6 py-3 border-2 border-[#FE05C288]">fullstack</div>
-                    <div className="rounded-3xl bg-white px-6 py-3 border-2 border-[#FF137888]">architecture</div>
-                    <div className="rounded-3xl bg-white px-6 py-3 border-2 border-[#C600B088]">devops</div>
-                    <div className="rounded-3xl bg-white px-6 py-3 border-2 border-[#6711C588]">cloud</div>
-                    <div className="rounded-3xl bg-white px-6 py-3 border-2 border-[#54A4FF88]">training</div>
-                    <div className="rounded-3xl bg-white px-6 py-3 border-2 border-[#29D9FF88]">advice</div>
+                    <Tag borderColor="#FE05C288" tagName="fullstack"></Tag>
+                    <Tag borderColor="#FF137888" tagName="architecture"></Tag>
+                    <Tag borderColor="#C600B088" tagName="devops"></Tag>
+                    <Tag borderColor="#6711C588" tagName="cloud"></Tag>
+                    <Tag borderColor="#54A4FF88" tagName="training"></Tag>
+                    <Tag borderColor="#29D9FF88" tagName="advice"></Tag>
                 </div>
             </div>
             <div className="col-span-12 lg:col-span-8 xl:col-span-7  w-full h-full">
