@@ -2,7 +2,7 @@
 import React, {useEffect, useState} from "react";
 import Card1x1 from "@/app/_components/Common/Card1x1";
 import Card1x12 from "@/app/_components/Common/Card1x12";
-import CardPhoto from "@/app/_components/Common/CardPhoto";
+import CardMe from "@/app/_components/Common/CardMe";
 import CardMap from "@/app/_components/Common/CardMap";
 import CardTechnologies from "@/app/_components/Common/CardTechnologies";
 import CardSchedule from "@/app/_components/Common/CardSchedule";
@@ -95,11 +95,9 @@ const Layout2AboutMini = (props: any) => {
             </motion.div>
             <motion.div className="col-span-2 row-span-2" initial="hidden"
                         animate="visible">
-                <CardPhoto>
-                    <div className="flex rounded-3xl w-30 h-30 bg-black">
-                        <Image src="/img/emoj.gif" alt="" height={100} width={100} className="rounded-full"/>
-                    </div>
-                </CardPhoto>
+                <CardMe>
+
+                </CardMe>
             </motion.div>
         </motion.div>
     </>;
@@ -158,11 +156,11 @@ const Layout3AboutMini = (props: any) => {
             </motion.div>
             <motion.div className="col-span-2 row-span-2" initial="hidden"
                         animate="visible">
-                <CardPhoto>
+                <CardMe>
                     <div className="flex rounded-3xl w-30 h-30 bg-black">
                         <Image src="/img/emoj.gif" alt="" height={100} width={100} className="rounded-full"/>
                     </div>
-                </CardPhoto>
+                </CardMe>
             </motion.div>
             <motion.div className="">
                 <Card1x1 className=" border-2 border-[#6711C5]">
@@ -233,11 +231,11 @@ const Layout4AboutMini = (props: any) => {
             </motion.div>
             <motion.div className="col-span-2 row-span-2"
                         variants={item} >
-                <CardPhoto>
+                <CardMe>
                     <div className="flex rounded-3xl w-30 h-30 bg-black">
                         <Image src="/img/emoj.gif" alt="" height={100} width={100} className="rounded-full"/>
                     </div>
-                </CardPhoto>
+                </CardMe>
             </motion.div>
             <motion.div className="" variants={item} >
                     <Flag></Flag>

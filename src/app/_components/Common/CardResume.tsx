@@ -15,7 +15,7 @@ const CardResume = (props: any) => {
                 <LottieFile beforeSrc="lottie/resume-in.json" src="lottie/resume.json"
                             className="w-10 h-10"></LottieFile>
             </div>
-            <div className="pt-2 font-color-logo font-bold text-center">
+            <div className="pt-2 font-color-logo text-center">
                 Download my resume
             </div>
         </div>

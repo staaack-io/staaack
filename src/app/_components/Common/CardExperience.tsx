@@ -20,14 +20,14 @@ const ExperienceDetails = (props: any) => {
                                  type: "spring",
                                  stiffness: 260,
                                  damping: 20
-                             }} className="text-5xl font-bold text-white items-end">{props.text1}</motion.span>
+                             }} className="text-5xl text-white items-end">{props.text1}</motion.span>
                 <motion.span initial={{opacity: 0, scale: 0}}
                              animate={{opacity: 100, scale: 1}}
                              transition={{
                                  type: "spring",
                                  stiffness: 260,
                                  damping: 20
-                             }} className="text-2xl font-bold text-white">{props.text2}</motion.span>
+                             }} className="text-2xl text-white">{props.text2}</motion.span>
             </div>
             <motion.span initial={{opacity: 0, scale: 0}}
                          animate={{opacity: 100, scale: 1}}
@@ -35,7 +35,7 @@ const ExperienceDetails = (props: any) => {
                              type: "spring",
                              stiffness: 260,
                              damping: 20
-                         }} className="p-1 text-base sm:text-2xl sm:font-bold col-span-2">{props.text3}</motion.span>
+                         }} className="p-1 text-base sm:text-2xl col-span-2">{props.text3}</motion.span>
         </motion.div>
 }
 const CardExperience = (props: any) => {

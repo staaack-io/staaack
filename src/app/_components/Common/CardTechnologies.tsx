@@ -5,8 +5,8 @@ const CardTechnologies = (props: any) => {
         " aspect-square w-full sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]" +
         " hover:drop-shadow-lg hover:transform-gpu duration-500"
     }>
-        <div className="flex h-full w-full text-white font-extrabold overflow-auto">
-            <span className="relative text-3xl overflow-hidden">
+        <div className="flex h-full w-full text-white overflow-auto">
+            <span className="relative text-3xl overflow-x-hidden">
                 java js react html css
                 <br/>architecture security
                 <br/>devops

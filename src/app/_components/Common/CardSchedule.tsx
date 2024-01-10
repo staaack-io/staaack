@@ -15,7 +15,7 @@ const CardSchedule = (props: any) => {
                 <LottieFile beforeSrc="lottie/schedule-in.json" src="lottie/schedule.json"
                             className="w-10 h-10"></LottieFile>
             </div>
-            <div className="pt-2 font-color-logo font-bold text-center">
+            <div className="pt-2 font-color-logo text-center">
                 Schedule a call
 
             </div>
