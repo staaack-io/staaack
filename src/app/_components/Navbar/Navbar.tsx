@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import Link from "next/link";
+import a from "next/a";
 import ButtonStylised from "@/app/_components/Home/ButtonStylised";
 import {useEffect, useState} from "react";
 import {motion, useAnimation} from "framer-motion";
@@ -84,57 +84,57 @@ const Navbar = (props: any) => {
             <motion.ul className="hidden lg:flex gap-5 justify-end font-semibold" variants={variantParentMenu}>
                 <motion.li variants={variantMenu}>
                     <div>
-                        <Link href="/#home">
+                        <a href="/#home">
                             <div
                                 className="text-black hover:font-color-logo">
                                 Home
                             </div>
-                        </Link>
+                        </a>
                     </div>
                 </motion.li>
                 <motion.li variants={variantMenu}>
                     /
                 </motion.li>
                 <motion.li variants={variantMenu}>
-                    <Link href="/#services">
+                    <a href="/#services">
                             <span
                                 className="text-black hover:font-color-logo">
                                 Services
                             </span>
-                    </Link>
+                    </a>
                 </motion.li>
                 <motion.li variants={variantMenu}>
                     /
                 </motion.li>
                 <motion.li variants={variantMenu}>
-                    <Link href="/#skills">
+                    <a href="/#skills">
                             <span
                                 className="text-black hover:font-color-logo">
                                 Skills
                             </span>
-                    </Link>
+                    </a>
                 </motion.li>
                 <motion.li variants={variantMenu}>
                     /
                 </motion.li>
                 <motion.li variants={variantMenu}>
-                    <Link href="/#our partners">
+                    <a href="/#our partners">
                             <span
                                 className="text-black hover:font-color-logo">
                                 Partners
                             </span>
-                    </Link>
+                    </a>
                 </motion.li>
                 <motion.li variants={variantMenu}>
                     /
                 </motion.li>
                 <motion.li className="pr-10" variants={variantMenu}>
-                    <Link href="/#contacts">
+                    <a href="/#contacts">
                             <span
                                 className="text-black hover:font-color-logo">
                                 Contact
                             </span>
-                    </Link>
+                    </a>
                 </motion.li>
                 <motion.li variants={variantMenu}>
                     <ButtonStylised text="HIRE ME !"/>
@@ -156,53 +156,53 @@ const Navbar = (props: any) => {
                             <ul className="flex flex-col gap-5 justify-end font-semibold">
                                 <li>
                                     <div>
-                                        <Link href="/#home" onClick={() => {
+                                        <a href="/#home" onClick={() => {
                                             setMobileToggleMenu(false); return true;
                                         }}>
                                                 <span
                                                     className="text-black text-2xl hover:font-color-logo">
                                                     Home
                                                 </span>
-                                        </Link>
+                                        </a>
                                     </div>
                                 </li>
                                 <li>
-                                    <Link href="/#services" onClick={() => {setMobileToggleMenu(false); return true;}}>
+                                    <a href="/#services" onClick={() => {setMobileToggleMenu(false); return true;}}>
                             <span
                                 className="text-black text-2xl hover:font-color-logo">
                                 Services
                             </span>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link href="/#skills" onClick={() => {
+                                    <a href="/#skills" onClick={() => {
                                         setMobileToggleMenu(false); return true;
                                     }}>
                             <span
                                 className="text-black text-2xl hover:font-color-logo">
                                 Skills
                             </span>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link href="/#our partners" onClick={() => {
+                                    <a href="/#our partners" onClick={() => {
                                         setMobileToggleMenu(false); return true;
                                     }}>
                             <span
                                 className="text-black text-2xl hover:font-color-logo">
                                 Partners
                             </span>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li className="pr-10">
-                                    <Link href="/#contacts" onClick={() => {
+                                    <a href="/#contacts" onClick={() => {
                                         setMobileToggleMenu(false); return true;
                                     }}>
                             <span
                                 className="text-black text-2xl hover:font-color-logo">
                                 Contact
                             </span>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li className="pt-6 w-full flex justify-center">
                                     <ButtonStylised text="HIRE ME !"/>

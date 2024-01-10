@@ -23,8 +23,14 @@ function Flag({
 
     const firstColumnDelay = numOfColumns * staggeredDelay * -1;
 
-    return (
-        <div className="flag p-5" style={{width: friendlyWidth}}>
+    return <div className={
+        " rounded-3xl" +
+        " flex flex-col items-center justify-center" +
+        " aspect-square w-full sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]" +
+        " hover:drop-shadow-lg hover:transform-gpu duration-500 "
+    }>
+        <div className="rounded-3xl flag" style={{width: "100%", height: "100%"}}>
+        {/*<div className="flag p-5" style={{width: friendlyWidth}}>*/}
             {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((columnIndex) => (
                 <div
                     key={columnIndex}
@@ -39,7 +45,7 @@ function Flag({
                 />
             ))}
         </div>
-    );
+    </div>
 }
 
 function generateGradientString(colors: any) {

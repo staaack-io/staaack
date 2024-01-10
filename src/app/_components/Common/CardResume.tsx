@@ -1,4 +1,3 @@
-import Image from "next/image";
 import LottieFile from "@/app/_components/Common/LottieFile";
 import React from "react";
 

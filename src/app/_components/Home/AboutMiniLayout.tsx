@@ -8,7 +8,7 @@ import CardTechnologies from "@/app/_components/Common/CardTechnologies";
 import CardSchedule from "@/app/_components/Common/CardSchedule";
 import Image from "next/image";
 import CardResume from "@/app/_components/Common/CardResume";
-import {motion, useAnimation} from "framer-motion";
+import {motion} from "framer-motion";
 import Card2x1 from "@/app/_components/Common/ExperienceMap";
 import Flag from "@/app/_components/Common/Flag";
 import CardSocialNetwork from "@/app/_components/Common/CardSocialNetwork";
@@ -47,9 +47,7 @@ const Layout2AboutMini = (props: any) => {
                 <CardMap/>
             </motion.div>
             <motion.div className="">
-                <Card1x1 className="p-0 bg-white rounded-3xl">
                     <Flag></Flag>
-                </Card1x1>
             </motion.div>
             <motion.div className="">
                 <CardExperience experiences={experiences}/>
@@ -129,9 +127,7 @@ const Layout3AboutMini = (props: any) => {
                 </CardResume>
             </motion.div>
             <motion.div className="">
-                <Card1x1 className="p-0 bg-white rounded-3xl">
                     <Flag></Flag>
-                </Card1x1>
             </motion.div>
             <motion.div className="">
                 <CardTechnologies>
@@ -244,9 +240,7 @@ const Layout4AboutMini = (props: any) => {
                 </CardPhoto>
             </motion.div>
             <motion.div className="" variants={item} >
-                <Card1x1 className="p-0 bg-white rounded-3xl">
                     <Flag></Flag>
-                </Card1x1>
             </motion.div>
             <motion.div className="" variants={item} >
                 <CardExperience experiences={experiences}/>
