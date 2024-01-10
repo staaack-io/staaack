@@ -1,6 +1,5 @@
 "use client"
 import Image from "next/image";
-import a from "next/a";
 import ButtonStylised from "@/app/_components/Home/ButtonStylised";
 import {useEffect, useState} from "react";
 import {motion, useAnimation} from "framer-motion";
