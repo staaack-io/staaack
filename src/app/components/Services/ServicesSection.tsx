@@ -1,6 +1,6 @@
-import ServiceCard from "@/app/_components/Services/ServiceCard";
+import ServiceCard from "@/app/components/Services/ServiceCard";
 import React from "react";
-import Title from "@/app/_components/Common/Title";
+import Title from "@/app/components/Common/Title";
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
 const responsive = {

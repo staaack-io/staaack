@@ -1,18 +1,18 @@
 "use client"
 import React, {useEffect, useState} from "react";
-import Card1x1 from "@/app/_components/Common/Card1x1";
-import Card1x12 from "@/app/_components/Common/Card1x12";
-import CardMe from "@/app/_components/Common/CardMe";
-import CardMap from "@/app/_components/Common/CardMap";
-import CardTechnologies from "@/app/_components/Common/CardTechnologies";
-import CardSchedule from "@/app/_components/Common/CardSchedule";
+import Card1x1 from "@/app/components/Common/Card1x1";
+import Card1x12 from "@/app/components/Common/Card1x12";
+import CardMe from "@/app/components/Common/CardMe";
+import CardMap from "@/app/components/Common/CardMap";
+import CardTechnologies from "@/app/components/Common/CardTechnologies";
+import CardSchedule from "@/app/components/Common/CardSchedule";
 import Image from "next/image";
-import CardResume from "@/app/_components/Common/CardResume";
+import CardResume from "@/app/components/Common/CardResume";
 import {motion} from "framer-motion";
-import Card2x1 from "@/app/_components/Common/ExperienceMap";
-import Flag from "@/app/_components/Common/Flag";
-import CardSocialNetwork from "@/app/_components/Common/CardSocialNetwork";
-import CardExperience from "@/app/_components/Common/CardExperience";
+import Card2x1 from "@/app/components/Common/ExperienceMap";
+import Flag from "@/app/components/Common/Flag";
+import CardSocialNetwork from "@/app/components/Common/CardSocialNetwork";
+import CardExperience from "@/app/components/Common/CardExperience";
 
 const experiences = [{
     text1: '13',

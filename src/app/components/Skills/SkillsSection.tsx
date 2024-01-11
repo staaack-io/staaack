@@ -2,10 +2,10 @@
 import React, {useState} from "react";
 // @ts-ignore
 import skills from "public/data/skills.json";
-import Hexagon from "@/app/_components/Skills/hexagon/Hexagon";
+import Hexagon from "@/app/components/Skills/hexagon/Hexagon";
 import Image from "next/image";
-import Title from "@/app/_components/Common/Title";
-import SkillChoice from "@/app/_components/Skills/hexagon/SkillChoice";
+import Title from "@/app/components/Common/Title";
+import SkillChoice from "@/app/components/Skills/hexagon/SkillChoice";
 
 
 const SkillsSection = () => {

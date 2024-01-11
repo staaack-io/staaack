@@ -1,8 +1,8 @@
 "use client"
 
 import React, {useEffect} from "react";
-import AboutMiniLayout from "@/app/_components/Home/AboutMiniLayout";
-import Tag from "@/app/_components/Common/Tag";
+import AboutMiniLayout from "@/app/components/Home/AboutMiniLayout";
+import Tag from "@/app/components/Common/Tag";
 import {motion} from "framer-motion";
 
 const HomeSection = (props: any) => {

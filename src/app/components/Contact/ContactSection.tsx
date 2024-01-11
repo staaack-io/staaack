@@ -1,6 +1,6 @@
 "use client"
 import React, {useState} from "react";
-import Title from "@/app/_components/Common/Title";
+import Title from "@/app/components/Common/Title";
 import {useForm} from "react-hook-form";
 
 const ContactSection = (props: any) => {

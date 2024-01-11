@@ -2,9 +2,9 @@
 import React, {useState} from "react";
 // @ts-ignore
 import partners from "public/data/partners.json";
-import PartnerCard from "@/app/_components/Partners/PartnerCard";
-import PartnerChoice from "@/app/_components/Partners/PartnerChoice";
-import Title from "@/app/_components/Common/Title";
+import PartnerCard from "@/app/components/Partners/PartnerCard";
+import PartnerChoice from "@/app/components/Partners/PartnerChoice";
+import Title from "@/app/components/Common/Title";
 
 const PartnersSection = (props: any) => {
 

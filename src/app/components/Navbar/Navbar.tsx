@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import ButtonStylised from "@/app/_components/Home/ButtonStylised";
+import ButtonStylised from "@/app/components/Home/ButtonStylised";
 import {useEffect, useState} from "react";
 import {motion, useAnimation} from "framer-motion";
 import {Sling as Hamburger} from 'hamburger-react'
