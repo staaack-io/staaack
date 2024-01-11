@@ -4,7 +4,7 @@ type HomeProps = {
   params: { locale: string };
 };
 
-export default async function Nested({ params: { locale } }: HomeProps) {
+export default function Nested({ params: { locale } }: HomeProps) {
   const intl = await getIntl(locale);
   return (
     <div >

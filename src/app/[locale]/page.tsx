@@ -1,58 +1,45 @@
-import { Metadata, ResolvingMetadata } from "next";
-
-import { getIntl } from "../../lib/intl";
-
-type RouteProps = {
-  params: { locale: string };
-  searchParams: { [key: string]: string | string[] | undefined };
-};
-
-export async function generateMetadata(
-  props: RouteProps,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
-  const intl = await getIntl(props.params.locale);
-
-  return {
-    title: intl.formatMessage({ id: "page.home.head.title" }),
-    description: intl.formatMessage({
-      id: "page.home.head.meta.description",
-    }),
-    alternates: {
-      canonical: "https://example.com",
-      languages: {
-        ar: "http://example.com/ar",
-        en: "http://example.com",
-        fr: "http://example.com/fr",
-        "nl-NL": "http://example.com/nl-NL",
-        "x-default": "http://example.com",
-      },
-    },
-  };
-}
+"use client"
+import {useEffect, useState} from "react";
+import Navbar from "@/app/components/Navbar/Navbar";
+import HomeSection from "@/app/components/Home/HomeSection";
+import ServicesSection from "@/app/components/Services/ServicesSection";
+import SkillsSection from "@/app/components/Skills/SkillsSection";
+import PartnersSection from "@/app/components/Partners/PartnersSection";
+import ContactSection from "@/app/components/Contact/ContactSection";
+import Footer from "@/app/components/Footer/Footer";
 
 type HomeProps = {
-  params: { locale: string };
+    params: { locale: string };
 };
+export default function Home({ params: { locale } }: HomeProps) {
+    const [endAnimationIsFinished, setEndAnimationIsFinished] = useState(false)
+    const [loadingScreenAnimationIsFinished, setLoadingScreenLoadingScreenAnimationIsFinished] = useState(false)
+    const [splineIsLoaded, setSplineIsLoaded] = useState(false)
+    const [loadingScreenLaunchStopAnimation, setloadingScreenLaunchStopAnimation] = useState(false)
 
-export default async function Home({ params: { locale } }: HomeProps) {
-  const intl = await getIntl(locale);
+    useEffect(() => {
+        if (loadingScreenAnimationIsFinished && splineIsLoaded) {
+            setloadingScreenLaunchStopAnimation(true)
+        }
+    }, [loadingScreenAnimationIsFinished, splineIsLoaded]);
 
-  return (
-    <div >
-      <main>
-        <h1>
-          {intl.formatMessage(
-            { id: "page.home.title" },
-            // @ts-ignore
-            { b: (chunks) => <b key="bold">{chunks}</b> }
-          )}
-        </h1>
-
-        <p >
-          {intl.formatMessage({ id: "page.home.description" })}
-        </p>
-      </main>
-    </div>
-  );
+    return (
+        <div className="flex flex-col bg-[#EDEEF0]">
+            <div className="flex flex-row">
+                <div className={endAnimationIsFinished ? "w-full" : "w-full"}>
+                    <Navbar showAnim={splineIsLoaded}/>
+                    <HomeSection onSlineAppLoad={() => {
+                        setTimeout(function () {
+                            setSplineIsLoaded(true)
+                        }, 1000);
+                    }}/>
+                    <ServicesSection></ServicesSection>
+                    <SkillsSection/>
+                    <PartnersSection/>
+                    <ContactSection/>
+                    <Footer/>
+                </div>
+            </div>
+        </div>
+    )
 }
