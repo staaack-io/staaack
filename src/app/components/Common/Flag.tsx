@@ -30,7 +30,7 @@ function Flag({
         " hover:drop-shadow-lg hover:transform-gpu duration-500 "
     }>
         <div className="rounded-3xl flag" style={{width: "100%", height: "100%"}}>
-        {/*<div className="flag p-5" style={{width: friendlyWidth}}>*/}
+            {/*<div className="flag p-5" style={{width: friendlyWidth}}>*/}
             {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((columnIndex) => (
                 <div
                     key={columnIndex}

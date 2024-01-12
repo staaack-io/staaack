@@ -11,7 +11,7 @@ import Footer from "@/app/components/Footer/Footer";
 type HomeProps = {
     params: { locale: string };
 };
-export default function Home({ params: { locale } }: HomeProps) {
+export default function Home({params: {locale}}: HomeProps) {
     const [endAnimationIsFinished, setEndAnimationIsFinished] = useState(false)
     const [loadingScreenAnimationIsFinished, setLoadingScreenLoadingScreenAnimationIsFinished] = useState(false)
     const [splineIsLoaded, setSplineIsLoaded] = useState(false)

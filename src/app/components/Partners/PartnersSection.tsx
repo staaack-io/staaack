@@ -20,10 +20,12 @@ const PartnersSection = (props: any) => {
                 setSelectedCategory(category);
             }}/>
             <div className="-z-10 flex justify-center w-full p-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-5">
                     {
                         listPartners.map((partner: any, index: any) => {
-                            return <PartnerCard key={index} name={partner.name} image={partner.image} city={partner.city} category={partner.category} selectedSectionPartner={selectedCategory}/>;
+                            return <PartnerCard key={index} name={partner.name} image={partner.image}
+                                                city={partner.city} category={partner.category}
+                                                selectedSectionPartner={selectedCategory}/>;
                         })
                     }
                 </div>

@@ -3,39 +3,40 @@ import React from "react";
 import Title from "@/app/components/Common/Title";
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
+
 const responsive = {
     desktop3Xl: {
-        breakpoint: { max: 100000, min: 1601 },
+        breakpoint: {max: 100000, min: 1601},
         items: 4,
         paritialVisibilityGutter: 60
     },
     desktop2Xl: {
-        breakpoint: { max: 1600, min: 1537 },
+        breakpoint: {max: 1600, min: 1537},
         items: 3,
         paritialVisibilityGutter: 60
     },
     desktopXl: {
-        breakpoint: { max: 1536, min: 1281 },
+        breakpoint: {max: 1536, min: 1281},
         items: 3,
         paritialVisibilityGutter: 60
     },
     desktopL: {
-        breakpoint: { max: 1280, min: 1025 },
+        breakpoint: {max: 1280, min: 1025},
         items: 2,
         paritialVisibilityGutter: 60
     },
     desktop: {
-        breakpoint: { max: 1024, min: 769 },
+        breakpoint: {max: 1024, min: 769},
         items: 2,
         paritialVisibilityGutter: 60
     },
     tablet: {
-        breakpoint: { max: 768, min: 641 },
+        breakpoint: {max: 768, min: 641},
         items: 1,
         paritialVisibilityGutter: 50
     },
     mobile: {
-        breakpoint: { max: 640, min: 0 },
+        breakpoint: {max: 640, min: 0},
         items: 1,
         paritialVisibilityGutter: 0
     }
@@ -110,8 +111,8 @@ const ServiceSection = () => {
                     listServices.map((service: any, index: any) => {
                         // eslint-disable-next-line react/jsx-key
                         return <ServiceCard key={index} icon={service.icon} serviceName={service.serviceName}>
-                                {service.content}
-                            </ServiceCard>
+                            {service.content}
+                        </ServiceCard>
                     })
                 }
             </Carousel>

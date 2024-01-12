@@ -10,7 +10,8 @@ Welcome to the landing page of staaack, have fun!
 - [Contributions](#contributions)
 - [License](#license)
 - [Contact](#contact)
-- 
+-
+
 ## Build Status on GitHub Actions
 
 [![Build Status](https://github.com/your-username/staaack/workflows/CI/badge.svg)](https://github.com/adetrie/staaack/actions)
@@ -21,7 +22,8 @@ Welcome to the landing page of staaack, have fun!
 
 ## Installation
 
-Before you can run the project locally, make sure you have the latest version of Node.js installed. Then follow these steps:
+Before you can run the project locally, make sure you have the latest version of Node.js installed. Then follow these
+steps:
 
 1. Clone this repository with `git clone https://github.com/your-username/staaack.git`
 2. Navigate to the project directory with `cd staaack`

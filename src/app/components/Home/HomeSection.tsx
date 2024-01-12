@@ -7,7 +7,7 @@ import {motion} from "framer-motion";
 
 const HomeSection = (props: any) => {
     const container = {
-        hidden: { opacity: 1, scale: 1 },
+        hidden: {opacity: 1, scale: 1},
         visible: {
             opacity: 1,
             scale: 1,
@@ -20,7 +20,7 @@ const HomeSection = (props: any) => {
     }
 
     const itemStaaack = {
-        hidden: { y: -20, opacity: 1 },
+        hidden: {y: -20, opacity: 1},
         visible: {
             x: 0,
             opacity: 1
@@ -28,7 +28,7 @@ const HomeSection = (props: any) => {
     }
 
     const itemP = {
-        hidden: { x: -20, opacity: 1 },
+        hidden: {x: -20, opacity: 1},
         visible: {
             x: 0,
             opacity: 1
@@ -54,7 +54,8 @@ const HomeSection = (props: any) => {
                         from conception to execution
                     </h2>
                 </motion.div>
-                <motion.div className="flex gap-5 mt-2 flex-wrap" variants={container} initial="hidden" animate="visible">
+                <motion.div className="flex gap-5 mt-2 flex-wrap" variants={container} initial="hidden"
+                            animate="visible">
                     <Tag borderColor="#FE05C288" tagName="fullstack"></Tag>
                     <Tag borderColor="#FF137888" tagName="architecture"></Tag>
                     <Tag borderColor="#C600B088" tagName="devops"></Tag>

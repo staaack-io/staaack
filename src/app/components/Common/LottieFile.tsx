@@ -34,7 +34,7 @@ const LottieFile = (props: any) => {
         mode="bounce"
         src={props.beforeSrc}
         className={props.className + ""}
-        onClick={()=> {
+        onClick={() => {
             // @ts-ignore
             ref.current.load(props.src);
             props.onClick();

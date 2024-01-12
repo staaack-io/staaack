@@ -26,13 +26,13 @@ export async function POST(request: Request) {
 
     sgMail.setApiKey(String(process.env.SENDGRID_API_KEY));
 
-    const mailContent: MailContent  = {
+    const mailContent: MailContent = {
         type: "", value: ""
 
     }
 
     // @ts-ignore
-    const sendGridMail : MailDataRequired = {
+    const sendGridMail: MailDataRequired = {
         to: 'alexis@staaack.io',
         from: 'alexis@staaack.io',
         templateId: process.env.SENDGRID_TEMPLATE_ID,

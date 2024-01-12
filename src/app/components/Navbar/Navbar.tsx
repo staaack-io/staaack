@@ -72,7 +72,7 @@ const Navbar = (props: any) => {
     return <nav className="fixed p-8 h-16 top-0 bg-white md:bg-opacity-30 md:backdrop-blur-2xl w-full z-40">
         <div className="flex justify-between items-center h-full ">
             <motion.div className="flex gap-5 content-center items-center" variants={variantLogo}
-                        whileHover={{ scale: 1.2, rotate: 360 }}
+                        whileHover={{scale: 1.2, rotate: 360}}
                         whileTap={{
                             scale: 0.8,
                             rotate: -90,
@@ -156,7 +156,8 @@ const Navbar = (props: any) => {
                                 <li>
                                     <div>
                                         <a href="/#home" onClick={() => {
-                                            setMobileToggleMenu(false); return true;
+                                            setMobileToggleMenu(false);
+                                            return true;
                                         }}>
                                                 <span
                                                     className="text-black text-2xl hover:font-color-logo">
@@ -166,7 +167,10 @@ const Navbar = (props: any) => {
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="/#services" onClick={() => {setMobileToggleMenu(false); return true;}}>
+                                    <a href="/#services" onClick={() => {
+                                        setMobileToggleMenu(false);
+                                        return true;
+                                    }}>
                             <span
                                 className="text-black text-2xl hover:font-color-logo">
                                 Services
@@ -175,7 +179,8 @@ const Navbar = (props: any) => {
                                 </li>
                                 <li>
                                     <a href="/#skills" onClick={() => {
-                                        setMobileToggleMenu(false); return true;
+                                        setMobileToggleMenu(false);
+                                        return true;
                                     }}>
                             <span
                                 className="text-black text-2xl hover:font-color-logo">
@@ -185,7 +190,8 @@ const Navbar = (props: any) => {
                                 </li>
                                 <li>
                                     <a href="/#our partners" onClick={() => {
-                                        setMobileToggleMenu(false); return true;
+                                        setMobileToggleMenu(false);
+                                        return true;
                                     }}>
                             <span
                                 className="text-black text-2xl hover:font-color-logo">
@@ -195,7 +201,8 @@ const Navbar = (props: any) => {
                                 </li>
                                 <li className="pr-10">
                                     <a href="/#contacts" onClick={() => {
-                                        setMobileToggleMenu(false); return true;
+                                        setMobileToggleMenu(false);
+                                        return true;
                                     }}>
                             <span
                                 className="text-black text-2xl hover:font-color-logo">

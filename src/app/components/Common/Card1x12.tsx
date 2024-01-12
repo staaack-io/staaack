@@ -1,4 +1,3 @@
-
 const Card1x12 = (props: any) => {
     return <div className={
         " bg-white rounded-3xl " +

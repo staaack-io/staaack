@@ -38,7 +38,7 @@ const LoadingScreen = (props: any) => {
             y: 50,
             opacity: 0,
             transition: {
-                y: { stiffness: 1000 }
+                y: {stiffness: 1000}
             }
         }
     };
@@ -47,7 +47,7 @@ const LoadingScreen = (props: any) => {
             y: 50,
             opacity: 0,
             transition: {
-                y: { stiffness: 1000 }
+                y: {stiffness: 1000}
             }
         },
     };
@@ -68,7 +68,7 @@ const LoadingScreen = (props: any) => {
             y: 50,
             opacity: 0,
             transition: {
-                y: { stiffness: 1000 }
+                y: {stiffness: 1000}
             }
         },
     };
@@ -81,7 +81,7 @@ const LoadingScreen = (props: any) => {
     };
 
     useEffect(() => {
-        if(props.launchStopAnimation){
+        if (props.launchStopAnimation) {
             props.endAnimationIsFinished()
             let promise = new Promise(async (resolve, reject) => {
                 await controlTitle.start("end");
@@ -106,7 +106,8 @@ const LoadingScreen = (props: any) => {
         }
     }, []);
     return (!hideLoader &&
-        <motion.div id="loader" variants={variantLoader} animate={controlLoader} className="absolute w-full h-screen z-50 bg-white">
+        <motion.div id="loader" variants={variantLoader} animate={controlLoader}
+                    className="absolute w-full h-screen z-50 bg-white">
             <div className="flex flex-col items-center justify-center h-full">
                 <motion.div variants={variantLogo} animate={controlLogo} initial="hidden">
                     <Image id="loader-image" src="/img/logo.png" alt="Logo staaack" height={80}
