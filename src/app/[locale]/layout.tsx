@@ -8,7 +8,6 @@ const inter = Inter({subsets: ['latin']})
 
 type RouteProps = {
     params: { locale: string };
-    searchParams: { [key: string]: string | string[] | undefined };
 };
 
 export async function generateMetadata(
