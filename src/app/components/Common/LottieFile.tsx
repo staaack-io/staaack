@@ -37,6 +37,7 @@ const LottieFile = (props: any) => {
         onClick={()=> {
             // @ts-ignore
             ref.current.load(props.src);
+            props.onClick();
         }}
     ></lottie-player>
 }

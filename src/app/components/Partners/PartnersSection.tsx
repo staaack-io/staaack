@@ -11,8 +11,8 @@ const PartnersSection = (props: any) => {
     const [listPartners, setListPartners] = useState(partners);
     const [selectedCategory, setSelectedCategory] = useState("All");
 
-    return <section className="w-full cursor-pointer flex flex-col items-center">
-        <div className="flex items-center mb-10 w-full">
+    return <section className="w-full cursor-pointer flex flex-col items-center pt-24">
+        <div className="flex items-center w-full">
             <Title title="Our Partners" subtitle="All the companies for which I have worked."/>
         </div>
         <div className="default-size">

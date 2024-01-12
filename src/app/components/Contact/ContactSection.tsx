@@ -34,9 +34,9 @@ const ContactSection = (props: any) => {
 
     }
 
-    return <div>
+    return <div className="pt-10">
 
-        <div className="flex items-center mb-10 w-full">
+        <div className="flex items-center w-full">
             <Title title="Contacts" subtitle=""/>
         </div>
         <div className="grid grid-cols-1 justify-center items-center w-full p-8">

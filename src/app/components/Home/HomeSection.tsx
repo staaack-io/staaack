@@ -41,7 +41,7 @@ const HomeSection = (props: any) => {
     }, [props.launchStopAnimation]);
 
 
-    return <section id="home" className="bg-[#EDEEF0] pt-32 p-8 flex justify-center items-center">
+    return <section id="home" className="bg-[#EDEEF0] pt-14 flex justify-center items-center">
         <div className="absolute h-full w-full"></div>
         <div className="grid gap-5 gap-y-12 z-0 grid-cols-12 default-size pt-24 lg:pt-0">
             <div className="col-span-12 lg:col-span-4 xl:col-span-5 flex flex-col justify-center gap-5">

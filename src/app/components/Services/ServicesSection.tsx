@@ -93,9 +93,9 @@ const listServices =
             "                        with your business goals."
     }];
 const ServiceSection = () => {
-    return <section className="flex flex-col pt-10 min-h-screen w-full">
+    return <section className="flex flex-col pt-24 w-full">
         <Title title="Services" subtitle="I provide a range of cross-functional services to your IT landscape."/>
-        <div className="w-full h-full p-10">
+        <div className="w-full h-full pl-10 pr-10">
             <Carousel className=""
                       swipeable={true}
                       draggable={true}
