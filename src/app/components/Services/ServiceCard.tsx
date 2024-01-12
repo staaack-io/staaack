@@ -13,10 +13,8 @@ const ServiceCard = (props: any) => {
                 <Image className="pic-services-color" src={props.icon} alt={props.serviceName} width={100}
                        height={100}/></div>
         </div>
-        <div
-            className="text-3xl sm:text-3xl md:text-4xl sm:text-center font-bold text-transparent
-                     bg-gradient-to-r from-pink-600 via-purple-700 to-blue-400
-                      inline-block bg-clip-text">{props.serviceName}
+        <div>
+        <span className="font-color-logo font-bold text-3xl">{props.serviceName}</span>
         </div>
         <div className="col-span-2 sm:col-span-0 pt-8 w-full">
             {parse(props.children)}

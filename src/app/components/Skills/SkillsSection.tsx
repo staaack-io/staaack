@@ -13,7 +13,7 @@ const SkillsSection = () => {
 
     return <section className="flex flex-col justify-center items-center pt-10">
         <div className="flex items-center w-full">
-            <Title title="Skills" subtitle="All technologies I have to chance to work"/>
+            <Title title="Skills" subtitle="All the technologies I have had the chance to work with."/>
         </div>
         <div className="default-size">
 

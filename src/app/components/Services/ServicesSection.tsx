@@ -45,49 +45,49 @@ const listServices =
     [{
         serviceName: "Developement",
         icon: "/img/develop.svg",
-        content: "Java/Spring/JEE: Crafting robust and scalable solutions" +
+        content: "<b>Java/Spring/JEE</b>: Crafting robust and scalable solutions" +
             "                        tailored" +
             "                        to your specific needs." +
             "                        <br/><br/>" +
-            "                        HTML/CSS/JS/React: Designing modern, responsive user" +
+            "                        <b>HTML/CSS/JS/React</b>: Designing modern, responsive user" +
             "                        interfaces" +
             "                        for an optimal user experience."
     }, {
         serviceName: "Architecture",
         icon: "/img/architecture.svg",
-        content: "Implementing personalized solutions to efficiently" +
+        content: "<b>Implementing personalized solutions</b> to efficiently" +
             "                        integrate" +
             "                        technology into your information system." +
             "                        <br/><br/>" +
-            "                        Definition and design of optimal architectures for Java/Spring applications," +
-            "                        ensuring performance and scalability."
+            "                        <b>Definition and design</b> of optimal architectures for Java/Spring applications," +
+            "                        ensuring <b>performance</b> and <b>scalability</b>."
     }, {
         serviceName: "Cloud",
         icon: "/img/cloud.svg",
-        content: "Cloud Deployment: Maximizing your business flexibility and" +
+        content: "<b>Cloud Deployment</b>: Maximizing your business flexibility and" +
             "                        scalability with our tailored cloud solutions." +
             "                        <br/><br/>" +
-            "                        Migration: Smoothly transition your systems to the" +
+            "                        <b>Migration</b>: Smoothly transition your systems to the" +
             "                        cloud, minimizing disruptions and costs."
     }, {
         serviceName: "Dev(Sec)Ops",
         icon: "/img/devops.svg",
         content: "                        Automate your workflows with advanced " +
-            "DevOps solutions for quick and reliable application and" +
-            "                        infrastructure" +
-            "                        deployment."
+            "DevOps solutions for <b>quick and reliable</b> application and" +
+            "                        <b>infrastructure" +
+            "                        deployment</b>."
     }, {
         serviceName: "Training",
         icon: "/img/training.svg",
-        content: "Comprehensive training on current technologies adapted to" +
+        content: "<b>Comprehensive training</b> on current technologies adapted to" +
             "                        your" +
             "                        needs." +
             "                        <br/><br/>" +
-            "                        Specialization in Java development, CI/CD methodologies, DevOps, best practices and more."
+            "                        Specialization in <b>Java development, CI/CD methodologies, DevOps, best practices</b> and more."
     }, {
         serviceName: "Advisory",
         icon: "/img/advisor.svg",
-        content: "Proposing innovative technological solutions to address your challenges." +
+        content: "<b>Proposing innovative technological solutions</b> to address your challenges." +
             "                        <br/><br/>" +
             "                        Impact analysis and strategic recommendations to align" +
             "                        technology" +

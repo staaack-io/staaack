@@ -33,7 +33,7 @@ const LottieFile = (props: any) => {
         autoplay
         mode="bounce"
         src={props.beforeSrc}
-        className={props.className + ""}
+        className={props.className + " cursor-pointer"}
         onClick={() => {
             // @ts-ignore
             ref.current.load(props.src);

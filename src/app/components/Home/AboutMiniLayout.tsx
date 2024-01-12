@@ -1,7 +1,7 @@
 "use client"
 import React, {useEffect, useState} from "react";
 import Card1x1 from "@/app/components/Common/Card1x1";
-import Card1x12 from "@/app/components/Common/Card1x12";
+import CardAI from "@/app/components/Common/CardAI";
 import CardMe from "@/app/components/Common/CardMe";
 import CardMap from "@/app/components/Common/CardMap";
 import CardTechnologies from "@/app/components/Common/CardTechnologies";
@@ -9,7 +9,7 @@ import CardSchedule from "@/app/components/Common/CardSchedule";
 import Image from "next/image";
 import CardResume from "@/app/components/Common/CardResume";
 import {motion} from "framer-motion";
-import Card2x1 from "@/app/components/Common/ExperienceMap";
+import Card2x1 from "@/app/components/Common/CardImages";
 import Flag from "@/app/components/Common/Flag";
 import CardSocialNetwork from "@/app/components/Common/CardSocialNetwork";
 import CardExperience from "@/app/components/Common/CardExperience";
@@ -64,18 +64,8 @@ const Layout2AboutMini = (props: any) => {
                     <span
                         className="p-2 rounded-full m-2 text-center bg-opacity-0 opacity-0 group-hover:bg-opacity-100 group-hover:opacity-100 bg-white">This service is not unavailable</span>
                 </div>
-                <Card1x12
-                    className="absolute border-2 border-[#FEAE07] aspect-square w-full sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]">
-                    <span className="absolute text-center opacity-20">Discuss with my AI bot</span>
-                    <div className="flex items-center justify-center w-full h-full hover:scale-150 transition">
-                        <div className='opacity-20 flex justify-center items-center h-full'>
-                            <div id="ripple-mini">
-                                <Image src={"/img/cards/bg-ai.png"} alt="" height={100} width={100}
-                                       className="rounded-full"/>
-                            </div>
-                        </div>
-                    </div>
-                </Card1x12>
+                <CardAI
+                    className="absolute border-2 border-[#FEAE07] aspect-square w-full sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]" />
             </motion.div>
             <motion.div className="">
                 <Card1x1 className=" border-2 border-[#6711C5]">
@@ -83,13 +73,7 @@ const Layout2AboutMini = (props: any) => {
                 </Card1x1>
             </motion.div>
             <motion.div className="">
-                <CardSocialNetwork>
-                    <div className="flex gap-2 h-full w-full">
-                        <Image src="/img/logo/github.svg" alt="" height={100} width={100} className="invert"/>
-                        <Image src="/img/logo/linkedin.svg" alt="" height={100} width={100}
-                               className="invert inverse-img"/>
-                    </div>
-                </CardSocialNetwork>
+                <CardSocialNetwork />
             </motion.div>
             <motion.div className="col-span-2 row-span-2" initial="hidden" animate="visible">
                 <CardMe/>
@@ -160,13 +144,7 @@ const Layout3AboutMini = (props: any) => {
             </motion.div>
 
             <motion.div className="md:order-11 hidden 2xl:block">
-                <CardSocialNetwork>
-                    <div className="flex gap-2 h-full w-full">
-                        <Image src="/img/logo/github.svg" alt="" height={100} width={100} className="invert"/>
-                        <Image src="/img/logo/linkedin.svg" alt="" height={100} width={100}
-                               className="invert inverse-img"/>
-                    </div>
-                </CardSocialNetwork>
+                <CardSocialNetwork />
             </motion.div>
         </motion.div>
     </>;
@@ -212,13 +190,7 @@ const Layout4AboutMini = (props: any) => {
                 <CardMap/>
             </motion.div>
             <motion.div className="" variants={item}>
-                <CardSocialNetwork>
-                    <div className="flex gap-2 h-full w-full">
-                        <Image src="/img/logo/github.svg" alt="" height={100} width={100} className="invert"/>
-                        <Image src="/img/logo/linkedin.svg" alt="" height={100} width={100}
-                               className="invert inverse-img"/>
-                    </div>
-                </CardSocialNetwork>
+                <CardSocialNetwork />
             </motion.div>
             <motion.div className="col-span-2 row-span-2"
                         variants={item}>

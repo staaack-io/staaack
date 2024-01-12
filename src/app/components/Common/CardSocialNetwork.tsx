@@ -1,3 +1,6 @@
+import React from "react";
+import Image from "next/image";
+
 const CardSocialNetwork = (props: any) => {
     return <div className={
         " bg-black rounded-3xl p-2" +
@@ -6,7 +9,16 @@ const CardSocialNetwork = (props: any) => {
         " hover:drop-shadow-lg hover:transform-gpu duration-500 " +
         props.className
     }>
-        {props.children}
+        <div className="flex justify-items-center items-center gap-2">
+            <Image src="/img/logo/github.svg" alt="github logo" height={80} width={80} className="invert cursor-pointer" onClick={() => {
+                window.open("https://github.com/adetrie");
+            }}/>
+            <Image src="/img/logo/linkedin.svg" alt="linkedin logo" height={80} width={80}
+                   className="invert inverse-img cursor-pointer" onClick={() => {
+                window.open("https://www.linkedin.com/in/detriealexis/");
+            }}/>
+        </div>
+
     </div>
 }
 
