@@ -12,7 +12,7 @@ const CardSchedule = (props: any) => {
     }>
         <div className="flex flex-col items-center justify-center w-full h-full">
             <div className="w-14 h-14 sm:w-28 sm:h-28">
-                <LottieFile beforeSrc="lottie/schedule-in.json" src="lottie/schedule.json" onClick={()=> {
+                <LottieFile beforeSrc="/lottie/schedule-in.json" src="/lottie/schedule.json" onClick={()=> {
                     window.open("https://meetings-eu1.hubspot.com/alexis-detrie");
                 }}
                             className="w-10 h-10"></LottieFile>
