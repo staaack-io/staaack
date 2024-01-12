@@ -1,7 +1,7 @@
 "use client"
 import React, {useState} from "react";
 // @ts-ignore
-import skills from "public/data/skills.json";
+import skills from "/public/data/skills.json";
 import Hexagon from "@/app/components/Skills/hexagon/Hexagon";
 import Image from "next/image";
 import Title from "@/app/components/Common/Title";

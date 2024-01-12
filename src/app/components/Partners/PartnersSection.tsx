@@ -1,7 +1,7 @@
 "use client"
 import React, {useState} from "react";
 // @ts-ignore
-import partners from "public/data/partners.json";
+import partners from "/public/data/partners.json";
 import PartnerCard from "@/app/components/Partners/PartnerCard";
 import PartnerChoice from "@/app/components/Partners/PartnerChoice";
 import Title from "@/app/components/Common/Title";
