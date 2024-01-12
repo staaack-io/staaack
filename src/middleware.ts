@@ -24,6 +24,7 @@ export function middleware(request: NextRequest) {
   let response;
   let nextLocale;
 
+
   const { locales, defaultLocale } = i18n;
 
   const { basePath, pathname } = request.nextUrl;
@@ -49,7 +50,18 @@ export function middleware(request: NextRequest) {
 
     const locale = isFirstVisit ? getLocale(request, i18n) : defaultLocale;
 
-    let newPath = `/${locale}${pathname}`;
+    let newPath = pathname
+    if(!(pathname.includes(".woff2")
+        || !pathname.includes(".eot")
+        || !pathname.includes(".ttf")
+        || !pathname.includes(".woff")
+        || !pathname.includes(".png")
+        || !pathname.includes(".gif")
+        || !pathname.includes(".xml")
+        || !pathname.includes(".json"))
+    || pathname === '/')
+      newPath = `/${locale}${pathname}`;
+
     if (request.nextUrl.search) newPath += request.nextUrl.search;
 
     const url = basePath + newPath;
