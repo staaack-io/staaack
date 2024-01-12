@@ -24,11 +24,9 @@ export async function generateMetadata(
         alternates: {
             canonical: "https://example.com",
             languages: {
-                ar: "http://example.com/ar",
-                en: "http://example.com",
-                fr: "http://example.com/fr",
-                "nl-NL": "http://example.com/nl-NL",
-                "x-default": "http://example.com",
+                en: "https://staaack.io",
+                fr: "https://staaack.io/fr",
+                "x-default": "https://staaack.io",
             },
         },
     };

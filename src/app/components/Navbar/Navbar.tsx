@@ -78,7 +78,7 @@ const Navbar = (props: any) => {
                             rotate: -90,
                             borderRadius: "100%"
                         }}>
-                <Image src="/img/logo.png" alt="Logo staaack" height={40} width={27}/>
+                <Image src="/public/img/logo.png" alt="Logo staaack" height={40} width={27}/>
             </motion.div>
             <motion.ul className="hidden lg:flex gap-5 justify-end font-semibold" variants={variantParentMenu}>
                 <motion.li variants={variantMenu}>
