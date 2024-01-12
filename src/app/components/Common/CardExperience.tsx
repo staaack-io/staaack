@@ -12,7 +12,7 @@ const ExperienceDetails = (props: any) => {
                 damping: 20
             }}
             hidden={false}
-            className="flex flex-col flex-wrap items-baseline h-full pt-4">
+            className="flex flex-col flex-wrap items-baseline h-full p-2">
             <div className="flex justify-start items-baseline gap-1">
                 <motion.span initial={{opacity: 0, scale: 0}}
                              animate={{opacity: 100, scale: 1}}

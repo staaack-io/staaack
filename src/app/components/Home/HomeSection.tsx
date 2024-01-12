@@ -41,10 +41,9 @@ const HomeSection = (props: any) => {
     }, [props.launchStopAnimation]);
 
 
-    return <section id="home" className="bg-[#EDEEF0] pt-14 flex justify-center items-center">
-        <div className="absolute h-full w-full"></div>
+    return <section id="home" className="bg-[#EDEEF0] pt-28 flex justify-center items-center">
         <div className="grid gap-5 gap-y-12 z-0 grid-cols-12 default-size pt-24 lg:pt-0">
-            <div className="col-span-12 lg:col-span-4 xl:col-span-5 flex flex-col justify-center gap-5">
+            <div className="col-span-12 lg:col-span-4 xl:col-span-5 flex flex-col justify-center gap-5 p-5 sm:p-0">
                 <motion.div className="text-[4rem]" animate={itemStaaack.visible} initial={itemStaaack.hidden}>
                     <h1 className="absolute font-shadow-logo font-logo font-extrabold text-transparent inline-block bg-clip-text">staaack</h1>
                     <h1 className="absolute font-color-logo font-logo font-extrabold text-transparent inline-block bg-clip-text">staaack</h1>
@@ -64,7 +63,7 @@ const HomeSection = (props: any) => {
                     <Tag borderColor="#29D9FF88" tagName="advice"></Tag>
                 </motion.div>
             </div>
-            <div className="col-span-12 lg:col-span-8 xl:col-span-7  w-full h-full">
+            <div className="col-span-12 lg:col-span-8 xl:col-span-7 w-full h-full p-5">
                 <AboutMiniLayout/>
             </div>
         </div>
