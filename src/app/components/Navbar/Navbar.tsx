@@ -135,9 +135,6 @@ const Navbar = (props: any) => {
                             </span>
                     </a>
                 </motion.li>
-                <motion.li variants={variantMenu}>
-                    <ButtonStylised text="HIRE ME !"/>
-                </motion.li>
             </motion.ul>
             <div className="lg:hidden -mt-6 pr-3 z-50">
                 <div className="fixed z-50 h-full -mt-3 -ml-3">
@@ -209,9 +206,6 @@ const Navbar = (props: any) => {
                                 Contact
                             </span>
                                     </a>
-                                </li>
-                                <li className="pt-6 w-full flex justify-center">
-                                    <ButtonStylised text="HIRE ME !"/>
                                 </li>
                             </ul>
                         </div>

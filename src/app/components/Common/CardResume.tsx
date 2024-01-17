@@ -13,7 +13,9 @@ const CardResume = (props: any) => {
         <div className="flex flex-col items-center justify-center w-full h-full">
             <div className="w-14 h-14 sm:w-28 sm:h-28">
                 <LottieFile beforeSrc="/lottie/resume-in.json" src="/lottie/resume.json"
-                            className="w-10 h-10 cursor-pointer"></LottieFile>
+                            className="w-10 h-10 cursor-pointer" onClick={() => {
+                    window.open("https://staaack.io/cv-alexis-detrie-2024.pdf");
+                }}></LottieFile>
             </div>
             <div className="pt-2 font-color-logo text-center">
                 Download my resume

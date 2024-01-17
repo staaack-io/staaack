@@ -15,11 +15,11 @@ import CardSocialNetwork from "@/app/components/Common/CardSocialNetwork";
 import CardExperience from "@/app/components/Common/CardExperience";
 
 const experiences = [{
-    text1: '13',
+    text1: '12',
     text2: ' years',
     text3: 'of XP',
 }, {
-    text1: '6',
+    text1: '5',
     text2: ' years',
     text3: ' of XP as IT Solution Architect',
 }, {
