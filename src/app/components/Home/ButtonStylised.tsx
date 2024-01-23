@@ -1,10 +1,14 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 const ButtonStylised = (props: any) => {
-    return <Link href="#"
-                 className="relative items-center justify-center px-4 py-2 overflow-hidden font-bold text-black rounded-full shadow-s border-2 border-black anim-bg-gradient anim-font-gradient">
-        <span className="relative">{props.text}</span>
+  return (
+    <Link
+      href='#'
+      className='shadow-s anim-bg-gradient anim-font-gradient relative items-center justify-center overflow-hidden rounded-full border-2 border-black px-4 py-2 font-bold text-black'
+    >
+      <span className='relative'>{props.text}</span>
     </Link>
-}
+  );
+};
 
 export default ButtonStylised;

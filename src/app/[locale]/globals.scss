@@ -3,13 +3,19 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "All Round Gothic W01 Medium";
-  src: url("/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.eot");
-  src: url("/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.eot?#iefix") format("embedded-opentype"),
-  url("/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.woff") format("woff"),
-  url("/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.woff2") format("woff2"),
-  url("/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.ttf") format("truetype"),
-  url("/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.svg#All Round Gothic W01 Medium") format("svg");
+  font-family: 'All Round Gothic W01 Medium';
+  src: url('/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.eot');
+  src:
+    url('/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.woff')
+      format('woff'),
+    url('/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.woff2')
+      format('woff2'),
+    url('/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.ttf')
+      format('truetype'),
+    url('/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.svg#All Round Gothic W01 Medium')
+      format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -18,26 +24,28 @@
 @layer components {
   .default-size {
     @apply max-w-[400px]
-    sm:max-w-[575px] sm:min-w-[575px]
-    md:max-w-[700px] md:min-w-[700px]
-    lg:max-w-[960px] lg:min-w-[960px]
-    xl:max-w-[1200px] xl:min-w-[1200px]
-    2xl:max-w-[1430px] 2xl:min-w-[1430px]
-
-    ;
+    sm:min-w-[575px] sm:max-w-[575px]
+    md:min-w-[700px] md:max-w-[700px]
+    lg:min-w-[960px] lg:max-w-[960px]
+    xl:min-w-[1200px] xl:max-w-[1200px]
+    2xl:min-w-[1430px] 2xl:max-w-[1430px];
   }
-
 }
 
-
 @font-face {
-  font-family: "All Round Gothic W01 Medium";
-  src: url("/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.eot");
-  src: url("/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.eot?#iefix") format("embedded-opentype"),
-  url("/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.woff") format("woff"),
-  url("/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.woff2") format("woff2"),
-  url("/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.ttf") format("truetype"),
-  url("/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.svg#All Round Gothic W01 Medium") format("svg");
+  font-family: 'All Round Gothic W01 Medium';
+  src: url('/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.eot');
+  src:
+    url('/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.woff')
+      format('woff'),
+    url('/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.woff2')
+      format('woff2'),
+    url('/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.ttf')
+      format('truetype'),
+    url('/fonts/allroundgothicw01medium/ff9f9b187dc224f3f985a8fadbd88d45.svg#All Round Gothic W01 Medium')
+      format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -45,20 +53,26 @@
 
 @layer utilities {
   .font-logo {
-    font-family: "All Round Gothic W01 Medium", Bauhaus, sans-serif;
+    font-family: 'All Round Gothic W01 Medium', Bauhaus, sans-serif;
   }
 
   .typo-staaack {
-    font-family: "Roboto";
+    font-family: 'Roboto';
   }
 
   .font-color-logo {
     color: #000;
-    background-image: -webkit-linear-gradient(0deg, #FE05C2 0%, #FF1378 20%, #CD06BC 40%, #672FD0 60%, #29D9FF 100%);
+    background-image: -webkit-linear-gradient(
+      0deg,
+      #fe05c2 0%,
+      #ff1378 20%,
+      #cd06bc 40%,
+      #672fd0 60%,
+      #29d9ff 100%
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
   }
 
   * {
@@ -76,20 +90,19 @@
     margin-right: -10px;
     background-size: 200% 100%;
     background: 100% 0;
-    transition: background-position .5s;
+    transition: background-position 0.5s;
   }
 
   .anim-bg-gradient:hover {
     background-position: 0 0;
     color: white;
   }
-
 }
 
 .pic-services-color {
-  filter: invert(22%) sepia(60%) saturate(4034%) hue-rotate(255deg) brightness(96%) contrast(94%);
+  filter: invert(22%) sepia(60%) saturate(4034%) hue-rotate(255deg)
+    brightness(96%) contrast(94%);
 }
-
 
 //Skills section
 $block: '.hex-grid';
@@ -129,7 +142,7 @@ $block: '.hex-grid';
     position: relative;
     grid-column: 1 / span 3;
     grid-row: calc(var(--counter) + var(--counter)) / span 2;
-    filter: drop-shadow(0 0 10px rgba(#444, .08));
+    filter: drop-shadow(0 0 10px rgba(#444, 0.08));
     height: 0;
     padding-bottom: 90%;
   }
@@ -149,7 +162,7 @@ $block: '.hex-grid';
     padding: 2rem 25%;
     text-decoration: none;
     text-align: center;
-    transition: transform .24s ease-out;
+    transition: transform 0.24s ease-out;
   }
 
   &__content img {
@@ -320,12 +333,12 @@ $block: '.hex-grid';
 .partner-card-parent {
   background-image: linear-gradient(163deg, #fe05c2 0%, #29d9ff 100%);
   border-radius: 20px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .partner-card-child {
   border-radius: 10px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .partner-card-child:hover {
@@ -338,7 +351,6 @@ $block: '.hex-grid';
 }
 
 // Map
-
 
 // Dropbox
 .dropdown {
@@ -370,7 +382,7 @@ $block: '.hex-grid';
     transition: all 0.4s cubic-bezier(0.93, 0.88, 0.1, 0.8);
 
     &::before {
-      content: "";
+      content: '';
       background-color: #fff;
       position: absolute;
       bottom: 100%;
@@ -403,7 +415,6 @@ $block: '.hex-grid';
   }
 }
 
-
 svg {
   display: none;
 }
@@ -424,7 +435,6 @@ svg {
   &__face {
     display: block;
     position: relative;
-
   }
 
   &__items {
@@ -440,14 +450,13 @@ svg {
     background-color: #ffffff;
 
     &::before {
-      content: "";
+      content: '';
       background-color: #ffffff;
       position: absolute;
       bottom: 100%;
       right: 20%;
       height: 27px;
       width: 20px;
-
     }
   }
 
@@ -483,7 +492,8 @@ canvas.mapboxgl-canvas {
   white-space: nowrap;
 }
 
-button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left, button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right {
+button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left,
+button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right {
   z-index: 30 !important;
   position: absolute;
   bottom: 0;
@@ -534,19 +544,20 @@ $color: black;
 
 @keyframes ripple {
   0% {
-    box-shadow: 0 0 0 0 rgba($color, 0.3),
-    0 0 0 1px rgba($color, 0.3),
-    0 0 0 3px rgba($color, 0.3),
-    0 0 0 5px rgba($color, 0.3);
+    box-shadow:
+      0 0 0 0 rgba($color, 0.3),
+      0 0 0 1px rgba($color, 0.3),
+      0 0 0 3px rgba($color, 0.3),
+      0 0 0 5px rgba($color, 0.3);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba($color, 0.3),
-    0 0 0 4px rgba($color, 0.3),
-    0 0 0 20px rgba($color, 0),
-    0 0 0 30px rgba($color, 0);
+    box-shadow:
+      0 0 0 0 rgba($color, 0.3),
+      0 0 0 4px rgba($color, 0.3),
+      0 0 0 20px rgba($color, 0),
+      0 0 0 30px rgba($color, 0);
   }
 }
-
 
 @keyframes move {
   100% {
@@ -569,7 +580,6 @@ $color: black;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-
 
 .background span:nth-child(0) {
   color: #54a4ff;
@@ -610,7 +620,6 @@ $color: black;
   transform-origin: 21vw 16vh;
   box-shadow: 12vmin 0 2.0757448264653906vmin currentColor;
 }
-
 
 @keyframes oscillate {
   from {

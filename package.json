@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --check --ignore-path .gitignore .",
+    "format:fix": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.2",
@@ -15,6 +17,7 @@
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.495",
     "@types/negotiator": "^0.6.3",
+    "eslint-config-prettier": "^9.1.0",
     "framer-motion": "^10.16.5",
     "hamburger-react": "^2.5.0",
     "html-react-parser": "^5.0.11",
@@ -25,7 +28,7 @@
     "negotiator": "^0.6.3",
     "next": "^14.0.4",
     "postcss-import": "^16.0.0",
-    "public": "^0.1.5",
+    "public": "^0.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.49.2",
@@ -38,14 +41,22 @@
     "tailwindcss-debug-screens": "^2.2.1"
   },
   "devDependencies": {
-    "@types/node": "latest",
+    "@types/node": "^20.11.5",
     "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.18",
-    "autoprefixer": "latest",
-    "eslint": "^8.52.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
     "eslint-config-next": "^14.0.4",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.33.2",
     "postcss": "latest",
+    "prettier": "3.2.4",
+    "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "latest",
-    "typescript": "latest"
+    "typescript": "*"
   }
 }

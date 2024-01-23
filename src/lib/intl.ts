@@ -1,19 +1,19 @@
-import "server-only";
+import 'server-only';
 
-import {createIntl} from "@formatjs/intl";
-import type {Locale} from "../../i18n-config";
+import { createIntl } from '@formatjs/intl';
+import type { Locale } from '../../i18n-config';
 
 export async function getIntl(locale: Locale) {
-    return createIntl({
-        locale: locale,
-        messages: (await import(`../lang/${locale}.json`)).default,
-    });
+  return createIntl({
+    locale: locale,
+    messages: (await import(`../lang/${locale}.json`)).default,
+  });
 }
 
 export function getDirection(locale: Locale) {
-    switch (locale) {
-        case "en":
-        case "fr":
-            return "ltr";
-    }
+  switch (locale) {
+    case 'en':
+    case 'fr':
+      return 'ltr';
+  }
 }
