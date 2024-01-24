@@ -65,7 +65,7 @@ export default function RootLayout({ params, children }: LayoutProps) {
         <link rel='manifest' href='/site.webmanifest'></link>
         <title>Welcome to staaack</title>
       </head>
-      <body className={inter.className + ' debug-screens font-sans'}>
+      <body className={inter.className + ' font-sans'}>
         {children}
       </body>
     </html>
