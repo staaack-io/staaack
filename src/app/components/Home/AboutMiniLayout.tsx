@@ -1,5 +1,3 @@
-'use client';
-import React, { useEffect, useState } from 'react';
 import Card1x1 from '@/app/components/Common/Card1x1';
 import CardAI from '@/app/components/Common/CardAI';
 import CardMe from '@/app/components/Common/CardMe';
@@ -269,19 +267,6 @@ const Layout4AboutMini = (props: any) => {
   );
 };
 const AboutMiniLayout = () => {
-  const [mapLayout, setMapLayout] = useState(new Map());
-  const [currentLayout, setCurrentLayout] = useState();
-
-  useEffect(() => {
-    if (mapLayout.size == 0) {
-      let layout = new Map();
-      layout.set(2, <Layout2AboutMini />);
-      layout.set(3, <Layout3AboutMini />);
-      layout.set(4, <Layout4AboutMini />);
-      setMapLayout(layout);
-    }
-  }, []);
-
   return (
     <>
       <div className='sm:hidden lg:hidden xl:hidden 2xl:hidden'>

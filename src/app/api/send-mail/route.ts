@@ -1,6 +1,6 @@
 import sgMail from '@sendgrid/mail';
 import { NextResponse } from 'next/server';
-import { MailContent, MailDataRequired } from '@sendgrid/helpers/classes/mail';
+import { type MailDataRequired } from '@sendgrid/helpers/classes/mail';
 
 export async function POST(request: Request) {
   const params = await request.json();
@@ -31,12 +31,7 @@ export async function POST(request: Request) {
 
   sgMail.setApiKey(String(process.env.SENDGRID_API_KEY));
 
-  const mailContent: MailContent = {
-    type: '',
-    value: '',
-  };
-
-  // @ts-ignore
+  // @ts-expect-error
   const sendGridMail: MailDataRequired = {
     to: 'alexis@staaack.io',
     from: 'alexis@staaack.io',

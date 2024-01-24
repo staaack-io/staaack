@@ -33,6 +33,7 @@ const SkillsSection = () => {
               selectedSkillCategory={selectedCategory}
             >
               <Image
+                priority={true}
                 src={'/img/logo/' + skill.img}
                 height={100}
                 width={100}

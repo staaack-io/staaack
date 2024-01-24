@@ -12,9 +12,9 @@ const Tag = (props: any) => {
   return (
     <motion.div
       className={
-        'border-[ rounded-3xl border-2 bg-white px-6 py-3 font-sans' +
+        'border-[' +
         props.borderColor +
-        '] ' +
+        '] rounded-3xl border-2 bg-white px-6 py-3 font-sans ' +
         props.className
       }
       variants={item}

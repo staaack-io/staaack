@@ -126,7 +126,6 @@ const ServiceSection = () => {
           itemClass=''
         >
           {listServices.map((service: any, index: any) => {
-            // eslint-disable-next-line react/jsx-key
             return (
               <ServiceCard
                 key={index}

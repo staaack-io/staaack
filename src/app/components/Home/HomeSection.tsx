@@ -35,11 +35,6 @@ const HomeSection = (props: any) => {
     },
   };
 
-  useEffect(() => {
-    if (props.launchStopAnimation) {
-    }
-  }, [props.launchStopAnimation]);
-
   return (
     <section
       id='home'
