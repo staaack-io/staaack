@@ -1,0 +1,97 @@
+{
+  "common": {
+    "company": "staaack",
+    "catchphrase": "<p>I craft your tech landscape</p><p>from conception to execution</p>",
+    "menu": {
+      "home": "Home",
+      "services": "Services",
+      "skills": "Skills",
+      "partners": "Partners",
+      "contact": "Contact"
+    },
+    "all": "All",
+    "development": "Development",
+    "devops": "DevOps",
+    "cloud": "Cloud",
+    "security": "Security",
+    "database": "Database",
+    "countries": {
+      "france": "France",
+      "luxembourg": "Luxembourg",
+      "belgium": "Belgium"
+    }
+  },
+  "home": {
+    "schedule-call": "Schedule a call",
+    "download-resume": "Download my resume",
+    "presentation": "Hi! I am Alexis, a freelance software developer and architect based in Luxembourg.\n\nWith over a decade of experience, I have spent 5 years as a solution architect and 7 years as a developer.\nI specialize in full-stack development and architecture assignments. Additionally, I am also available to provide DevOps consulting and offer development training.\n\nFor any collaboration or inquiries, I invite you to schedule a meeting through HubSpot or contact me via the contact form.",
+    "experience": {
+      "5": "5 years of XP as IT Solution Architect",
+      "7": "7 years of XP as fullstack java developer",
+      "12": "12 years of XP"
+    },
+    "bot": {
+      "discuss": "Discuss with my AI bot",
+      "na": "This service is not unavailable"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "I provide a range of cross-functional services to your IT landscape.",
+    "service-development": {
+      "title": "Developement",
+      "content": "Java/Spring/JEE: Crafting robust and scalable solutions tailored to your specific needs.\n\nHTML/CSS/JS/React: Designing modern, responsive user interfaces for an optimal user experience."
+    },
+    "service-architecture": {
+      "title": "Architecture",
+      "content": "Implementing personalized solutions to efficiently integrate technology into your information system.\n\nDefinition and design of optimal architectures for Java/Spring applications, ensuring performance and scalability."
+    },
+    "service-cloud": {
+      "title": "Cloud",
+      "content": "Cloud Deployment: Maximizing your business flexibility and scalability with our tailored cloud solutions.\n\nMigration: Smoothly transition your systems to the cloud, minimizing disruptions and costs."
+    },
+    "service-devsecops": {
+      "title": "Dev(Sec)Ops",
+      "content": "Automate your workflows with advanced DevOps solutions for quick and reliable application and infrastructure deployment."
+    },
+    "service-training": {
+      "title": "Training",
+      "content": "Comprehensive training on current technologies adapted to your needs.\n\nSpecialization in Java development, CI/CD methodologies, DevOps, best practices and more."
+    },
+    "service-advisory": {
+      "title": "Advisory",
+      "content": "Proposing innovative technological solutions to address your challenges.\n\nImpact analysis and strategic recommendations to align technology with your business goals."
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "All the technologies I have had the chance to work with."
+  },
+  "partners": {
+    "title": "Partners",
+    "subtitle": "All the technologies I have had the chance to work with.",
+    "types": {
+      "all": "All",
+      "bigfour": "Big four",
+      "administration": "Administrations",
+      "itcompanies": "IT services companies",
+      "startups": "Startups",
+      "banks": "Banks",
+      "others": "Others"
+    }
+  },
+  "contacts": {
+    "title": "Contacts",
+    "subtitle": "",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message"
+  },
+  "footer": {
+    "whereiam": "Where I am",
+    "followme": "Follow me",
+    "legal": "Legal",
+    "legalnotice": "Legal notice",
+    "licences": "Licences"
+  }
+}

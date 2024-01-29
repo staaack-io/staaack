@@ -1,7 +1,9 @@
 import React from 'react';
 import LottieFile from '@/app/components/Common/LottieFile';
+import { useTranslations } from 'next-intl';
 
 const CardSchedule = (props: any) => {
+  const t = useTranslations('home');
   return (
     <div
       className={
@@ -24,7 +26,7 @@ const CardSchedule = (props: any) => {
             className='h-10 w-10'
           ></LottieFile>
         </div>
-        <div className='font-color-logo pt-2 text-center'>Schedule a call</div>
+        <div className='font-color-logo pt-2 text-center'>{t('schedule-call')}</div>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ import Image from 'next/image';
 import Title from '@/app/components/Common/Title';
 import SkillChoice from '@/app/components/Skills/hexagon/SkillChoice';
 
-const SkillsSection = () => {
+const SkillsSection = (props: any) => {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   return (

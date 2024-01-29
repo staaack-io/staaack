@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
+import { useTranslations } from 'next-intl';
 
 const CardMe = (props: any) => {
+  const t = useTranslations('home');
   return (
     <div
       className={
@@ -18,23 +20,10 @@ const CardMe = (props: any) => {
             <source src="/video/memoji.mp4" type="video/mp4" />
           </video>
         </div>
-        {/*<p className="p-3">*/}
-        {/*    Bonjour ! Je suis Alexis, <b>freelance en développement et architecture logicielle</b>, basé au*/}
-        {/*    Luxembourg.*/}
-        {/*    <br/><br/>*/}
-        {/*    Fort de plus d&#8217;une décennie d&#8217;expérience, j&#8217;ai passé <b>5 ans en tant*/}
-        {/*    qu&#8217;architecte de*/}
-        {/*    solutions informatiques et 7 ans en tant que développeur.</b>*/}
-        {/*    <br/>*/}
-        {/*    Je me spécialise dans les missions de développement fullstack et d&#8217;architecture. Parallèlement,*/}
-        {/*    je suis également disponible pour offrir des conseils en <b>DevOps</b> et pour <b>dispenser des*/}
-        {/*    formations</b> en développement.*/}
-        {/*    <br/><br/>*/}
-        {/*    Pour toute collaboration ou question, je vous invite à prendre rendez-vous via <a*/}
-        {/*    href="https://meetings-eu1.hubspot.com/alexis-detrie" target="_blank"> HubSpot</a> ou me contacter*/}
-        {/*    via <a href="/#contacts">le formulaire de contact</a>.*/}
-        {/*</p>*/}
         <p className='p-3'>
+          {t('presentation')}
+
+
           Hi! I am Alexis, <b>a freelance software developer and architect</b>{' '}
           based in Luxembourg.
           <br />

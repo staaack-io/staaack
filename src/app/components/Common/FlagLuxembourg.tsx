@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Flag({
+function FlagLuxembourg({
   colors = [
     '#EF2F3E',
     '#EF2F3E',
@@ -67,4 +67,4 @@ function generateGradientString(colors: any) {
   return `linear-gradient(to bottom, ${gradientStops.join(', ')})`;
 }
 
-export default Flag;
+export default FlagLuxembourg;

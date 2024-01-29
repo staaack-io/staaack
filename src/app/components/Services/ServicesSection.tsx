@@ -1,8 +1,10 @@
+'use client'
 import ServiceCard from '@/app/components/Services/ServiceCard';
 import React from 'react';
 import Title from '@/app/components/Common/Title';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { useTranslations } from 'next-intl';
 
 const responsive = {
   desktop3Xl: {
@@ -105,7 +107,8 @@ const listServices = [
       '                        with your business goals.',
   },
 ];
-const ServiceSection = () => {
+const ServiceSection = (props: any) => {
+  const t = useTranslations('common.menu');
   return (
     <section className='flex w-full flex-col pt-24'>
       <Title

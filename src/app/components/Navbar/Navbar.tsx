@@ -1,11 +1,14 @@
 'use client';
 import Image from 'next/image';
 import ButtonStylised from '@/app/components/Home/ButtonStylised';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { Sling as Hamburger } from 'hamburger-react';
+import LanguageChanger from '@/app/components/Common/LanguageChanger';
+import { useTranslations } from 'next-intl';
 
 const Navbar = (props: any) => {
+  const t = useTranslations('common.menu');
   const [mobileToggleMenu, setMobileToggleMenu] = useState(false);
   const controlMenu = useAnimation();
   const controlLogo = useAnimation();
@@ -91,43 +94,46 @@ const Navbar = (props: any) => {
           />
         </motion.div>
         <motion.ul
-          className='hidden justify-end gap-5 font-semibold lg:flex'
+          className="hidden justify-end gap-5 font-semibold lg:flex items-center"
           variants={variantParentMenu}
         >
           <motion.li variants={variantMenu}>
             <div>
-              <a href='/#home'>
-                <div className='hover:font-color-logo text-black'>Home</div>
+              <a href="/#home">
+                <div className="hover:font-color-logo text-black">{t('home')}</div>
               </a>
             </div>
           </motion.li>
           <motion.li variants={variantMenu}>/</motion.li>
           <motion.li variants={variantMenu}>
-            <a href='/#services'>
-              <span className='hover:font-color-logo text-black'>Services</span>
+            <a href="/#services">
+              <span className="hover:font-color-logo text-black">{t('services')}</span>
             </a>
           </motion.li>
           <motion.li variants={variantMenu}>/</motion.li>
           <motion.li variants={variantMenu}>
-            <a href='/#skills'>
-              <span className='hover:font-color-logo text-black'>Skills</span>
+            <a href="/#skills">
+              <span className="hover:font-color-logo text-black">{t('skills')}</span>
             </a>
           </motion.li>
           <motion.li variants={variantMenu}>/</motion.li>
           <motion.li variants={variantMenu}>
-            <a href='/#our partners'>
-              <span className='hover:font-color-logo text-black'>Partners</span>
+            <a href="/#our partners">
+              <span className="hover:font-color-logo text-black">{t('partners')}</span>
             </a>
           </motion.li>
           <motion.li variants={variantMenu}>/</motion.li>
-          <motion.li className='pr-10' variants={variantMenu}>
-            <a href='/#contacts'>
-              <span className='hover:font-color-logo text-black'>Contact</span>
+          <motion.li className="pr-10" variants={variantMenu}>
+            <a href="/#contacts">
+              <span className="hover:font-color-logo text-black">{t('contact')}</span>
             </a>
+          </motion.li>
+          <motion.li variants={variantMenu}>
+            <LanguageChanger locale={props.locale} />
           </motion.li>
         </motion.ul>
-        <div className='z-50 -mt-6 pr-3 lg:hidden'>
-          <div className='fixed z-50 -ml-3 -mt-3 h-full'>
+        <div className="z-50 -mt-6 pr-3 lg:hidden">
+          <div className="fixed z-50 -ml-3 -mt-3 h-full">
             <button>
               <Hamburger
                 size={25}
@@ -156,7 +162,7 @@ const Navbar = (props: any) => {
                         }}
                       >
                         <span className='hover:font-color-logo text-2xl text-black'>
-                          Home
+                          {t('home')}
                         </span>
                       </a>
                     </div>
@@ -170,7 +176,7 @@ const Navbar = (props: any) => {
                       }}
                     >
                       <span className='hover:font-color-logo text-2xl text-black'>
-                        Services
+                        {t('services')}
                       </span>
                     </a>
                   </li>
@@ -183,7 +189,7 @@ const Navbar = (props: any) => {
                       }}
                     >
                       <span className='hover:font-color-logo text-2xl text-black'>
-                        Skills
+                        {t('skills')}
                       </span>
                     </a>
                   </li>
@@ -196,7 +202,7 @@ const Navbar = (props: any) => {
                       }}
                     >
                       <span className='hover:font-color-logo text-2xl text-black'>
-                        Partners
+                        {t('partners')}
                       </span>
                     </a>
                   </li>
@@ -209,9 +215,12 @@ const Navbar = (props: any) => {
                       }}
                     >
                       <span className='hover:font-color-logo text-2xl text-black'>
-                        Contact
+                        {t('contact')}
                       </span>
                     </a>
+                  </li>
+                  <li>
+                    <LanguageChanger locale={props.locale} />
                   </li>
                 </ul>
               </div>

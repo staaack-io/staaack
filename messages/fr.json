@@ -1,0 +1,97 @@
+{
+  "common": {
+    "company": "staaack",
+    "catchphrase": "<p>Je conçois votre paysage technologique</p><p>de la conception à l'exécution</p>",
+    "menu": {
+      "home": "Accueil",
+      "services": "Services",
+      "skills": "Compétences",
+      "partners": "Partenaires",
+      "contact": "Contact"
+    },
+    "all": "Tout",
+    "development": "Développement",
+    "devops": "DevOps",
+    "cloud": "Cloud",
+    "security": "Sécurité",
+    "database": "Base de données",
+    "countries": {
+      "france": "France",
+      "luxembourg": "Luxembourg",
+      "belgium": "Belgique"
+    }
+  },
+  "home": {
+    "schedule-call": "Planifier un appel",
+    "download-resume": "Télécharger mon CV",
+    "presentation": "Salut ! Je suis Alexis, un développeur de logiciels freelance et architecte basé au Luxembourg.\n\nAvec plus d'une décennie d'expérience, j'ai passé 5 ans en tant qu'architecte de solutions et 7 ans en tant que développeur.\nJe suis spécialisé dans le développement full-stack et les missions d'architecture. De plus, je suis également disponible pour fournir des conseils DevOps et offrir des formations en développement.\n\nPour toute collaboration ou demande, je vous invite à planifier une réunion via HubSpot ou à me contacter via le formulaire de contact.",
+    "experience": {
+      "5": "5 ans d'expérience en tant qu'architecte de solutions informatiques",
+      "7": "7 ans d'expérience en tant que développeur Java fullstack",
+      "12": "12 ans d'expérience"
+    },
+    "bot": {
+      "discuss": "Discuter avec mon bot IA",
+      "na": "Ce service n'est pas disponible actuellement"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Je propose une gamme de services interfonctionnels pour votre paysage informatique.",
+    "service-development": {
+      "title": "Développement",
+      "content": "Java/Spring/JEE : Création de solutions robustes et évolutives adaptées à vos besoins spécifiques.\n\nHTML/CSS/JS/React : Conception d'interfaces utilisateur modernes et réactives pour une expérience utilisateur optimale."
+    },
+    "service-architecture": {
+      "title": "Architecture",
+      "content": "Mise en œuvre de solutions personnalisées pour intégrer efficacement la technologie dans votre système d'information.\n\nDéfinition et conception d'architectures optimales pour les applications Java/Spring, garantissant performances et évolutivité."
+    },
+    "service-cloud": {
+      "title": "Cloud",
+      "content": "Déploiement dans le cloud : Maximisez la flexibilité et la scalabilité de votre entreprise grâce à nos solutions cloud sur mesure.\n\nMigration : Effectuez en douceur la transition de vos systèmes vers le cloud, en minimisant les perturbations et les coûts."
+    },
+    "service-devsecops": {
+      "title": "Dev(Sec)Ops",
+      "content": "Automatisez vos flux de travail avec des solutions DevOps avancées pour un déploiement rapide et fiable des applications et de l'infrastructure."
+    },
+    "service-training": {
+      "title": "Formation",
+      "content": "Formation complète sur les technologies actuelles adaptées à vos besoins.\n\nSpécialisation en développement Java, méthodologies CI/CD, DevOps, bonnes pratiques, et plus encore."
+    },
+    "service-advisory": {
+      "title": "Conseil",
+      "content": "Proposition de solutions technologiques innovantes pour répondre à vos défis.\n\nAnalyse de l'impact et recommandations stratégiques pour aligner la technologie sur vos objectifs commerciaux."
+    }
+  },
+  "skills": {
+    "title": "Compétences",
+    "subtitle": "Toutes les technologies avec lesquelles j'ai eu la chance de travailler."
+  },
+  "partners": {
+    "title": "Partenaires",
+    "subtitle": "Toutes les technologies avec lesquelles j'ai eu la chance de travailler.",
+    "types": {
+      "all": "Tous",
+      "bigfour": "Quatre grands",
+      "administration": "Administrations",
+      "itcompanies": "Entreprises de services informatiques",
+      "startups": "Startups",
+      "banks": "Banques",
+      "others": "Autres"
+    }
+  },
+  "contacts": {
+    "title": "Contacts",
+    "subtitle": "",
+    "name": "Nom",
+    "email": "E-mail",
+    "message": "Message"
+  },
+  "footer": {
+    "whereiam": "Où je suis",
+    "followme": "Suivez-moi",
+    "legal": "Légal",
+    "legalnotice": "Avis juridique",
+    "licences": "Licences"
+  }
+}

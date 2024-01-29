@@ -676,3 +676,44 @@ $color: black;
   background-repeat: no-repeat;
   background-position: center;
 }
+
+
+.dropdown-lang {
+  position: relative;
+  width: 100px;
+  filter: url(#goo);
+
+  &__face,
+  &__items {
+    border-radius: 25px;
+  }
+
+  &__face {
+    display: block;
+    position: relative;
+  }
+
+  &__items {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 100%;
+    visibility: hidden;
+    z-index: 1000;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.93, 0.88, 0.1, 0.8);
+    background-color: #ffffff;
+
+  }
+
+  input {
+    display: none;
+
+    &:checked ~ .dropdown-lang__items {
+      top: calc(100% + 25px);
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

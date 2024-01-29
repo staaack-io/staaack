@@ -11,17 +11,14 @@
     "format:fix": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@formatjs/intl": "^2.9.11",
-    "@formatjs/intl-localematcher": "^0.5.2",
     "@lottiefiles/lottie-player": "^2.0.2",
     "@sendgrid/mail": "^8.1.0",
-    "@types/negotiator": "^0.6.3",
     "framer-motion": "^10.16.5",
     "hamburger-react": "^2.5.0",
     "html-react-parser": "^5.0.11",
     "mapbox-gl": "^3.0.1",
-    "negotiator": "^0.6.3",
     "next": "^14.0.4",
+    "next-intl": "^3.5.2",
     "postcss-import": "^16.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
+import { useTranslations } from 'next-intl';
 
 const CardAI = (props: any) => {
+  const t = useTranslations('home');
   return (
     <div
       className={
@@ -12,18 +14,18 @@ const CardAI = (props: any) => {
         props.className
       }
     >
-      <span className='absolute text-center opacity-20'>
-        Discuss with my AI bot
+      <span className="absolute text-center opacity-20">
+        {t('bot.discuss')}
       </span>
-      <div className='flex h-full w-full items-center justify-center transition hover:scale-150'>
-        <div className='flex h-full items-center justify-center opacity-20'>
-          <div id='ripple-mini'>
+      <div className="flex h-full w-full items-center justify-center transition hover:scale-150">
+        <div className="flex h-full items-center justify-center opacity-20">
+          <div id="ripple-mini">
             <Image
               src={'/img/cards/bg-ai.png'}
-              alt=''
+              alt=""
               height={100}
               width={100}
-              className='rounded-full'
+              className="rounded-full"
             />
           </div>
         </div>

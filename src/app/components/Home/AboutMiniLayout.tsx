@@ -8,28 +8,13 @@ import Image from 'next/image';
 import CardResume from '@/app/components/Common/CardResume';
 import { motion } from 'framer-motion';
 import Card2x1 from '@/app/components/Common/CardImages';
-import Flag from '@/app/components/Common/Flag';
+import FlagLuxembourg from '@/app/components/Common/FlagLuxembourg';
 import CardSocialNetwork from '@/app/components/Common/CardSocialNetwork';
 import CardExperience from '@/app/components/Common/CardExperience';
+import { useTranslations } from 'next-intl';
 
-const experiences = [
-  {
-    text1: '12',
-    text2: ' years',
-    text3: 'of XP',
-  },
-  {
-    text1: '5',
-    text2: ' years',
-    text3: ' of XP as IT Solution Architect',
-  },
-  {
-    text1: '7',
-    text2: ' years',
-    text3: ' of XP as fullstack java developer',
-  },
-];
 const Layout2AboutMini = (props: any) => {
+  const t = useTranslations('home');
   return (
     <>
       <motion.div
@@ -38,19 +23,19 @@ const Layout2AboutMini = (props: any) => {
         animate={container.visible}
       >
         <motion.div className=''>
-          <CardSchedule>Schedule a call</CardSchedule>
+          <CardSchedule locale={props.locale} />
         </motion.div>
         <motion.div className=''>
-          <CardResume>Resume</CardResume>
+          <CardResume locale={props.locale} />
         </motion.div>
         <motion.div className='col-span-2' initial='hidden' animate='visible'>
-          <CardMap />
+          <CardMap locale={props.locale}/>
         </motion.div>
         <motion.div className=''>
-          <Flag></Flag>
+          <FlagLuxembourg></FlagLuxembourg>
         </motion.div>
         <motion.div className=''>
-          <CardExperience experiences={experiences} />
+          <CardExperience locale={props.locale}/>
         </motion.div>
         <motion.div className='col-span-2'>
           <Card2x1 />
@@ -61,10 +46,12 @@ const Layout2AboutMini = (props: any) => {
         <motion.div className='group relative'>
           <div className='absolute z-30 flex aspect-square h-full w-full items-center justify-center rounded-3xl bg-black bg-opacity-0 transition group-hover:bg-opacity-30 sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]'>
             <span className='m-2 rounded-full bg-white bg-opacity-0 p-2 text-center opacity-0 group-hover:bg-opacity-100 group-hover:opacity-100'>
-              This service is not unavailable
+              {t('bot.na')}
             </span>
           </div>
-          <CardAI className='absolute aspect-square w-full border-2 border-[#FEAE07] sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]' />
+          <CardAI className='absolute aspect-square w-full border-2 border-[#FEAE07] sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]'
+            locale={props.locale}
+          />
         </motion.div>
         <motion.div className=''>
           <Card1x1 className=' border-2 border-[#6711C5]'>
@@ -85,13 +72,14 @@ const Layout2AboutMini = (props: any) => {
           initial='hidden'
           animate='visible'
         >
-          <CardMe />
+          <CardMe locale={props.locale}/>
         </motion.div>
       </motion.div>
     </>
   );
 };
 const Layout3AboutMini = (props: any) => {
+  const t = useTranslations('home');
   return (
     <>
       <motion.div
@@ -100,7 +88,7 @@ const Layout3AboutMini = (props: any) => {
         animate={container.visible}
       >
         <motion.div className=''>
-          <CardSchedule>Schedule a call</CardSchedule>
+          <CardSchedule locale={props.locale} />
         </motion.div>
         <motion.div className='col-span-2' initial='hidden' animate='visible'>
           <CardMap />
@@ -109,10 +97,10 @@ const Layout3AboutMini = (props: any) => {
           <Card2x1 />
         </motion.div>
         <motion.div className=''>
-          <CardResume>Resume</CardResume>
+          <CardResume locale={props.locale} />
         </motion.div>
         <motion.div className=''>
-          <Flag></Flag>
+          <FlagLuxembourg></FlagLuxembourg>
         </motion.div>
         <motion.div className=''>
           <CardTechnologies></CardTechnologies>
@@ -120,37 +108,21 @@ const Layout3AboutMini = (props: any) => {
         <motion.div className='group relative'>
           <div className='absolute z-30 flex aspect-square h-full w-full items-center justify-center rounded-3xl bg-black bg-opacity-0 transition group-hover:bg-opacity-30 sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]'>
             <span className='m-2 rounded-full bg-white bg-opacity-0 p-2 text-center opacity-0 group-hover:bg-opacity-100 group-hover:opacity-100'>
-              This service is not unavailable
+              {t('bot.na')}
             </span>
           </div>
-          <Card1x1 className='absolute aspect-square w-full border-2 border-[#FEAE07] sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]'>
-            <span className='absolute text-center opacity-20'>
-              Discuss with my AI bot
-            </span>
-            <div className='flex h-full w-full items-center justify-center p-2 transition hover:scale-150'>
-              <div className='flex h-full items-center justify-center opacity-20'>
-                <div id='ripple-mini'>
-                  <Image
-                    src={'/img/cards/bg-ai.png'}
-                    alt=''
-                    height={100}
-                    width={100}
-                    className='rounded-full'
-                  />
-                </div>
-              </div>
-            </div>
-          </Card1x1>
+          <CardAI className='absolute aspect-square w-full border-2 border-[#FEAE07] sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]'
+                  locale={props.locale} />
         </motion.div>
         <motion.div className=''>
-          <CardExperience experiences={experiences} />
+          <CardExperience locale={props.locale}/>
         </motion.div>
         <motion.div
           className='col-span-2 row-span-2'
           initial='hidden'
           animate='visible'
         >
-          <CardMe />
+          <CardMe locale={props.locale}/>
         </motion.div>
         <motion.div className=''>
           <Card1x1 className=' border-2 border-[#6711C5]'>
@@ -193,6 +165,7 @@ const item = {
   },
 };
 const Layout4AboutMini = (props: any) => {
+  const t = useTranslations('home');
   return (
     <motion.div initial='hidden' animate='visible'>
       <motion.div
@@ -200,10 +173,10 @@ const Layout4AboutMini = (props: any) => {
         variants={container}
       >
         <motion.div className='' variants={item}>
-          <CardSchedule>Schedule a call</CardSchedule>
+          <CardSchedule locale={props.locale} />
         </motion.div>
         <motion.div className='' variants={item}>
-          <CardResume>Resume</CardResume>
+          <CardResume locale={props.locale} />
         </motion.div>
         <motion.div className='col-span-2' variants={item}>
           <CardMap />
@@ -212,13 +185,13 @@ const Layout4AboutMini = (props: any) => {
           <CardSocialNetwork />
         </motion.div>
         <motion.div className='col-span-2 row-span-2' variants={item}>
-          <CardMe />
+          <CardMe locale={props.locale}/>
         </motion.div>
         <motion.div className='' variants={item}>
-          <Flag></Flag>
+          <FlagLuxembourg></FlagLuxembourg>
         </motion.div>
         <motion.div className='' variants={item}>
-          <CardExperience experiences={experiences} />
+          <CardExperience locale={props.locale}/>
         </motion.div>
         <motion.div className='' variants={item}>
           <CardTechnologies></CardTechnologies>
@@ -229,27 +202,11 @@ const Layout4AboutMini = (props: any) => {
         <motion.div className='group relative' variants={item}>
           <div className='absolute z-30 flex aspect-square h-full w-full items-center justify-center rounded-3xl bg-black bg-opacity-0 transition group-hover:bg-opacity-30 sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]'>
             <span className='m-2 rounded-full bg-white bg-opacity-0 p-2 text-center opacity-0 group-hover:bg-opacity-100 group-hover:opacity-100'>
-              This service is not unavailable
+              {t('bot.na')}
             </span>
           </div>
-          <Card1x1 className='absolute aspect-square w-full border-2 border-[#FEAE07] sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]'>
-            <span className='absolute text-center opacity-20'>
-              Discuss with my AI bot
-            </span>
-            <div className='flex h-full w-full items-center justify-center p-2 transition hover:scale-150'>
-              <div className='flex h-full items-center justify-center opacity-20'>
-                <div id='ripple-mini'>
-                  <Image
-                    src={'/img/cards/bg-ai.png'}
-                    alt=''
-                    height={100}
-                    width={100}
-                    className='rounded-full'
-                  />
-                </div>
-              </div>
-            </div>
-          </Card1x1>
+          <CardAI className='absolute aspect-square w-full border-2 border-[#FEAE07] sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]'
+                  locale={props.locale} />
         </motion.div>
         <motion.div className='' variants={item}>
           <Card1x1 className=' border-2 border-[#6711C5]'>
@@ -266,26 +223,26 @@ const Layout4AboutMini = (props: any) => {
     </motion.div>
   );
 };
-const AboutMiniLayout = () => {
+const AboutMiniLayout = (props: any) => {
   return (
     <>
       <div className='sm:hidden lg:hidden xl:hidden 2xl:hidden'>
-        <Layout2AboutMini />
+        <Layout2AboutMini locale={props.locale} />
       </div>
       <div className='hidden sm:block md:hidden lg:hidden xl:hidden 2xl:hidden'>
-        <Layout2AboutMini />
+        <Layout2AboutMini locale={props.locale} />
       </div>
       <div className='hidden sm:hidden md:block lg:hidden xl:hidden 2xl:hidden'>
-        <Layout3AboutMini />
+        <Layout3AboutMini locale={props.locale} />
       </div>
       <div className='hidden sm:hidden md:hidden lg:block xl:hidden 2xl:hidden'>
-        <Layout3AboutMini />
+        <Layout3AboutMini locale={props.locale} />
       </div>
       <div className='hidden sm:hidden md:hidden lg:hidden xl:block 2xl:hidden'>
-        <Layout3AboutMini />
+        <Layout3AboutMini locale={props.locale} />
       </div>
       <div className='hidden sm:hidden md:hidden lg:hidden xl:hidden 2xl:block'>
-        <Layout4AboutMini />
+        <Layout4AboutMini locale={props.locale} />
       </div>
     </>
   );

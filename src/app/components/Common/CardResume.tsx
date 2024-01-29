@@ -1,7 +1,9 @@
 import LottieFile from '@/app/components/Common/LottieFile';
 import React from 'react';
+import { useTranslations } from 'next-intl';
 
 const CardResume = (props: any) => {
+  const t = useTranslations('home');
   return (
     <div
       className={
@@ -25,7 +27,7 @@ const CardResume = (props: any) => {
           ></LottieFile>
         </div>
         <div className='font-color-logo pt-2 text-center'>
-          Download my resume
+          {t('download-resume')}
         </div>
       </div>
     </div>

@@ -15,14 +15,14 @@ const CardImages = (props: any) => {
     >
       <div className='flex h-full w-full items-center justify-center p-4 sm:gap-1'>
         <Image
-          src='/img/flag-france.svg'
+          src='/img/flag-fr.svg'
           alt='logo'
           width={90}
           height={90}
           className='ml-2 p-2'
         ></Image>
         <Image
-          src='/img/flag-gb.svg'
+          src='/img/flag-en.svg'
           alt='logo'
           width={90}
           height={90}
