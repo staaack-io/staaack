@@ -6,16 +6,18 @@ import Hexagon from '@/app/components/Skills/hexagon/Hexagon';
 import Image from 'next/image';
 import Title from '@/app/components/Common/Title';
 import SkillChoice from '@/app/components/Skills/hexagon/SkillChoice';
+import { useTranslations } from 'next-intl';
 
 const SkillsSection = (props: any) => {
+  const t = useTranslations('skills');
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   return (
     <section className='flex flex-col items-center justify-center pt-10'>
       <div className='flex w-full items-center'>
         <Title
-          title='Skills'
-          subtitle='All the technologies I have had the chance to work with.'
+          title={t('title')}
+          subtitle={t('subtitle')}
         />
       </div>
       <div className='default-size'>

@@ -2,8 +2,10 @@
 import React, { useState } from 'react';
 import Title from '@/app/components/Common/Title';
 import { useForm } from 'react-hook-form';
+import { useTranslations } from 'next-intl';
 
 const ContactSection = (props: any) => {
+  const t = useTranslations('contacts');
   const [mailSending, setMailSendig] = useState(false);
   const [mailSent, setMailSent] = useState(false);
   const [mailSentError, setMailSentError] = useState(null);
@@ -41,12 +43,12 @@ const ContactSection = (props: any) => {
   return (
     <div className='pt-10'>
       <div className='flex w-full items-center'>
-        <Title title='Contacts' subtitle='' />
+        <Title title={t('title')} subtitle={t('subtitle')} />
       </div>
       <div className='grid w-full grid-cols-1 items-center justify-center p-8'>
         {mailSent && (
           <div className='text-l text-center text-green-500'>
-            Your message is sent
+            {t('message-sent')}
           </div>
         )}
         <div className='flex justify-center'>
@@ -62,7 +64,7 @@ const ContactSection = (props: any) => {
                       htmlFor='name'
                       className='text-lg leading-7 text-gray-600'
                     >
-                      Name
+                      {t('name')}
                     </label>
                     <input
                       id='name'
@@ -71,7 +73,7 @@ const ContactSection = (props: any) => {
                     />
                     {errors.name && (
                       <p className='text-lg font-bold text-red-600'>
-                        You must filled your name
+                        {t('name-error')}
                       </p>
                     )}
                   </div>
@@ -82,7 +84,7 @@ const ContactSection = (props: any) => {
                       htmlFor='email'
                       className='text-lg leading-7 text-gray-600'
                     >
-                      Email
+                      {t('email')}
                     </label>
                     <input
                       id='email'
@@ -91,7 +93,7 @@ const ContactSection = (props: any) => {
                     />
                     {errors.email && (
                       <p className='text-lg font-bold text-red-600'>
-                        You must filled your email
+                        {t('email-error')}
                       </p>
                     )}
                   </div>
@@ -102,7 +104,7 @@ const ContactSection = (props: any) => {
                       htmlFor='message'
                       className='text-lg leading-7 text-gray-600'
                     >
-                      Message
+                      {t('message')}
                     </label>
                     <textarea
                       id='message'
@@ -111,7 +113,7 @@ const ContactSection = (props: any) => {
                     ></textarea>
                     {errors.message && (
                       <p className='text-lg font-bold text-red-600'>
-                        You must filled a message
+                        {t('message-error')}
                       </p>
                     )}
                   </div>
@@ -122,13 +124,13 @@ const ContactSection = (props: any) => {
                       className='focus:shadow-outline mx-auto flex rounded bg-purple-500 px-4 py-2 font-bold text-white shadow hover:bg-purple-400 focus:outline-none'
                       type='submit'
                     >
-                      Envoyer
+                      {t('send-message')}
                     </button>
                   )}
                 </div>
                 {mailSentError && (
                   <p className='font-bold text-red-600'>
-                    An error occured: {mailSentError}
+                    {t('message-not-send')}: {mailSentError}
                   </p>
                 )}
                 <div className='mt-8 w-full border-t border-gray-200 p-2 pt-8 text-center'>

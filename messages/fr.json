@@ -1,7 +1,7 @@
 {
   "common": {
     "company": "staaack",
-    "catchphrase": "<p>Je conçois votre paysage technologique</p><p>de la conception à l'exécution</p>",
+    "catchphrase": "Je façonne votre paysage technologique<br></br>de la conception à l'exécution",
     "menu": {
       "home": "Accueil",
       "services": "Services",
@@ -24,7 +24,7 @@
   "home": {
     "schedule-call": "Planifier un appel",
     "download-resume": "Télécharger mon CV",
-    "presentation": "Salut ! Je suis Alexis, un développeur de logiciels freelance et architecte basé au Luxembourg.\n\nAvec plus d'une décennie d'expérience, j'ai passé 5 ans en tant qu'architecte de solutions et 7 ans en tant que développeur.\nJe suis spécialisé dans le développement full-stack et les missions d'architecture. De plus, je suis également disponible pour fournir des conseils DevOps et offrir des formations en développement.\n\nPour toute collaboration ou demande, je vous invite à planifier une réunion via HubSpot ou à me contacter via le formulaire de contact.",
+    "presentation": "Salut ! Je suis Alexis, <b>un développeur de logiciels freelance et architecte</b> basé au Luxembourg.<br></br><br></br>Avec plus d'une décennie d'expérience, j'ai passé <b>5 ans en tant qu'architecte de solutions et 7 ans en tant que développeur</b>.<br></br><br></br>Je suis spécialisé dans le développement full-stack java/javascript et l'architecture d'application et de SI. De plus, je suis également disponible pour fournir <b>des conseils DevOps</b> et offrir <b>des formations en développement</b>.<br></br><br></br>Pour toute collaboration ou demande, je vous invite à planifier une réunion via <ahubspot>HubSpot</ahubspot> ou à me contacter via le <acontact>formulaire de contact</acontact>.",
     "experience": {
       "5": "5 ans d'expérience en tant qu'architecte de solutions informatiques",
       "7": "7 ans d'expérience en tant que développeur Java fullstack",
@@ -40,27 +40,33 @@
     "subtitle": "Je propose une gamme de services interfonctionnels pour votre paysage informatique.",
     "service-development": {
       "title": "Développement",
-      "content": "Java/Spring/JEE : Création de solutions robustes et évolutives adaptées à vos besoins spécifiques.\n\nHTML/CSS/JS/React : Conception d'interfaces utilisateur modernes et réactives pour une expérience utilisateur optimale."
+      "content": "<b>Java/Spring/JEE</b>: Conception de solutions robustes et évolutives adaptées à vos besoins spécifiques.<br></br><br></br><b>HTML/CSS/JS/React</b>: Conception d'interfaces utilisateur modernes et réactives pour une expérience optimale.",
+      "icon": "develop.svg"
     },
     "service-architecture": {
       "title": "Architecture",
-      "content": "Mise en œuvre de solutions personnalisées pour intégrer efficacement la technologie dans votre système d'information.\n\nDéfinition et conception d'architectures optimales pour les applications Java/Spring, garantissant performances et évolutivité."
+      "content": "<b>Mise en œuvre de solutions personnalisées</b> pour intégrer efficacement la technologie dans votre système d'information.<br></br><br></br><b>Définition et conception</b> d'architectures optimales pour les applications Java/Spring, garantissant <b>les performances</b> et <b>la scalabilité</b>.",
+      "icon": "architecture.svg"
     },
     "service-cloud": {
       "title": "Cloud",
-      "content": "Déploiement dans le cloud : Maximisez la flexibilité et la scalabilité de votre entreprise grâce à nos solutions cloud sur mesure.\n\nMigration : Effectuez en douceur la transition de vos systèmes vers le cloud, en minimisant les perturbations et les coûts."
+      "content": "<b>Déploiement dans le cloud</b>: Maximisez la flexibilité et la scalabilité de votre entreprise grâce à nos solutions cloud sur mesure.<br></br><br></br><b>Migration</b>: Effectuez en douceur la transition de vos systèmes vers le cloud, en minimisant les perturbations et les coûts.",
+      "icon": "cloud.svg"
     },
     "service-devsecops": {
       "title": "Dev(Sec)Ops",
-      "content": "Automatisez vos flux de travail avec des solutions DevOps avancées pour un déploiement rapide et fiable des applications et de l'infrastructure."
+      "content": "Automatisez vos flux de travail avec des solutions DevOps avancées pour un <b>déploiement rapide et fiable</b> des applications et de l'infrastructure.",
+      "icon": "devops.svg"
     },
     "service-training": {
       "title": "Formation",
-      "content": "Formation complète sur les technologies actuelles adaptées à vos besoins.\n\nSpécialisation en développement Java, méthodologies CI/CD, DevOps, bonnes pratiques, et plus encore."
+      "content": "<b>Formation complète</b> sur les technologies actuelles adaptées à vos besoins.<br></br><br></br>Spécialisation en <b>développement Java, méthodologies CI/CD, DevOps, bonnes pratiques</b> et plus encore.",
+      "icon": "training.svg"
     },
     "service-advisory": {
       "title": "Conseil",
-      "content": "Proposition de solutions technologiques innovantes pour répondre à vos défis.\n\nAnalyse de l'impact et recommandations stratégiques pour aligner la technologie sur vos objectifs commerciaux."
+      "content": "<b>Proposition de solutions technologiques innovantes</b> pour répondre à vos défis.<br></br><br></br>Analyse de l'impact et recommandations stratégiques pour aligner la technologie sur vos objectifs commerciaux.",
+      "icon": "advisor.svg"
     }
   },
   "skills": {
@@ -69,11 +75,11 @@
   },
   "partners": {
     "title": "Partenaires",
-    "subtitle": "Toutes les technologies avec lesquelles j'ai eu la chance de travailler.",
+    "subtitle": "Toutes les entreprises pour lesquelles j'ai travaillé.",
     "types": {
       "all": "Tous",
       "bigfour": "Quatre grands",
-      "administration": "Administrations",
+      "administrations": "Administrations",
       "itcompanies": "Entreprises de services informatiques",
       "startups": "Startups",
       "banks": "Banques",
@@ -84,8 +90,14 @@
     "title": "Contacts",
     "subtitle": "",
     "name": "Nom",
+    "name-error": "Vous devez remplir votre nom",
     "email": "E-mail",
-    "message": "Message"
+    "email-error": "Vous devez remplir votre adresse e-mail",
+    "message": "Message",
+    "message-error": "Vous devez remplir un message",
+    "send-message": "Envoyer votre message",
+    "message-sent": "Votre message est envoyé 😃",
+    "message-not-sent": "Une erreur s'est produite"
   },
   "footer": {
     "whereiam": "Où je suis",

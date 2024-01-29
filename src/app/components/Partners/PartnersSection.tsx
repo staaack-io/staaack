@@ -5,8 +5,10 @@ import partners from '/public/data/partners.json';
 import PartnerCard from '@/app/components/Partners/PartnerCard';
 import PartnerChoice from '@/app/components/Partners/PartnerChoice';
 import Title from '@/app/components/Common/Title';
+import { useTranslations } from 'next-intl';
 
 const PartnersSection = (props: any) => {
+  const t = useTranslations('partners');
   const [listPartners, setListPartners] = useState(partners);
   const [selectedCategory, setSelectedCategory] = useState('All');
 
@@ -14,8 +16,8 @@ const PartnersSection = (props: any) => {
     <section className='flex w-full cursor-pointer flex-col items-center pt-24'>
       <div className='flex w-full items-center'>
         <Title
-          title='Our Partners'
-          subtitle='All the companies for which I have worked.'
+          title={t('title')}
+          subtitle={t('subtitle')}
         />
       </div>
       <div className='default-size'>

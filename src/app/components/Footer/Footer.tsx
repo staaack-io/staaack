@@ -1,6 +1,8 @@
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 const Footer = (props: any) => {
+  const t = useTranslations('footer');
   return (
     <footer className='bg-gray-100 dark:bg-gray-900'>
       <div className='mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8'>
@@ -22,7 +24,7 @@ const Footer = (props: any) => {
           <div className='grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6'>
             <div className='mr-2'>
               <h2 className='mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white'>
-                Where I am
+                {t('whereiam')}
               </h2>
               <ul className='font-medium text-gray-500 dark:text-gray-400'>
                 <li className=''>staaack S.A.R.L. -S</li>
@@ -32,7 +34,7 @@ const Footer = (props: any) => {
             </div>
             <div>
               <h2 className='mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white'>
-                Follow me
+                {t('followme')}
               </h2>
               <ul className='font-medium text-gray-500 dark:text-gray-400'>
                 <li className='mb-4'>
@@ -63,17 +65,17 @@ const Footer = (props: any) => {
             </div>
             <div>
               <h2 className='mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white'>
-                Legal
+                {t('legal')}
               </h2>
               <ul className='font-medium text-gray-500 dark:text-gray-400'>
                 <li className='mb-4'>
                   <a href='/legal-notice' className='hover:underline'>
-                    Legal Notice
+                    {t('legalnotice')}
                   </a>
                 </li>
                 <li className='mb-4'>
                   <a href='/licences' className='hover:underline'>
-                    Licences
+                    {t('licences')}
                   </a>
                 </li>
               </ul>

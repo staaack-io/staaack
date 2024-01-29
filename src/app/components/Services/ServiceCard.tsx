@@ -18,7 +18,7 @@ const ServiceCard = (props: any) => {
         <div className='h-full w-full'>
           <Image
             className='pic-services-color'
-            src={props.icon}
+            src={"/img/" + props.icon}
             alt={props.serviceName}
             width={100}
             height={100}
@@ -31,7 +31,7 @@ const ServiceCard = (props: any) => {
         </span>
       </div>
       <div className='sm:col-span-0 col-span-2 w-full pt-8'>
-        {parse(props.children)}
+        {props.children}
       </div>
     </div>
   );

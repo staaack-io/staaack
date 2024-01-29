@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 const SkillChoice = (props: { name: any }) => {
-  const [name, setName] = useState('All');
+  const t = useTranslations('common');
+  const [name, setName] = useState(t('all'));
   const [checked, setChecked] = useState(false);
 
   const handleChange = () => {
@@ -25,28 +27,27 @@ const SkillChoice = (props: { name: any }) => {
 
         <label className='dropdown-skills__face' htmlFor='dropdown-skills'>
           <div className='dropdown-skills__text'>{name}</div>
-
           <div className='dropdown-skills__arrow'></div>
         </label>
 
         <ul className='dropdown-skills__items'>
           <li className='p-5' onClick={() => onClick('All')}>
-            All
+            {t('all')}
           </li>
           <li className='p-5' onClick={() => onClick('Development')}>
-            Development
+            {t('development')}
           </li>
           <li className='p-5' onClick={() => onClick('DevOps')}>
-            DevOps
+            {t('devops')}
           </li>
           <li className='p-5' onClick={() => onClick('Cloud')}>
-            Cloud
+            {t('cloud')}
           </li>
           <li className='p-5' onClick={() => onClick('Security')}>
-            Security
+            {t('security')}
           </li>
           <li className='p-5' onClick={() => onClick('Database')}>
-            Database
+            {t('database')}
           </li>
         </ul>
       </div>

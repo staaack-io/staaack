@@ -21,34 +21,16 @@ const CardMe = (props: any) => {
           </video>
         </div>
         <p className='p-3'>
-          {t('presentation')}
-
-
-          Hi! I am Alexis, <b>a freelance software developer and architect</b>{' '}
-          based in Luxembourg.
-          <br />
-          <br />
-          With over a decade of experience, I have spent{' '}
-          <b>5 years as a solution architect and 7 years as a developer</b>.
-          <br />I specialize in full-stack development and architecture
-          assignments. Additionally, I am also available to provide{' '}
-          <b>DevOps consulting</b> and offer <b>development training</b>.
-          <br />
-          <br />
-          For any collaboration or inquiries, I invite you to schedule a meeting
-          through{' '}
-          <a
-            href='https://meetings-eu1.hubspot.com/alexis-detrie'
-            className='underline'
-            target='_blank'
-          >
-            HubSpot
-          </a>{' '}
-          or contact me via{' '}
-          <a href='/#contacts' className='underline'>
-            the contact form
-          </a>
-          .
+          {t.rich('presentation', {
+            b: (chunks) => <b>{chunks}</b>,
+            br: (chunks) => <br/>,
+            ahubspot: (chunks) => <a
+              href="https://meetings-eu1.hubspot.com/alexis-detrie"
+              className="underline"
+              target="_blank"
+            >{chunks}</a>,
+            acontact: (chunks) => <a href="/#contacts" className="underline">{chunks}</a>
+          })}
         </p>
       </div>
     </div>

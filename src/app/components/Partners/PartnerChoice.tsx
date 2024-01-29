@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 const PartnerChoice = (props: { name: any }) => {
-  const [name, setName] = useState('All');
+  const t = useTranslations('partners');
+  const [name, setName] = useState(t('types.all'));
   const [checked, setChecked] = useState(false);
 
   useEffect(() => {}, []);
@@ -28,31 +30,30 @@ const PartnerChoice = (props: { name: any }) => {
 
         <label className='dropdown__face' htmlFor='dropdown'>
           <div className='dropdown__text'>{name}</div>
-
           <div className='dropdown__arrow'></div>
         </label>
 
         <ul className='dropdown__items'>
           <li className='p-5' onClick={() => onClick('All')}>
-            All
+            {t('types.all')}
           </li>
           <li className='p-5' onClick={() => onClick('Big four')}>
-            Big four
+            {t('types.bigfour')}
           </li>
           <li className='p-5' onClick={() => onClick('Administrations')}>
-            Administrations
+            {t('types.administrations')}
           </li>
           <li className='p-5' onClick={() => onClick('IT services companies')}>
-            IT services companies
+            {t('types.itcompanies')}
           </li>
           <li className='p-5' onClick={() => onClick('Startup')}>
-            Startup
+            {t('types.startups')}
           </li>
           <li className='p-5' onClick={() => onClick('Banks')}>
-            Banks
+            {t('types.banks')}
           </li>
           <li className='p-5' onClick={() => onClick('Others')}>
-            Other
+            {t('types.others')}
           </li>
         </ul>
       </div>

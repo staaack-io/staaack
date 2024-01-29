@@ -62,9 +62,8 @@ const HomeSection = (props: any) => {
           <motion.div animate={itemP.visible} initial={itemP.hidden}>
             <h2 className="pt-24 font-sans text-3xl text-black">
               {tc.rich('catchphrase', {
-                p: (chunks) => <p>{chunks}</p>
+                br: (chunks) => <br/>
               })}
-
             </h2>
           </motion.div>
           <motion.div

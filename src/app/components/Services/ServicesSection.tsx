@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import ServiceCard from '@/app/components/Services/ServiceCard';
 import React from 'react';
 import Title from '@/app/components/Common/Title';
@@ -43,99 +43,44 @@ const responsive = {
     paritialVisibilityGutter: 0,
   },
 };
-const listServices = [
-  {
-    serviceName: 'Developement',
-    icon: '/img/develop.svg',
-    content:
-      '<b>Java/Spring/JEE</b>: Crafting robust and scalable solutions' +
-      '                        tailored' +
-      '                        to your specific needs.' +
-      '                        <br/><br/>' +
-      '                        <b>HTML/CSS/JS/React</b>: Designing modern, responsive user' +
-      '                        interfaces' +
-      '                        for an optimal user experience.',
-  },
-  {
-    serviceName: 'Architecture',
-    icon: '/img/architecture.svg',
-    content:
-      '<b>Implementing personalized solutions</b> to efficiently' +
-      '                        integrate' +
-      '                        technology into your information system.' +
-      '                        <br/><br/>' +
-      '                        <b>Definition and design</b> of optimal architectures for Java/Spring applications,' +
-      '                        ensuring <b>performance</b> and <b>scalability</b>.',
-  },
-  {
-    serviceName: 'Cloud',
-    icon: '/img/cloud.svg',
-    content:
-      '<b>Cloud Deployment</b>: Maximizing your business flexibility and' +
-      '                        scalability with our tailored cloud solutions.' +
-      '                        <br/><br/>' +
-      '                        <b>Migration</b>: Smoothly transition your systems to the' +
-      '                        cloud, minimizing disruptions and costs.',
-  },
-  {
-    serviceName: 'Dev(Sec)Ops',
-    icon: '/img/devops.svg',
-    content:
-      '                        Automate your workflows with advanced ' +
-      'DevOps solutions for <b>quick and reliable</b> application and' +
-      '                        <b>infrastructure' +
-      '                        deployment</b>.',
-  },
-  {
-    serviceName: 'Training',
-    icon: '/img/training.svg',
-    content:
-      '<b>Comprehensive training</b> on current technologies adapted to' +
-      '                        your' +
-      '                        needs.' +
-      '                        <br/><br/>' +
-      '                        Specialization in <b>Java development, CI/CD methodologies, DevOps, best practices</b> and more.',
-  },
-  {
-    serviceName: 'Advisory',
-    icon: '/img/advisor.svg',
-    content:
-      '<b>Proposing innovative technological solutions</b> to address your challenges.' +
-      '                        <br/><br/>' +
-      '                        Impact analysis and strategic recommendations to align' +
-      '                        technology' +
-      '                        with your business goals.',
-  },
-];
 const ServiceSection = (props: any) => {
-  const t = useTranslations('common.menu');
+  const t = useTranslations('services');
+  const servicesKeys = ['service-development', 'service-architecture',
+    'service-cloud', 'service-devsecops',
+    'service-training', 'service-advisory'] as const;
+
   return (
-    <section className='flex w-full flex-col pt-24'>
+    <section className="flex w-full flex-col pt-24">
       <Title
-        title='Services'
-        subtitle='I provide a range of cross-functional services to your IT landscape.'
+        title={t('title')}
+        subtitle={t('subtitle')}
       />
-      <div className='h-full w-full pl-10 pr-10'>
+      <div className="h-full w-full pl-10 pr-10">
         <Carousel
-          className=''
+          className=""
           swipeable={true}
           draggable={true}
           showDots={false}
           responsive={responsive}
           infinite={false}
           keyBoardControl={true}
-          customTransition='transform 300ms ease-in-out'
+          customTransition="transform 300ms ease-in-out"
           transitionDuration={500}
-          itemClass=''
+          itemClass=""
         >
-          {listServices.map((service: any, index: any) => {
+          {servicesKeys.map((key: any) => {
             return (
               <ServiceCard
-                key={index}
-                icon={service.icon}
-                serviceName={service.serviceName}
+                key={key}
+                icon={t(`${key}.icon`)}
+                serviceName={t(`${key}.title`)}
               >
-                {service.content}
+                {t.rich(`${key}.content`, {
+                  b: (chunks) => <b>{chunks}</b>,
+                  br: (chunks) => <br/>,
+                })}
+
+
               </ServiceCard>
             );
           })}
