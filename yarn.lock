@@ -748,6 +748,11 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
+"@usermaven/sdk-js@^1.2.7":
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/@usermaven/sdk-js/-/sdk-js-1.2.7.tgz#28adf34a1debcc9784a1da11bd22a5f47f7815cd"
+  integrity sha512-t30rqucABlfGwMiQHIWc3i9hm4FoAnfzQcY9lIMoCrUPk4Mp4+vDI5dbcZqRvRlr/HNisoyUyToCVBIJLjJcpA==
+
 "@zkochan/retry@^0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@zkochan/retry/-/retry-0.2.0.tgz#cb52c9fce1976f3eed7b1979b739e70706f4a3d2"
