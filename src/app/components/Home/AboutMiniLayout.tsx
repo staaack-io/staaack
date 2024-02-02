@@ -50,9 +50,7 @@ const Layout2AboutMini = (props: any) => {
               {t('bot.na')}
             </span>
           </div>
-          <CardAI className='absolute aspect-square w-full border-2 border-[#FEAE07] sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]'
-            locale={props.locale}
-          />
+          <CardAI className='absolute aspect-square w-full border-2 border-[#FEAE07] sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]' />
         </motion.div>
         <motion.div className=''>
           <Card1x1 className=' border-2 border-[#6711C5]'>
@@ -112,8 +110,7 @@ const Layout3AboutMini = (props: any) => {
               {t('bot.na')}
             </span>
           </div>
-          <CardAI className='absolute aspect-square w-full border-2 border-[#FEAE07] sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]'
-                  locale={props.locale} />
+          <CardAI className='absolute aspect-square w-full border-2 border-[#FEAE07] sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]' />
         </motion.div>
         <motion.div className=''>
           <CardExperience locale={props.locale}/>
@@ -206,8 +203,7 @@ const Layout4AboutMini = (props: any) => {
               {t('bot.na')}
             </span>
           </div>
-          <CardAI className='absolute aspect-square w-full border-2 border-[#FEAE07] sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]'
-                  locale={props.locale} />
+          <CardAI className='absolute aspect-square w-full border-2 border-[#FEAE07] sm:h-[265px] sm:w-[265px] md:h-[215px] md:w-[215px] lg:h-[190px] lg:w-[190px] xl:h-[210px] xl:w-[210px] 2xl:h-[190px] 2xl:w-[190px]' />
         </motion.div>
         <motion.div className='' variants={item}>
           <Card1x1 className=' border-2 border-[#6711C5]'>

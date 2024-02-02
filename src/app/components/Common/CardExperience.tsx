@@ -1,7 +1,9 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+// @ts-ignore
 import experiencesEN from '/public/data/experiences-en.json';
+// @ts-ignore
 import experiencesFR from '/public/data/experiences-fr.json';
 
 const ExperienceDetails = (props: any) => {
