@@ -13,6 +13,8 @@
   "dependencies": {
     "@lottiefiles/lottie-player": "^2.0.2",
     "@sendgrid/mail": "^8.1.0",
+    "@types/negotiator": "^0.6.3",
+    "@usermaven/sdk-js": "^1.2.7",
     "framer-motion": "^10.16.5",
     "hamburger-react": "^2.5.0",
     "html-react-parser": "^5.0.11",

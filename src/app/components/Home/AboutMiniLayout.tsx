@@ -11,6 +11,7 @@ import Card2x1 from '@/app/components/Common/CardImages';
 import FlagLuxembourg from '@/app/components/Common/FlagLuxembourg';
 import CardSocialNetwork from '@/app/components/Common/CardSocialNetwork';
 import CardExperience from '@/app/components/Common/CardExperience';
+import { useWindowSize } from '@/hook/useWindowSize';
 import { useTranslations } from 'next-intl';
 
 const Layout2AboutMini = (props: any) => {
@@ -224,26 +225,12 @@ const Layout4AboutMini = (props: any) => {
   );
 };
 const AboutMiniLayout = (props: any) => {
+  const [width, height] = useWindowSize()
   return (
     <>
-      <div className='sm:hidden lg:hidden xl:hidden 2xl:hidden'>
-        <Layout2AboutMini locale={props.locale} />
-      </div>
-      <div className='hidden sm:block md:hidden lg:hidden xl:hidden 2xl:hidden'>
-        <Layout2AboutMini locale={props.locale} />
-      </div>
-      <div className='hidden sm:hidden md:block lg:hidden xl:hidden 2xl:hidden'>
-        <Layout3AboutMini locale={props.locale} />
-      </div>
-      <div className='hidden sm:hidden md:hidden lg:block xl:hidden 2xl:hidden'>
-        <Layout3AboutMini locale={props.locale} />
-      </div>
-      <div className='hidden sm:hidden md:hidden lg:hidden xl:block 2xl:hidden'>
-        <Layout3AboutMini locale={props.locale} />
-      </div>
-      <div className='hidden sm:hidden md:hidden lg:hidden xl:hidden 2xl:block'>
-        <Layout4AboutMini locale={props.locale} />
-      </div>
+      {width < 768 &&  <Layout2AboutMini locale={props.locale} />}
+      {width >= 768 && width < 1536 &&  <Layout3AboutMini locale={props.locale} />}
+      {width >= 1536 &&  <Layout4AboutMini locale={props.locale} />}
     </>
   );
 };

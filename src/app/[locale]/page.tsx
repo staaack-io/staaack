@@ -5,7 +5,8 @@ import SkillsSection from '@/app/components/Skills/SkillsSection';
 import PartnersSection from '@/app/components/Partners/PartnersSection';
 import ContactSection from '@/app/components/Contact/ContactSection';
 import Footer from '@/app/components/Footer/Footer';
-import { useTranslations } from 'next-intl';
+import { UsermavenAnalytics } from '@/app/components/Common/usermavenAnalytics';
+import { Suspense } from 'react';
 
 type HomeProps = {
   params: { locale: string };
@@ -13,6 +14,9 @@ type HomeProps = {
 export default function Home({ params: { locale } }: HomeProps) {
   return (
     <div className='flex flex-col bg-[#EDEEF0]'>
+    <Suspense fallback={null}>
+      <UsermavenAnalytics />
+    </Suspense>
       <div className='flex flex-row'>
         <div className="w-full">
           <Navbar locale={locale}/>
