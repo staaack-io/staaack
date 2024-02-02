@@ -32,7 +32,7 @@
     },
     "bot": {
       "discuss": "Discuss with my AI bot",
-      "na": "This service is not unavailable"
+      "na": "This service is not available"
     }
   },
   "services": {
@@ -78,7 +78,7 @@
     "subtitle": "All the companies for which I have worked.",
     "types": {
       "all": "All",
-      "bigfour": "Big four",
+      "bigfour": "Big Four",
       "administrations": "Administrations",
       "itcompanies": "IT services companies",
       "startups": "Startups",

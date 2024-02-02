@@ -16,7 +16,7 @@ const Footer = (props: any) => {
                 height={40}
                 className='mr-2 p-2'
               ></Image>
-              <span className='typo-staaack self-center whitespace-nowrap text-xl font-semibold dark:text-white '>
+              <span className='font-logo self-center whitespace-nowrap text-xl font-semibold dark:text-white '>
                 staaack
               </span>
             </a>
