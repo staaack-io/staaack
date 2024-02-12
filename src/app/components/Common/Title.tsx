@@ -2,7 +2,7 @@ import React from 'react';
 
 const Title = (props: any) => {
   return (
-    <div className='pt-15 sticky flex flex-col items-baseline gap-1 px-20 text-black md:flex-row'>
+    <div className='pt-15 sticky flex flex-col items-baseline gap-1 px-8 sm:px-20 text-black md:flex-row'>
       <div
         id={String(props.title).toLowerCase()}
         className='text-4xl font-semibold md:text-3xl'
